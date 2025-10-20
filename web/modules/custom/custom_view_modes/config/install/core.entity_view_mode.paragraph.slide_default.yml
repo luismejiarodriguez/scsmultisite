@@ -1,0 +1,11 @@
+#core.entity_view_mode.paragraph.slide_default.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.slide_default
+label: 'Slide Default'
+targetEntityType: paragraph
+cache: true

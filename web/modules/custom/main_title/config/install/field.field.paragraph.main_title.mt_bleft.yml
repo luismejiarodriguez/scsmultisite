@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_bleft.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bleft
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mt_bleft
+field_name: mt_bleft
+entity_type: paragraph
+bundle: main_title
+label: 'Border Left'
+description: 'Activate the border on the left side.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

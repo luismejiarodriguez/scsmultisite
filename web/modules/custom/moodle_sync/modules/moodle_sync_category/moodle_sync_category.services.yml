@@ -1,0 +1,27 @@
+services:
+
+  moodle_sync_category.create:
+    class: Drupal\moodle_sync_category\Service\CreateService
+    arguments: ['@config.factory', '@moodle_sync', '@entity_type.manager', '@moodle_sync.logger']
+
+  moodle_sync_category.update:
+    class: Drupal\moodle_sync_category\Service\UpdateService
+    arguments: ['@config.factory', '@moodle_sync', '@entity_type.manager', '@moodle_sync.logger']
+
+  moodle_sync_category.delete:
+    class: Drupal\moodle_sync_category\Service\DeleteService
+    arguments: ['@config.factory', '@moodle_sync', '@entity_type.manager', '@moodle_sync.logger']
+
+  moodle_sync:
+    class: Drupal\moodle_sync\Service\MoodleSync
+    arguments:
+      - '@config.factory'
+
+  moodle_sync.logger:
+    class: Drupal\moodle_sync\Service\MoodleSyncLogger
+    arguments: ['@config.factory']
+
+  settings_form_options:
+    class: Drupal\moodle_sync_category\Service\SettingsFormOptionsService
+    arguments: [ '@entity_type.manager', '@config.factory' ]
+    public: true

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the services_api_key_auth module.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Introduces new settings.
+ *
+ * Makes the request api key names configurable. And set their defaults to the
+ * old programmatically set values.
+ */
+function services_api_key_auth_update_10001() {
+  \Drupal::configFactory()->getEditable('services_api_key_auth.settings')
+    ->set('api_key_request_header_name', 'apikey')
+    ->set('api_key_post_parameter_name', 'api_key')
+    ->set('api_key_get_parameter_name', 'api_key')
+    ->save();
+}
+
+/**
+ * Service deprecation.
+ *
+ * The "authentication.api_key_auth" can now be accessed under the name
+ * "services_api_key_auth.authentication.api_key_auth".
+ */
+function services_api_key_auth_update_10002() {
+  \Drupal::service('kernel')->rebuildContainer();
+}

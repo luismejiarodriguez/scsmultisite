@@ -1,0 +1,17 @@
+{
+  "name": "drupal/augmentor",
+  "description": "Integration module which allows content to be augmented in Drupal via connections with external services.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/augmentor",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/augmentor",
+    "source": "https://git.drupalcode.org/project/augmentor"
+  },
+  "require": {
+    "drupal/key": "^1.18"
+  },
+  "require-dev": {
+    "drupal/search_api": "^1.35"
+  }
+}

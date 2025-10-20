@@ -1,0 +1,46 @@
+<?php
+/*
+ * Module: moodle_sync_enrollment.
+ *
+ * Synchronizes enrollments from Drupal to Moodle.
+ *
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_enrollment_registration_presave(EntityInterface $registration) {
+  \Drupal::service('moodle_sync_enrollment.update')->updateEnrollment($registration);
+}
+
+/*
+ * Implements HOOK_ENTITY_INSERT().
+ */
+function moodle_sync_enrollment_registration_insert(EntityInterface $registration) {
+  \Drupal::service('moodle_sync_enrollment.create')->createEnrollment($registration, 0);
+}
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_enrollment_registration_update(EntityInterface $registration) {
+  \Drupal::service('moodle_sync_enrollment.update')->updateEnrollment($registration);
+}
+
+/*
+ * Implements HOOK_ENTITY_DELETE().
+ */
+function moodle_sync_enrollment_registration_delete(EntityInterface $registration) {
+  \Drupal::service('moodle_sync_enrollment.create')->createEnrollment($registration, 1);
+}
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_enrollment_node_update($node) {
+  if ($node->hasField('field_moodle_id') && $node->get('field_moodle_id')->getString()) {
+    \Drupal::service('moodle_sync_enrollment.node')->syncField($node);
+  }
+}

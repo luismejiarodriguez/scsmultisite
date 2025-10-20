@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_box_shadow.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_box_shadow
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: P6fPFBS4IAO53C-vqqV-W4Qe6sFBGuM_wDYDKdVKwGQ
+id: paragraph.video_only.vo_box_shadow
+field_name: vo_box_shadow
+entity_type: paragraph
+bundle: video_only
+label: 'Block Shadow'
+description: 'Allows you to add a shadow effect to the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

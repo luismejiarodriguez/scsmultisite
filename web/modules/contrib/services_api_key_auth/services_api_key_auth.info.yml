@@ -1,0 +1,11 @@
+name: 'Request API Key Authentication'
+type: module
+description: 'Provides a Request Origin Authentication'
+package: Web services
+core_version_requirement: ^10.3 || ^11
+configure: entity.api_key.collection
+
+# Information added by Drupal.org packaging script on 2025-02-13
+version: '4.0.0'
+project: 'services_api_key_auth'
+datestamp: 1739438376

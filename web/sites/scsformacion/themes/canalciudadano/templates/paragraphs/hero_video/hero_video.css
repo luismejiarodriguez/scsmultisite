@@ -1,0 +1,21 @@
+.hvwrapper {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.glightbox.btn-watch-video.d-flex.align-items-center {
+  font-size: 16px;
+  transition: 0.5s;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+h2.mt-hi {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}

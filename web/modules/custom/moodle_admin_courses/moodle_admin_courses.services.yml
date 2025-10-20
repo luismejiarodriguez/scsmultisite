@@ -1,0 +1,3 @@
+services:
+  moodle_admin_courses.client:
+    class: GuzzleHttp\Client

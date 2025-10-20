@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Contains h5peditor.module
+ */
+
+ /**
+  * Implements hook_library_info_build().
+  *
+  * @see hook_library_info_build()
+  */
+function h5peditor_library_info_build() {
+   $libraries = [];
+
+  $h5p_editor_module_path = \Drupal::service('extension.list.module')
+    ->getPath('h5peditor');
+   $libraries['h5peditor.assets'] = [
+     'version' => '1.0',
+     'license' => [
+       'name' => 'MIT',
+       'url' => 'https://github.com/h5p/h5p-editor-php-library/blob/master/README.md',
+       'gpl-compatible' => TRUE,
+     ],
+     'dependencies' => [
+       'h5p/h5p.content',
+     ],
+   ];
+  $h5peditor_assets_js_key = \Drupal::service('file_url_generator')->generate('assets://h5p/h5p-editor/scripts/h5peditor-editor.js', [
+    'absolute' => TRUE,
+    'language' => FALSE,
+  ])->toString(TRUE)->getGeneratedUrl();
+  $libraries['h5peditor.assets']['js'][$h5peditor_assets_js_key] = [];
+
+   return $libraries;
+ }

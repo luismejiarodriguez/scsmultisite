@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_playcolor.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: NLwqi7UVEFKctzhaH8f_T3ujTgA_Mh01g18nXYwc-a4
+id: paragraph.vo_playcolor
+field_name: vo_playcolor
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

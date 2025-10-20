@@ -1,0 +1,117 @@
+{#{{ dump(courseid) }}#}
+{#{{ dump(course) }}#}
+{#{{ dump(sections) }}#}
+
+
+  <img src="{{ course.courseimage }}" alt="{{ course.fullname }}" width="100%" height="auto">
+
+{% if courseid %}
+
+  <h2>{{ course.fullname }}</h2>
+  <p><strong>Shortname:</strong> {{ course.shortname }}</p>
+  <div>{{ course.summary|raw }}</div>
+
+  {% if sections %}
+    <h3>Contenido del course</h3>
+    {% for section in sections %}
+{#      {{ dump(sections) }}#}
+      <div class="section">
+        {% if section.name %}
+          <h4>{{ section.name }}</h4>
+        {% endif %}
+        {% if section.summary %}
+          <div>{{ section.summary|raw }}</div>
+        {% endif %}
+        {% if section.modules %}
+          <ul>
+            {% for module in section.modules %}
+              <li>
+                <strong>{{ module.name }}</strong> ({{ module.modname }})
+                {% if module.description %}
+                  <div>{{ module.description|raw }}</div>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>Este course no tiene contenido visible.</p>
+  {% endif %}
+{% else %}
+  <p>No se encontró el course.</p>
+{% endif %}
+
+
+
+
+
+{#{{ dump(course) }}#}
+
+{#{% if course %}#}
+{#  <h2>{{ course.fullname }}</h2>#}
+{#  <p><strong>Shortname:</strong> {{ course.shortname }}</p>#}
+{#  <div>{{ course.summary|raw }}</div>#}
+
+{#  {% if content %}#}
+{#    <h3>content del course</h3>#}
+{#    {% for section in content %}#}
+{#      <div class="section">#}
+{#        {% if section.name %}#}
+{#          <h4>{{ section.name }}</h4>#}
+{#        {% endif %}#}
+{#        {% if section.summary %}#}
+{#          <div>{{ section.summary|raw }}</div>#}
+{#        {% endif %}#}
+{#        {% if section.modules %}#}
+{#          <ul>#}
+{#            {% for module in section.modules %}#}
+{#              <li>#}
+{#                <strong>{{ module.name }}</strong> ({{ module.modname }})#}
+{#                {% if module.description %}#}
+{#                  <div>{{ module.description|raw }}</div>#}
+{#                {% endif %}#}
+{#              </li>#}
+{#            {% endfor %}#}
+{#          </ul>#}
+{#        {% endif %}#}
+{#      </div>#}
+{#    {% endfor %}#}
+{#  {% else %}#}
+{#    <p>Este course no tiene content visible.</p>#}
+{#  {% endif %}#}
+{#{% else %}#}
+{#  <p>No se encontró el course.</p>#}
+{#{% endif %}#}
+
+
+{#{{ dump(course) }}#}
+
+{#{% if course %}#}
+{#  <div class="card" style="width: 18rem;">#}
+{#    <img src="{{ course.courseimage }}" class="card-img-top" alt="{{ course.shortname }}">#}
+{#    <div class="card-body">#}
+{#      <h5 class="card-title">{{ course.fullname }}</h5>#}
+{#      <p class="card-text p5">{{ course.shortname }}</p>#}
+{#      {% if course.summary %}#}
+{#        <div class="course-summary p-3">#}
+{#          {{ course.summary|raw }}#}
+{#        </div>#}
+{#      {% endif %}#}
+{#      <p></p>#}
+{#      <a href="/admin/moodle/course/{{ course.id }}" class="btn btn-primary">{{ 'Access' | t }}</a>#}
+{#    </div>#}
+{#  </div>#}
+
+{#  <div>#}
+{#    <img src="{{ course.courseimage }}" alt="{{ course.categoryname }}" width="100%" height="auto">#}
+{#  </div>#}
+{#  <h2>{{ course.fullname }}</h2>#}
+{#  <p><strong>Short name:</strong> {{ course.shortname }}</p>#}
+{#  <p><strong>Category ID:</strong> {{ course.categoryid }}</p>#}
+
+
+{#{% else %}#}
+{#  <p>No se encontró información del course.</p>#}
+{#{% endif %}#}

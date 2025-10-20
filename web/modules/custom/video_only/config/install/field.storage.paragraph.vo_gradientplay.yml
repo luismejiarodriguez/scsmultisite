@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_gradientplay.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: F_SATTaICTds_B6-6Irz_inSZe3OAFC9bWtfUs-DOJc
+id: paragraph.vo_gradientplay
+field_name: vo_gradientplay
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#129dd0'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+moodle_admin_courses.details:
+  path: '/admin/moodle/course/{courseid}'
+  defaults:
+    _controller: '\Drupal\moodle_admin_courses\Controller\MoodleCourseDetailController::getCourseDetail'
+    _title: 'Moodle Course Detail'
+  requirements:
+    _permission: 'access content'
+
+
+
+moodle_admin_courses.getCourses:
+  path: '/moodle-admin-courses/courses'
+  defaults:
+    _title: 'GetCourses'
+    _controller: '\Drupal\moodle_admin_courses\Controller\MoodleAdminCoursesController::getCourses'
+  requirements:
+    _permission: 'access content'
+

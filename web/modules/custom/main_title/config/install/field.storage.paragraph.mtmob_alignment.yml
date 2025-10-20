@@ -1,0 +1,33 @@
+#field.storage.paragraph.mtmob_alignment.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: abBjIQ6JneG9ylVE3698BjBCbzpdJxqJU
+id: paragraph.mtmob_alignment
+field_name: mtmob_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: center
+      label: Centrado
+    -
+      value: left
+      label: Izquierda
+    -
+      value: right
+      label: Derecha
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

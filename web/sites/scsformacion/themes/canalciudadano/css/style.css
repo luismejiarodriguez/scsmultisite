@@ -1,0 +1,98 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'HelveticaNeue-Medium';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/HelveticaNeue-Medium.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* HOME */
+#video-only-4 img {
+  width: 1500px;
+}
+#search-top {
+  background-image: linear-gradient(180deg, #0021C9, #0D5AFD);
+  display: flex;
+  padding: 40px 20px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+#search-top .col-izq {
+  text-align: center;
+}
+
+#search-top .col-der a.btn.btn-outline-primary {
+  max-width: 200px;
+  border-radius: 25px;
+  width: 100%;
+  height: 42px;
+}
+#search-top .col-der svg {
+  height: 18px;
+  filter: invert(1);
+  margin-right: 10px;
+}
+input[type="search"] {
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.search-submit-icon {
+  background: url(/sites/canalciudadano/files/icono_lupa.svg) no-repeat center;
+  background-size: 1.2rem;
+  text-indent: -9999px;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  position: absolute;
+  margin-left: -38px;
+  margin-top: 3px;
+}
+
+/* Telefonos en vertical (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #search-top {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+
+
+}
+
+/* Ordenadores y Laptops (desktops, 992px and up) */
+@media (min-width: 992px){
+  #search-top {
+    display: flex;
+    flex-flow: wrap;
+  }
+  input[type="search"] {
+    width: 566px;
+  }
+  #search-top .col-der {
+    display: flex;
+    justify-content: end;
+  }
+
+}
+
+/* Logo Admin */
+.admin-toolbar__header {
+  text-align: center;
+  padding: 10px 5px 30px;
+}
+.toolbar-menu__item.toolbar-menu__item--level-1 img{
+  width: 100%;
+}
+
+/* Menu Admin */
+a.toolbar-link.toolbar-link--has-icon.toolbar-link-- {
+  background: #ffffff!important;
+  padding: 16px 24px 16px 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 10px;
+  color: #666666;
+}

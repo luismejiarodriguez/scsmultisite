@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_bright.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bright
+    - paragraphs.paragraphs_type.video_only
+id: paragraph.video_only.vo_bright
+field_name: vo_bright
+entity_type: paragraph
+bundle: video_only
+label: 'Border Right'
+description: 'Activate the border on the right side.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

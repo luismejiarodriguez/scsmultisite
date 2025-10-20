@@ -1,0 +1,12 @@
+#core.entity_view_mode.paragraph.contact_button.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.contact_button
+label: 'Contact Button'
+description: ''
+targetEntityType: paragraph
+cache: true

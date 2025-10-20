@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_external_video.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_external_video
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: l-5VwxRTVg0QtKbhHs8Op3wCfEuull73ys-4aVM7WE0
+id: paragraph.video_only.vo_external_video
+field_name: vo_external_video
+entity_type: paragraph
+bundle: video_only
+label: 'Video'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'https://youtu.be/VZLHSaMwrqA'
+default_value_callback: ''
+settings: {  }
+field_type: string

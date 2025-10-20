@@ -1,0 +1,13 @@
+services:
+  moodle_sync_course.create:
+    class: Drupal\moodle_sync_course\Service\CreateService
+    arguments: ['@config.factory']
+
+  moodle_sync_course.delete:
+    class: Drupal\moodle_sync_course\Service\DeleteService
+    arguments: ['@config.factory']
+
+  moodle_sync_course.update:
+    class: Drupal\moodle_sync_course\Service\UpdateService
+    arguments: ['@config.factory']
+

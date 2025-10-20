@@ -1,0 +1,13 @@
+uuid: 900d528b-6130-4ef6-9594-6fac171b44a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: VxaiPesYfsYBdqKs6dVNu2qQajIjtzqUNndZWm0L-A0
+id: paragraph.bg_card
+label: 'Tarjeta con fondo'
+description: ''
+targetEntityType: paragraph
+cache: true

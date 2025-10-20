@@ -1,0 +1,27 @@
+#field.storage.paragraph.mt_titleline_color.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: XniP8des4qKIYda2qJ5XhjbEcZ58kpuecpfo7nkW5bc
+id: paragraph.mt_titleline_color
+field_name: mt_titleline_color
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

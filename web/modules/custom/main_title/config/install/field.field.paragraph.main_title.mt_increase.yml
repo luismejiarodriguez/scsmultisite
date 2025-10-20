@@ -1,0 +1,22 @@
+#field.field.paragraph.main_title.mt_increase.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_increase
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+id: paragraph.main_title.mt_increase
+field_name: mt_increase
+entity_type: paragraph
+bundle: main_title
+label: Increase
+description: 'Allows you to exponentially increase the size and thickness of the text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

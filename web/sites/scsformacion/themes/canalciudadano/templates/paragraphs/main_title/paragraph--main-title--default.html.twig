@@ -1,0 +1,189 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# PC  #}
+{% set mt_align_pc =  content.mt_alignment.0|render %}
+{% set mt_punit_pc =  content.mt_punit_pc.0|render %}
+{% set mt_gpadding_pc =  content.mt_gpadding_pc.0|render %}
+{% set mt_ptop_pc =  content.mt_ptop_pc.0|render|default(0) %}
+{% set mt_pright_pc =  content.mt_pright_pc.0|render|default(0) %}
+{% set mt_pbottom_pc =  content.mt_pbottom_pc.0|render|default(0) %}
+{% set mt_pleft_pc =  content.mt_pleft_pc.0|render|default(0) %}
+{% set mt_fxheight_pc =  content.mt_fxhpc.0|render %}
+{# GLOBALES #}
+{% set mt_text =  content.mt_text.0|render %}
+{% set mt_fontsize =  content.mt_fontsize.0|render %}
+{% set mt_fontsize_unit =  content.mt_fontsunit.0|render %}
+{% set mt_increase =  content.mt_increase.0|render %}
+{% set mt_text_color =  content.mt_color.0|render %}
+{% set mt_text_bold =  content.mt_bold.0|render %}
+{% set mt_text_shadow =  content.mt_shadow_title.0|render %}
+{% set mt_bgcolor =  content.mt_bgcolor.0|render %}
+{% set mt_fontfamily =  content.mt_font_family.0|render %}
+{# MARGIN #}
+{% set mt_munit_pc = content.mt_munit_pc.0|render %}
+{% set mt_mtop_pc =  content.mt_mtop_pc.0|render %}
+{% set mt_mright_pc =  content.mt_mright_pc.0|render %}
+{% set mt_mbottom_pc =  content.mt_mbottom_pc.0|render %}
+{% set mt_mleft_pc =  content.mt_mleft_pc.0|render %}
+
+{# BORDER #}
+{% set mt_bunit_pc = content.mt_bunit.0|render %}
+{% set mt_gborder_pc = content.mt_gborder_pc.0|render %}
+{% set mt_btop_pc = content.mt_btop_pc.0|render %}
+{% set mt_bright_pc = content.mt_bright_pc.0|render %}
+{% set mt_bbottom_pc = content.mt_bbottom_pc.0|render %}
+{% set mt_bleft_pc = content.mt_bleft_pc.0|render %}
+{% set mt_bstyle_pc = content.mt_border_style.0|render %}
+{% set mt_bwidth_pc = content.mt_borderwidth.0|render|default(0) %}
+{% set mt_bcolor_pc = content.mt_bordercolor.0|render %}
+{# BORDER RADIUS #}
+{% set mt_gbradius_pc =  content.mt_global_radius.0|render %}
+{% set mt_bradius_topleft_pc =  content.mt_bradius_top_left.0|render|default(0) %}
+{% set mt_bradius_topright_pc =  content.mt_bradius_top_right.0|render|default(0) %}
+{% set mt_bradius_btleft_pc =  content.mt_bradius_bt_left.0|render|default(0) %}
+{% set mt_bradius_btright_pc =  content.mt_bradius_bt_right.0|render|default(0) %}
+{# LINE DECORATION #}
+{% set mt_addline =  content.mt_add_titleline.0|render %}
+{% set mt_line_type =  content.mt_titleline_type.0|render %}
+{% set mt_line_color =  content.mt_titleline_color.0|render %}
+{# EXTRAS #}
+{% set mt_wow_ani_type =  content.mt_watype.0|render %}
+{% set mt_bk_shadow =  content.mt_bk_box_shadow.0|render %}
+{% set mt_wow_ani_duration =  content.mt_waduration.0|render %}
+{% set mt_wow_ani_delay =  content.mt_wadelay.0|render %}
+{% set mt_animation =  content.mt_animation.0|render %}
+{% set mt_htag =  content.mt_htag.0|render %}
+{# MOBILE #}
+{% set mt_align_mobile =  content.mtmob_alignment.0|render %}
+{% set mt_mtop_mobile =  content.mt_mob_mtop.0|render %}
+{% set mt_mbottom_mobile =  content.mt_mob_mbottom.0|render %}
+{# PADDING MOBILE #}
+{% set mt_gpadding_mobile =  content.mtmob_gpadding.0|render %}
+{% set mt_ptop_mobile =  content.mtmob_ptop.0|render %}
+{% set mt_pright_mobile =  content.mtmob_pright.0|render %}
+{% set mt_pbottom_mobile =  content.mtmob_pbottom.0|render %}
+{% set mt_pleft_mobile =  content.mtmob_pleft.0|render %}
+{% set mt_fontsize_mobile =  content.mt_mobfontsize.0|render %}
+{% set mt_fxheight_mobile =  content.mt_fxhmob.0|render %}
+{% set mt_removepblock_mobile =  content.field_remove_pblock_mobile.0|render %}
+
+
+<style>
+  /* Mobile Settings */
+  /* Telefonos en vertical (portrait phones, less than 576px) */
+  @media (max-width: 767px) {
+    #maint-{{ paragraph.id() }}, #maint-{{ paragraph.id() }} h1,
+    #maint-{{ paragraph.id() }} h2, #maint-{{ paragraph.id() }} h3,
+    #maint-{{ paragraph.id() }} h4,#maint-{{ paragraph.id() }} h5, #maint-{{ paragraph.id() }} h6,
+    #maint-{{ paragraph.id() }} .texto-sin-h {
+    {% if mt_align_mobile is not empty %} text-align: {{ mt_align_mobile }};
+    {% endif %}
+    {% if mt_fontsize_mobile is not empty %} font-size: {{ mt_fontsize_mobile }}; {% endif %}
+    {% if mt_gpadding_mobile is not empty %} padding: {{ mt_gpadding_mobile }};
+    {% else %} padding: {{ mt_ptop_mobile }} {{ mt_pright_mobile }} {{ mt_pbottom_mobile }} {{ mt_pleft_mobile }};
+    {% endif %}
+    {% if mt_fxheight_mobile is not empty %} height:{{ mt_fxheight_mobile }};{% else %} overflow: hidden; {% endif %}
+    {% if mt_mtop_mobile is not empty %} margin-top:  {{ mt_mtop_mobile }};{% endif %}
+    {% if mt_mbottom_mobile is not empty %} margin-bottom:  {{ mt_mbottom_mobile }}; {% endif %}
+    }
+    {% if mt_removepblock_mobile == '1' %}
+      #maint-{{ paragraph.id() }} {
+        padding: 0;
+      }
+    {% endif %}
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #maint-{{ paragraph.id() }} h1,
+    #maint-{{ paragraph.id() }} h2, #maint-{{ paragraph.id() }} h3,
+    #maint-{{ paragraph.id() }} h4,#maint-{{ paragraph.id() }} h5, #maint-{{ paragraph.id() }} h6,
+    #maint-{{ paragraph.id() }} .texto-sin-h {
+      {% if mt_fxheight_pc %}  height: {{ mt_fxheight_pc }};{% endif %}
+      {% if mt_align_pc is not empty %} text-align: {{ mt_align_pc }};
+      {% endif %}
+      {% if mt_mtop_pc is not empty %} margin-top: {{ mt_mtop_pc }}{{ mt_munit_pc }}; {% endif %}
+      {% if mt_mright_pc is not empty %} margin-right: {{ mt_mright_pc }}{{ mt_munit_pc }}; {% endif %}
+      {% if mt_mbottom_pc is not empty %} margin-bottom: {{ mt_mbottom_pc }}{{ mt_munit_pc }} ;{% endif %}
+      {% if mt_mleft_pc is not empty %} margin-left:  {{ mt_mleft_pc }}{{ mt_munit_pc }}; {% endif %}
+      {% if mt_fontsize is not empty %} font-size: {{ mt_fontsize }}{{ mt_fontsize_unit }}; {% endif %}
+    {% if mt_gpadding_pc is not empty %} padding: {{ mt_gpadding_pc }}{{ mt_punit_pc }};
+    {% else %} padding: {{ mt_ptop_pc }}{{ mt_punit_pc }} {{ mt_pright_pc }}{{ mt_punit_pc }} {{ mt_pbottom_pc }}{{ mt_punit_pc }} {{ mt_pleft_pc }}{{ mt_punit_pc }};
+    {% endif %}
+    }
+
+  }
+    /* ESTILOS GLOBALES */
+  #maint-{{ paragraph.id() }}.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+  #maint-{{ paragraph.id() }} h1,
+  #maint-{{ paragraph.id() }} h2, #maint-{{ paragraph.id() }} h3,
+  #maint-{{ paragraph.id() }} h4,#maint-{{ paragraph.id() }} h5, #maint-{{ paragraph.id() }} h6,
+  #maint-{{ paragraph.id() }} .texto-sin-h {
+  {% if mt_bgcolor is not empty %} background-color: {{ mt_bgcolor }};
+    {% endif %}{% if mt_fontfamily is not empty %} font-family: {{ mt_fontfamily }};
+    {% endif %}{% if mt_addline == "1" %} text-decoration: {{ mt_line_type }};
+      text-decoration-color: {{ mt_line_color }};
+    {% endif %}
+    {% if mt_gborder_pc is not empty %} border-width: {{ mt_gborder_pc }}{{ mt_bunit_pc }}; {% else %}
+      border-width: {{ mt_btop_pc }}{{ mt_bunit_pc }} {{ mt_bright_pc }}{{ mt_bunit_pc }} {{ mt_bbottom_pc }}{{ mt_bunit_pc }} {{ mt_bleft_pc }}{{ mt_bunit_pc }};
+    {% endif %}
+      border-radius:   {% if mt_gbradius_pc is not empty  %} {{ mt_gbradius_pc }}; {% else %}
+      {{ mt_bradius_topleft_pc }} {{ mt_bradius_topright_pc }} {{ mt_bradius_btleft_pc }} {{ mt_bradius_btright_pc }} ;{% endif %}
+    {% if mt_text_shadow == "1" %}  text-shadow: 2px 3px #2c1515;{% endif %}
+    {% if mt_text_color is not empty %} color: {{ mt_text_color }};
+    {% endif %}{% if mt_text_bold == "1" %} font-weight: bold;
+    {% endif %}
+    {% if mt_addline == "1" %} text-decoration:  {{ mt_line_color }} {{ mt_line_type }};
+    {% endif %}
+    }
+</style>
+
+{% set classes = [
+  'paragraph',
+  'main-title',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+
+{{ attach_library('canalciudadano/paragraphs.main_title') }}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div  id="maint-{{ paragraph.id() }}"
+            class="
+            {%- if mt_wow_ani_type is not empty -%}{{ mt_wow_ani_type }} {%- endif -%}
+            {% if mt_bk_shadow is not empty %}{{ mt_bk_shadow }} {% endif %}
+        {% if mt_wow_ani_duration is not empty %} {{ mt_wow_ani_duration }} {% endif %}
+        {% if mt_wow_ani_delay is not empty %} {{ mt_wow_ani_delay }} {% endif %}
+      ">
+      {% if mt_htag is not empty %}
+        <h{{ mt_htag }}
+          class=" {%- if mt_increase is not empty -%} display-{{ mt_increase }} fw-bolder {%- endif -%}
+          {% if mt_animation is not empty %} {{ mt_animation }} {% endif %}
+          "
+        >
+          {{ mt_text }}
+        </h{{ mt_htag }}>
+        {% else %}
+        <div class="texto-sin-h {%- if mt_increase is not empty -%} display-{{ mt_increase }} fw-bolder {%- endif -%}">
+          {{ mt_text }}
+        </div>
+      {% endif %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

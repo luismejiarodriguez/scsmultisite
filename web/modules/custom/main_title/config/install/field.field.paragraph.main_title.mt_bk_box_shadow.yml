@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_bk_box_shadow.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bk_box_shadow
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: n0aP1Vgh7vKVJYztNhW0VlJHCD1wlG7ku4Ri6SMxL5s
+id: paragraph.main_title.mt_bk_box_shadow
+field_name: mt_bk_box_shadow
+entity_type: paragraph
+bundle: main_title
+label: 'Sombra del bloque'
+description: 'Permite añadir sombra al bloque.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

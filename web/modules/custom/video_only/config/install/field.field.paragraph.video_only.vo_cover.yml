@@ -1,0 +1,32 @@
+#field.field.paragraph.video_only.vo_cover.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_cover
+    - media.type.image
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: 0JuDm7mhSl6VgHYApib7vFtdvz2JEAGRgPfDRJqGVUo
+id: paragraph.video_only.vo_cover
+field_name: vo_cover
+entity_type: paragraph
+bundle: video_only
+label: 'Cover image'
+description: 'Allows you to add a cover image for the video'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_bradius_btright.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bradius_btright
+    - paragraphs.paragraphs_type.video_only
+id: paragraph.video_only.vo_bradius_btright
+field_name: vo_bradius_btright
+entity_type: paragraph
+bundle: video_only
+label: 'Bottom right border radius'
+description: 'Allows you to add a radius to the bottom right of the image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

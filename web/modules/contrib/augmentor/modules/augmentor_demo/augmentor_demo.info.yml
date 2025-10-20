@@ -1,0 +1,12 @@
+name: Demo Augmentor
+type: module
+description: Demo Augmentor to serve as a blueprint for developers.
+package: Augmentor
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - augmentor:augmentor
+
+# Information added by Drupal.org packaging script on 2025-07-14
+version: '1.2.2'
+project: 'augmentor'
+datestamp: 1752467449

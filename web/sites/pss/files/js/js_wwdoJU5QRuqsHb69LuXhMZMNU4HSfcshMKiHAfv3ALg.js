@@ -1,0 +1,4 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function(Drupal){'use strict';Drupal.behaviors.pss={attach:function(context,settings){}};})(Drupal);;
+(function($,drupalSettings){setTimeout(()=>{$.ajax({type:'POST',cache:false,url:drupalSettings.statistics.url,data:drupalSettings.statistics.data});});})(jQuery,drupalSettings);;
+(function($,Drupal,drupalSettings){const pathInfo=drupalSettings.path;const escapeAdminPath=sessionStorage.getItem('escapeAdminPath');const windowLocation=window.location;if(!pathInfo.currentPathIsAdmin&&!/destination=/.test(windowLocation.search))sessionStorage.setItem('escapeAdminPath',windowLocation);Drupal.behaviors.escapeAdmin={attach(){const toolbarEscape=once('escapeAdmin','[data-toolbar-escape-admin]');if(toolbarEscape.length&&pathInfo.currentPathIsAdmin&&escapeAdminPath!==null)$(toolbarEscape).attr('href',escapeAdminPath);}};})(jQuery,Drupal,drupalSettings);;

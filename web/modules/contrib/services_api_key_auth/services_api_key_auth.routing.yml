@@ -1,0 +1,43 @@
+entity.api_key.collection:
+  path: '/admin/config/services/api-key-auth'
+  defaults:
+    _entity_list: 'api_key'
+    _title: 'Api key list'
+  requirements:
+    _permission: 'administer services_api_key_auth'
+
+entity.api_key.add_form:
+  path: '/admin/config/services/api-key-auth/add'
+  defaults:
+    _title: 'Add api key'
+    _entity_form: 'api_key.add'
+  requirements:
+    _entity_create_access: 'api_key'
+
+entity.api_key.edit_form:
+  path: '/admin/config/services/api-key-auth/{api_key}/edit'
+  defaults:
+    _title: 'Edit api key'
+    _entity_form: 'api_key.edit'
+  requirements:
+    _entity_access: 'api_key.edit'
+
+entity.api_key.delete_form:
+  path: '/admin/config/services/api-key-auth/{api_key}/delete'
+  defaults:
+    _title: 'Delete api key'
+    _entity_form: 'api_key.delete'
+  requirements:
+    _entity_access: 'api_key.delete'
+  options:
+    parameters:
+      api_key:
+        with_config_overrides: TRUE
+
+services_api_key_auth.api_key_auth_settings:
+  path: '/admin/config/services/api-key-auth/settings'
+  defaults:
+    _title: 'Api key authentication settings'
+    _form: 'Drupal\services_api_key_auth\Form\ApiKeyAuthSettingsForm'
+  requirements:
+    _permission: 'administer services_api_key_auth'

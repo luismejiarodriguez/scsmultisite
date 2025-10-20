@@ -1,0 +1,8 @@
+install recommended h5p libraries:
+  title: 'Install recommended H5P Libraries'
+  description: 'Install only recommended content types available at the Hub.'
+  restrict access: TRUE
+
+access h5p editor:
+  title: 'Access H5P editor'
+  description: 'The user is allowed to use the H5P Editor widget to create H5P interactives.'

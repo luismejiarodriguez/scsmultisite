@@ -1,0 +1,1170 @@
+#core.entity_form_display.paragraph.main_title.default.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_title.mt_no_pblock_mob
+    - field.field.paragraph.main_title.mt_add_titleline
+    - field.field.paragraph.main_title.mt_alignment
+    - field.field.paragraph.main_title.mt_animation
+    - field.field.paragraph.main_title.mt_bbottom
+    - field.field.paragraph.main_title.mt_bgcolor
+    - field.field.paragraph.main_title.mt_bk_box_shadow
+    - field.field.paragraph.main_title.mt_bleft
+    - field.field.paragraph.main_title.mt_bold
+    - field.field.paragraph.main_title.mt_border_style
+    - field.field.paragraph.main_title.mt_bordercolor
+    - field.field.paragraph.main_title.mt_bradius_bt_left
+    - field.field.paragraph.main_title.mt_bradius_bt_right
+    - field.field.paragraph.main_title.mt_bradius_top_left
+    - field.field.paragraph.main_title.mt_bradius_top_right
+    - field.field.paragraph.main_title.mt_bright
+    - field.field.paragraph.main_title.mt_btop
+    - field.field.paragraph.main_title.mt_bunit
+    - field.field.paragraph.main_title.mt_color
+    - field.field.paragraph.main_title.mt_font_family
+    - field.field.paragraph.main_title.mt_fontsize
+    - field.field.paragraph.main_title.mt_fontsunit
+    - field.field.paragraph.main_title.mt_fxhmob
+    - field.field.paragraph.main_title.mt_fxhpc
+    - field.field.paragraph.main_title.mt_gborder
+    - field.field.paragraph.main_title.mt_global_radius
+    - field.field.paragraph.main_title.mt_gpadding_pc
+    - field.field.paragraph.main_title.mt_htag
+    - field.field.paragraph.main_title.mt_increase
+    - field.field.paragraph.main_title.mt_mbottom_pc
+    - field.field.paragraph.main_title.mt_mleft_pc
+    - field.field.paragraph.main_title.mt_mob_mbottom
+    - field.field.paragraph.main_title.mt_mob_mtop
+    - field.field.paragraph.main_title.mt_mobfontsize
+    - field.field.paragraph.main_title.mt_mright_pc
+    - field.field.paragraph.main_title.mt_mtop_pc
+    - field.field.paragraph.main_title.mt_munit_pc
+    - field.field.paragraph.main_title.mt_pbottom_pc
+    - field.field.paragraph.main_title.mt_pleft_pc
+    - field.field.paragraph.main_title.mt_pright_pc
+    - field.field.paragraph.main_title.mt_ptop_pc
+    - field.field.paragraph.main_title.mt_punit_pc
+    - field.field.paragraph.main_title.mt_rotate
+    - field.field.paragraph.main_title.mt_shadow_title
+    - field.field.paragraph.main_title.mt_text
+    - field.field.paragraph.main_title.mt_titleline_color
+    - field.field.paragraph.main_title.mt_titleline_type
+    - field.field.paragraph.main_title.mt_wadelay
+    - field.field.paragraph.main_title.mt_waduration
+    - field.field.paragraph.main_title.mt_watype
+    - field.field.paragraph.main_title.mtmob_alignment
+    - field.field.paragraph.main_title.mtmob_gpadding
+    - field.field.paragraph.main_title.mtmob_pbottom
+    - field.field.paragraph.main_title.mtmob_pleft
+    - field.field.paragraph.main_title.mtmob_pright
+    - field.field.paragraph.main_title.mtmob_ptop
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+    - field_group
+third_party_settings:
+  field_group:
+    group_mobile_settings:
+      children:
+        - mt_mobfontsize
+        - mt_fxhmob
+        - mtmob_alignment
+      label: 'Configuración móviles'
+      region: content
+      parent_name: group_extras_mobile
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: mobile-wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+        formatter: closed
+        direction: horizontal
+        width_breakpoint: '640'
+    group_border_radius:
+      children:
+        - mt_global_radius
+        - mt_bradius_top_left
+        - mt_bradius_top_right
+        - mt_bradius_bt_right
+        - mt_bradius_bt_left
+      label: 'Radio del borde'
+      region: content
+      parent_name: group_border_radius_block
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: 'main-title wrapper-inside'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_animation_effects_settings:
+      children:
+        - mt_animation
+      label: 'Animation Effects Settings'
+      region: content
+      parent_name: group_anieffects_mt
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: 'wow-animation-settings mobile-wrapper-inside'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+        formatter: closed
+    group_margin_settings:
+      children:
+        - mt_munit_pc
+        - mt_mtop_pc
+        - mt_mright_pc
+        - mt_mbottom_pc
+        - mt_mleft_pc
+      label: 'Margin Settings'
+      region: content
+      parent_name: group_margin_block
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: 'main-title-margin-settings wrapper-inside'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_font_size:
+      children:
+        - group_font_size_settings
+      label: 'Font Size '
+      region: content
+      parent_name: group_text
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_font_size_settings:
+      children:
+        - mt_fontsunit
+        - mt_fontsize
+        - mt_increase
+      label: 'Font Size Settings'
+      region: content
+      parent_name: group_font_size
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_border_block:
+      children:
+        - group_border_block_settings
+      label: 'Border Block'
+      region: content
+      parent_name: group_block_title
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_radius_block:
+      children:
+        - group_border_radius
+      label: 'Border Radius'
+      region: content
+      parent_name: group_border_type_settings
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_text_line_decoration:
+      children:
+        - group_text_line_decoration_setti
+      label: 'Text Line Decoration'
+      region: content
+      parent_name: group_text
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_margin_block:
+      children:
+        - group_margin_settings
+      label: Margin
+      region: content
+      parent_name: group_block_title
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_other_block_settings:
+      children:
+        - group_more_settings
+      label: 'Other Block'
+      region: content
+      parent_name: group_block_title
+      weight: 9
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_more_settings:
+      children:
+        - mt_bgcolor
+        - mt_fxhpc
+        - mt_bk_box_shadow
+      label: 'Other Block Settings'
+      region: content
+      parent_name: group_other_block_settings
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_style_color_and_width:
+      children:
+        - group_border_style_and_color
+      label: 'Color, Width and Style'
+      region: content
+      parent_name: group_border_block_settings
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_style_and_color:
+      children:
+        - mt_bordercolor
+        - mt_bunit
+        - mt_border_style
+      label: 'Color, Width and Style Settings'
+      region: content
+      parent_name: group_style_color_and_width
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_settings:
+      children:
+        - group_text
+        - group_block_title
+        - group_mobile_maint
+        - group_animation_effects_maint
+      label: SETTINGS
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        direction: horizontal
+        width_breakpoint: 640
+    group_text:
+      children:
+        - group_font_size
+        - group_text_extra
+        - group_text_line_decoration
+      label: EXTRAS
+      region: content
+      parent_name: group_settings
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block_title:
+      children:
+        - group_other_block_settings
+        - group_margin_block
+        - group_padding_mt
+        - group_border_block
+      label: BLOCK
+      region: content
+      parent_name: group_settings
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_mobile_maint:
+      children:
+        - group_extras_mobile
+        - group_mobile_margin
+        - group_mobile_padding
+      label: MOBILE
+      region: content
+      parent_name: group_settings
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_mobile_padding:
+      children:
+        - group_mobile_pad_settings
+      label: 'Padding global móvil'
+      region: content
+      parent_name: group_mobile_maint
+      weight: 25
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_mobile_pad_settings:
+      children:
+        - mtmob_gpadding
+        - mtmob_ptop
+        - mtmob_pright
+        - mtmob_pbottom
+        - mtmob_pleft
+        - mt_no_pblock_mob
+      label: 'Mobile Padding Settings'
+      region: content
+      parent_name: group_mobile_padding
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_border_type:
+      children:
+        - group_border_type_settings
+      label: 'Border Type'
+      region: content
+      parent_name: group_border_block_settings
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_type_settings:
+      children:
+        - mt_gborder
+        - mt_btop
+        - mt_bright
+        - mt_bbottom
+        - mt_bleft
+        - group_border_radius_block
+      label: 'Border Type Settings'
+      region: content
+      parent_name: group_border_type
+      weight: 26
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_text_extra:
+      children:
+        - group_extra_settings
+      label: 'Text Extra'
+      region: content
+      parent_name: group_text
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_extra_settings:
+      children:
+        - group_align_and_rotate
+        - group_bold_shadow_and_color
+        - mt_font_family
+        - mt_htag
+      label: 'Text Extra Settings'
+      region: content
+      parent_name: group_text_extra
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_wow_animation:
+      children:
+        - group_wow_animation_settings
+      label: 'WOW Animation'
+      region: content
+      parent_name: group_animation_effects_maint
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_wow_animation_settings:
+      children:
+        - mt_waduration
+        - mt_watype
+        - mt_wadelay
+      label: 'WOW Animation Settings'
+      region: content
+      parent_name: group_wow_animation
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_align_and_rotate:
+      children:
+        - group_align_and_rotate_settings
+      label: 'Align and Rotate'
+      region: content
+      parent_name: group_extra_settings
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_align_and_rotate_settings:
+      children:
+        - mt_rotate
+        - mt_alignment
+      label: 'Align and Rotate Settings'
+      region: content
+      parent_name: group_align_and_rotate
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_bold_shadow_and_color:
+      children:
+        - group_bold_scolor_settings
+      label: 'Color, Bold and Shadow'
+      region: content
+      parent_name: group_extra_settings
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_bold_scolor_settings:
+      children:
+        - mt_color
+        - mt_bold
+        - mt_shadow_title
+      label: 'Color, Bold and Shadow Settings'
+      region: content
+      parent_name: group_bold_shadow_and_color
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_mobile_margin:
+      children:
+        - group_mobile_margin_settings
+      label: 'Mobile Margin'
+      region: content
+      parent_name: group_mobile_maint
+      weight: 24
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_mobile_margin_settings:
+      children:
+        - mt_mob_mtop
+        - mt_mob_mbottom
+      label: 'Mobile Margin Settings'
+      region: content
+      parent_name: group_mobile_margin
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_extras_mobile:
+      children:
+        - group_mobile_settings
+      label: Extras
+      region: content
+      parent_name: group_mobile_maint
+      weight: 23
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_animation_effects_maint:
+      children:
+        - group_anieffects_mt
+        - group_wow_animation
+      label: 'ANIMATION EFFECTS'
+      region: content
+      parent_name: group_settings
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_text_line_decoration_setti:
+      children:
+        - mt_add_titleline
+        - mt_titleline_color
+        - mt_titleline_type
+      label: 'Text Line Decoration Settings'
+      region: content
+      parent_name: group_text_line_decoration
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_padding_mt:
+      children:
+        - group_padding_set_mt
+      label: Padding
+      region: content
+      parent_name: group_block_title
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_padding_set_mt:
+      children:
+        - mt_punit_pc
+        - mt_gpadding_pc
+        - mt_ptop_pc
+        - mt_pright_pc
+        - mt_pbottom_pc
+        - mt_pleft_pc
+      label: 'Padding Settings'
+      region: content
+      parent_name: group_padding_mt
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_title:
+      children:
+        - mt_text
+      label: TITLE
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_border_block_settings:
+      children:
+        - group_style_color_and_width
+        - group_border_type
+      label: 'Border Block Settings'
+      region: content
+      parent_name: group_border_block
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_anieffects_mt:
+      children:
+        - group_animation_effects_settings
+      label: 'Animation Effects'
+      region: content
+      parent_name: group_animation_effects_maint
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: HjZ7ha18GVs0nmD5Bwkma31w9JVjjoK86BP0_LFbNR4
+id: paragraph.main_title.default
+targetEntityType: paragraph
+bundle: main_title
+mode: default
+content:
+  mt_no_pblock_mob:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  mt_add_titleline:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  mt_alignment:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_animation:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bbottom:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_bgcolor:
+    type: color_field_widget_spectrum
+    weight: 8
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+    third_party_settings: {  }
+  mt_bk_box_shadow:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bleft:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_bold:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  mt_border_style:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bordercolor:
+    type: color_field_widget_spectrum
+    weight: 10
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+    third_party_settings: {  }
+  mt_bradius_bt_left:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bradius_bt_right:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bradius_top_left:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bradius_top_right:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_bright:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_btop:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_bunit:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_color:
+    type: color_field_widget_spectrum
+    weight: 14
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elegir
+      allow_empty: '1'
+    third_party_settings: {  }
+  mt_font_family:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ul
+  mt_fontsize:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_fontsunit:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_fxhmob:
+    type: number
+    weight: 23
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_fxhpc:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_gborder:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_global_radius:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_gpadding_pc:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_htag:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_increase:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_mbottom_pc:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mleft_pc:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mob_mbottom:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mob_mtop:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mobfontsize:
+    type: number
+    weight: 21
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mright_pc:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_mtop_pc:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_munit_pc:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_pbottom_pc:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_pleft_pc:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_pright_pc:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_ptop_pc:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_punit_pc:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_rotate:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mt_shadow_title:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  mt_text:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  mt_titleline_color:
+    type: color_field_widget_spectrum
+    weight: 7
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+    third_party_settings: {  }
+  mt_titleline_type:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_wadelay:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_waduration:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mt_watype:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mtmob_alignment:
+    type: options_select
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mtmob_gpadding:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mtmob_pbottom:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mtmob_pleft:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mtmob_pright:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mtmob_ptop:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

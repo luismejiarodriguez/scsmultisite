@@ -1,0 +1,7 @@
+moodle_sync_template.config:
+  path: '/admin/config/moodle_sync/template/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_template\Form\MoodleSyncTemplateSettingsForm'
+    _title: 'Moodle Sync Template Settings'
+  requirements:
+    _permission: 'administer site configuration'

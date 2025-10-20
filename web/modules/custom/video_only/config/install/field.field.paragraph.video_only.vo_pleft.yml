@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_pleft.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_pleft
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: uZZ4ftJc00ESp22pSI2x27EA-J9tD9-8QtIddMWg0hQ
+id: paragraph.video_only.vo_pleft
+field_name: vo_pleft
+entity_type: paragraph
+bundle: video_only
+label: 'Padding left side'
+description: 'Allows you to add left padding to the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

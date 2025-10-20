@@ -1,0 +1,15 @@
+moodle_sync_cohort.config:
+  path: '/admin/config/moodle_sync/cohort/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_cohort\Form\MoodleSyncCohortSettingsForm'
+    _title: 'Moodle Sync Cohort Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+moodle_sync_cohort.sync_all:
+  path: '/admin/config/moodle_sync/cohort/sync'
+  defaults:
+    _controller: '\Drupal\moodle_sync_cohort\Controller\SyncAllController::syncAll'
+    _title: 'Sync all cohorts to Moodle'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,14 @@
+moodle_sync.config:
+  path: '/admin/config/moodle_sync/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync\Form\MoodleSyncSettingsForm'
+    _title: 'Moodle Sync Settings'
+  requirements:
+    _permission: 'administer site configuration'
+moodle_sync.settings:
+  path: '/admin/config/moodle_sync/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync\Form\MoodleSyncSettingsForm'
+    _title: 'Moodle Sync Settings'
+  requirements:
+    _permission: 'administer site configuration'

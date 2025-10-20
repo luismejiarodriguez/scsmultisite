@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_enrollment.config:
+  title: 'Moodle Sync Enrollment'
+  route_name: moodle_sync_enrollment.config
+  parent: moodle_sync.config
+  description: 'Moodle Sync Enrollment'

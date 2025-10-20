@@ -1,0 +1,20 @@
+# Api key menu items definition
+entity.api_key.collection:
+  title: 'Api key list'
+  route_name: entity.api_key.collection
+  description: 'Configure API Key registration for users'
+  parent: system.admin_config_services
+  weight: 99
+
+entity.api_key.add:
+  title: 'Add api key'
+  route_name: entity.api_key.add_form
+  parent: entity.api_key.collection
+  weight: 98
+
+services_api_key_auth.settings:
+  title: Api key authentication settings
+  description: The API Key Authentication settings
+  parent: entity.api_key.collection
+  route_name: services_api_key_auth.api_key_auth_settings
+  weight: 99

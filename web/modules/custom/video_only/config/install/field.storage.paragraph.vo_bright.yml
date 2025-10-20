@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_bright.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: wswB4Ym5ghfgrLfq6RSNCPF-Ih8s
+id: paragraph.vo_bright
+field_name: vo_bright
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

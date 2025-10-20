@@ -1,0 +1,15 @@
+moodle_sync_user.config:
+  path: '/admin/config/moodle_sync/user/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_user\Form\MoodleSyncUserSettings'
+    _title: 'Moodle Sync User Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+moodle_sync_user.sync_all_users:
+  path: '/admin/config/moodle_sync/users/sync'
+  defaults:
+    _controller: '\Drupal\moodle_sync_user\Controller\MoodleSyncAllUsers::syncAllUsers'
+    _title: 'Sync all users to Moodle'
+  requirements:
+    _permission: 'administer site configuration'

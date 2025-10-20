@@ -1,0 +1,7 @@
+saka_form_test.test_settings:
+  path: '/admin/config/system/test-settings'
+  defaults:
+    _title: 'Test settings'
+    _form: 'Drupal\saka_form_test\Form\TestSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

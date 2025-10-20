@@ -1,0 +1,36 @@
+#field.storage.paragraph.mt_fontsunit.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 0a0HdvnCnTbOpIwhyC9bwOJM8l4
+id: paragraph.mt_fontsunit
+field_name: mt_fontsunit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: px
+      label: px
+    -
+      value: porcentaje
+      label: '%'
+    -
+      value: rem
+      label: rem
+    -
+      value: em
+      label: em
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

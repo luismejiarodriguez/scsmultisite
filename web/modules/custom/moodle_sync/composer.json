@@ -1,0 +1,9 @@
+{
+    "name": "think-modular/moodle_sync",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "description": "Uses Moodle webservices to sync Drupal entities to Moodle.",
+    "require": {
+        "drupal/core": "^9 || ^10"
+    }
+}

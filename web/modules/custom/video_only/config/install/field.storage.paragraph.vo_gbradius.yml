@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_gbradius.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: v4FQ7eUPI5p8VCghy0gGoOqL8Ov1M
+id: paragraph.vo_gbradius
+field_name: vo_gbradius
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

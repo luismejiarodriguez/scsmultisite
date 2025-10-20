@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Request API Key Authentication Form Test module.
+saka_form_test.settings:
+  type: config_object
+  label: 'Request API Key Authentication Form Test settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

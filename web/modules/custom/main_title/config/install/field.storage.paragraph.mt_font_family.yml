@@ -1,0 +1,85 @@
+#field.storage.paragraph.mt_font_family.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: AEA1rBKY92M_xmlj8D3IckcUoBv0M4FhncVOW0SrgT4
+id: paragraph.mt_font_family
+field_name: mt_font_family
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dancing_script
+      label: 'Dancing Script'
+    -
+      value: pacifico
+      label: Pacifico
+    -
+      value: luckiestguy_regular
+      label: LuckiestGuy-Regular
+    -
+      value: playpensans_regular
+      label: PlaypenSans-Regular
+    -
+      value: englebert
+      label: Englebert
+    -
+      value: handlee
+      label: Handlee
+    -
+      value: titanone_regular
+      label: TitanOne-Regular
+    -
+      value: sarabun
+      label: Sarabun
+    -
+      value: mansalva
+      label: Mansalva
+    -
+      value: museomoderno_light
+      label: MuseoModerno-Light
+    -
+      value: museomoderno_blackitalic
+      label: MuseoModerno-BlackItalic
+    -
+      value: monoton_regular
+      label: Monoton-Regular
+    -
+      value: aclonica_regular
+      label: Aclonica-Regular
+    -
+      value: fingerpaint_regular
+      label: FingerPaint-Regular
+    -
+      value: abrilfatface_regular
+      label: AbrilFatface-Regular
+    -
+      value: bethellen_regular
+      label: BethEllen-Regular
+    -
+      value: caesardressing_regular
+      label: CaesarDressing-Regular
+    -
+      value: alfaslabone_regular
+      label: AlfaSlabOne-Regular
+    -
+      value: barrio_regular
+      label: Barrio-Regular
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

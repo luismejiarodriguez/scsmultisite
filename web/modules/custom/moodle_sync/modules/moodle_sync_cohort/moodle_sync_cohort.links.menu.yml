@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_cohort.config:
+  title: 'Moodle Sync Cohort'
+  route_name: moodle_sync_cohort.config
+  parent: moodle_sync.config
+  description: 'Settings for synching Drupal references to Moodle Cohorts.'

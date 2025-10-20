@@ -1,0 +1,23 @@
+#field.storage.paragraph.mt_fxhpc.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: XhrHqYbLyBf52vs4Tgh5RifpRfBQnEu6w
+id: paragraph.mt_fxhpc
+field_name: mt_fxhpc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

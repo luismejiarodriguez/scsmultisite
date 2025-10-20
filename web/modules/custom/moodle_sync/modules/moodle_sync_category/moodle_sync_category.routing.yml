@@ -1,0 +1,17 @@
+moodle_sync_category.settings:
+  path: '/admin/config/moodle_sync/category/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_category\Form\MoodleSyncCategorySettingsForm'
+    _title: 'Moodle Sync Category Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+moodle_sync_category.sync_all_categories:
+  path: '/admin/config/moodle_sync/categories/sync'
+  defaults:
+    _controller: '\Drupal\moodle_sync_category\Controller\MoodleSyncCategoryController::syncAllCategories'
+    _title: 'Sync all categories to Moodle'
+  requirements:
+    _permission: 'administer site configuration'
+
+

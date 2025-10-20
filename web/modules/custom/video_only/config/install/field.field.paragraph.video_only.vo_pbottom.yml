@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_pbottom.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_pbottom
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: vqcf2N_f9ibZVUhFE7zSawe592_1hkyk-uETSh70Eak
+id: paragraph.video_only.vo_pbottom
+field_name: vo_pbottom
+entity_type: paragraph
+bundle: video_only
+label: 'Bottom Padding'
+description: 'Allows you to add bottom side padding to the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

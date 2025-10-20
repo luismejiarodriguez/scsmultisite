@@ -1,0 +1,7 @@
+moodle_sync_completion.config:
+  path: '/admin/config/moodle_sync/completion/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_completion\Form\MoodleSyncCompletionSettingsForm'
+    _title: 'Moodle Sync Completion Settings'
+  requirements:
+    _permission: 'administer site configuration'

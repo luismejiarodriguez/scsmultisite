@@ -1,0 +1,76 @@
+<?php
+/*
+ * Module: moodle_sync_course.
+ *
+ * Synchronizes courses from Drupal to Moodle.
+ *
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\moodle_sync_course\Utility\MoodleCourse;
+
+/**
+ * Implements HOOK_ENTITY_INSERT().
+ */
+function moodle_sync_course_node_insert(EntityInterface $entity) {
+  if (!MoodleCourse::process($entity, \Drupal::config('moodle_sync_course.settings'))) {
+    return;
+  }
+  if (\Drupal::config('moodle_sync_course.settings')->get('async_create')) {
+    $queue = \Drupal::queue('moodle_sync_create_course');
+    $queue->createItem(['entity_id' => $entity->id()]);
+  } else {
+    \Drupal::service('moodle_sync_course.create')->createCourse($entity);
+  }
+}
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_course_node_update(EntityInterface $entity) {
+  if (!MoodleCourse::process($entity, \Drupal::config('moodle_sync_course.settings'))) {
+    return;
+  }
+  if (\Drupal::config('moodle_sync_course.settings')->get('async_update')) {
+    $queue = \Drupal::queue('moodle_sync_update_course');
+    $queue->createItem(['entity_id' => $entity->id(), 'entity_original' => $entity->original]);
+  } else {
+    \Drupal::service('moodle_sync_course.update')->updateRemoteCourse($entity, $entity->original);
+  }
+}
+
+/*
+ * Implements HOOK_ENTITY_DELETE().
+ */
+function moodle_sync_course_node_delete(EntityInterface $entity) {
+  if (!MoodleCourse::process($entity, \Drupal::config('moodle_sync_course.settings'))) {
+    return;
+  }
+  if ($entity->field_moodle_id?->isEmpty()) {
+    // Do nothing if there is no moodle_id.
+    return;
+  }
+  if (\Drupal::config('moodle_sync_course.settings')->get('async_delete')) {
+    $queue = \Drupal::queue('moodle_sync_delete_course');
+    $queue->createItem(['moodle_id' => $entity->field_moodle_id->value]);
+  } else {
+    \Drupal::service('moodle_sync_course.delete')->deleteRemoteCourse($entity->field_moodle_id->value);
+  }
+}
+
+/*
+ * Implements HOOK_FORM_ALTER().
+ */
+function moodle_sync_course_form_alter(&$form, &$form_state, $form_id) {
+  $config = \Drupal::config('moodle_sync_course.settings');
+  if ($config->get('template_hide')) {
+    // If form contains the template field, and is an edit form, hide the field.
+    $template_field = $config->get('template_field');
+    if (array_key_exists($template_field, $form)) {
+      if (str_contains($form_id, '_edit_form')) {
+        unset($form[$template_field]);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+name: 'Moodle Sync Completion'
+type: module
+package: 'Moodle Sync'
+description: 'Provides a REST endpoint to receive Moodle completion changes from Moodle Completion Push plugin.'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:moodle_sync
+  - drupal:rest
+  - drupal:serialization
+  - drupal:services_api_key_auth
+configure: moodle_sync_completion.config
+
+# Information added by Drupal.org packaging script on 2025-04-04
+version: '1.0.0'
+project: 'moodle_sync'
+datestamp: 1743782383

@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_bradius_btright.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: doJoCsluK7eghSopyRlC842x7wB2g
+id: paragraph.vo_bradius_btright
+field_name: vo_bradius_btright
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

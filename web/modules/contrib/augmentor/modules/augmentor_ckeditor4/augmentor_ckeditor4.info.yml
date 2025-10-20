@@ -1,0 +1,15 @@
+name: CKEditor 4 Augmentor
+type: module
+description: Provides integration of Augmentor with CKEditor 4.
+package: Augmentor
+core_version_requirement: ^10.3 || ^11
+lifecycle: deprecated
+lifecycle_link: https://www.drupal.org/project/augmentor/issues/3469771
+dependencies:
+  - drupal:ckeditor
+  - augmentor:augmentor
+
+# Information added by Drupal.org packaging script on 2025-07-14
+version: '1.2.2'
+project: 'augmentor'
+datestamp: 1752467449

@@ -1,0 +1,26 @@
+#field.field.paragraph.main_title.mt_alignment.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_alignment
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: Xb9LCOASYsc3iOu-a3CryHZv2VW0doxm-jgU50YUzFU
+id: paragraph.main_title.mt_alignment
+field_name: mt_alignment
+entity_type: paragraph
+bundle: main_title
+label: 'Alinear textos'
+description: 'Permite alinear el Título dentro de su contenedor.'
+required: false
+translatable: true
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

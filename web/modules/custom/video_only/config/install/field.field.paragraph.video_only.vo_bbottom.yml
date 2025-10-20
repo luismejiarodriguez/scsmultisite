@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_bbottom.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bbottom
+    - paragraphs.paragraphs_type.video_only
+id: paragraph.video_only.vo_bbottom
+field_name: vo_bbottom
+entity_type: paragraph
+bundle: video_only
+label: 'Border Botton'
+description: 'Activate the border at the bottom.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,11 @@
+entity.api_key.add_form:
+  route_name: 'entity.api_key.add_form'
+  title: 'Add api key'
+  appears_on:
+    - entity.api_key.collection
+
+services_api_key_auth.settings:
+  route_name: 'services_api_key_auth.api_key_auth_settings'
+  title: 'General settings'
+  appears_on:
+    - entity.api_key.collection

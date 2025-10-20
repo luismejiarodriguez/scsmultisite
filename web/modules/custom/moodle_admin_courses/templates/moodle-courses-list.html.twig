@@ -1,0 +1,30 @@
+{{ dump(courses) }}
+
+<h2>Listado de Cursos desde Moodle</h2>
+
+{% if courses is not empty %}
+
+  <ul id="courses-list">
+    {% for course in courses %}
+      <li class="course-teaser">
+          <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                  <h5 class="card-title">{{ course.fullname }}</h5>
+                  <p class="card-text">{{ course.shortname }}</p>
+                  <a href="/admin/moodle/course/{{ course.id }}" class="btn btn-primary">{{ 'Access' | t }}</a>
+              </div>
+          </div>
+{#        <strong>{{ course.fullname }}</strong><br>#}
+{#        <small>{{ course.shortname }}</small><br>#}
+{#        {% if course.summary %}#}
+{#          <div>{{ course.summary|raw }}</div>#}
+{#        {% endif %}#}
+{#          <span>#}
+{#              <a class="btn btn-primary" href="/admin/moodle/course/{{ course.id }}">Acceder</a>#}
+{#          </span>#}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No hay cursos disponibles.</p>
+{% endif %}

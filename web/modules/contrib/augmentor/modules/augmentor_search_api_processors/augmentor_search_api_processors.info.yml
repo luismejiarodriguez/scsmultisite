@@ -1,0 +1,13 @@
+name: Search API Augmentor Processors
+type: module
+description: 'Provides Search API processors for augmenting search results.'
+package: Augmentor
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - augmentor:augmentor
+  - search_api:search_api
+
+# Information added by Drupal.org packaging script on 2025-07-14
+version: '1.2.2'
+project: 'augmentor'
+datestamp: 1752467449

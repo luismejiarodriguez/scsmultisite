@@ -1,0 +1,7 @@
+moodle_course_detail:
+  render element: 'elements'
+  template: 'moodle-course-detail'
+
+moodle_courses_list:
+  render element: 'elements'
+  template: 'moodle_courses_list'

@@ -1,0 +1,14 @@
+name: Moodle Course Integration
+type: module
+description: 'Course node type, with migration to populate, list of courses.'
+package: 'Moodle Integration'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - moodle_rest:moodle_rest
+  - moodle_rest:moodle_rest_migrate
+  - migrate_plus:migrate_plus
+
+# Information added by Drupal.org packaging script on 2024-04-17
+version: '1.1.0-beta2'
+project: 'moodle_rest'
+datestamp: 1713349051

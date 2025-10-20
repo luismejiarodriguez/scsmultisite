@@ -1,0 +1,49 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Messanger\MessangerInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_user_insert().
+ * Creates users in Moodle.
+ */
+function moodle_sync_user_user_insert(EntityInterface $user) {
+  $createUserService = \Drupal::service('moodle_sync_user.create_service');
+  $createUserService->createUser($user);
+}
+
+/**
+ * Implements hook_user_update().
+ * Updates users in Moodle.
+ */
+function moodle_sync_user_user_update($user) {
+  $updateUserService = \Drupal::service('moodle_sync_user.update_service');
+  $updateUserService->updateUser($user);
+}
+
+/**
+ * Implements hook_user_delete().
+ * Deletes users in Moodle.
+ */
+function moodle_sync_user_user_delete($user) {
+  $deleteUserService = \Drupal::service('moodle_sync_user.delete_service');
+  $deleteUserService->deleteUser($user);
+}
+
+/**
+ * Implements hook_profile_update().
+ * Updates user information in Moodle.
+ */
+function moodle_sync_user_profile_update($profile) {
+
+  // Get user from profile.
+  if ($user = $profile->getOwner()) {
+
+    // Call normal user update service, but supply profile.
+    $updateUserService = \Drupal::service('moodle_sync_user.update_service');
+    $updateUserService->updateUser($user, true, $profile);
+
+  }
+}

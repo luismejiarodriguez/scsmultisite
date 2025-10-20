@@ -1,0 +1,26 @@
+#field.field.paragraph.video_only.vo_animation.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_animation
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: ncNOx1NhW7GcyEp4yLpGUdpzSc-ZhISYwHvdRFcqhLQ
+id: paragraph.video_only.vo_animation
+field_name: vo_animation
+entity_type: paragraph
+bundle: video_only
+label: 'Animation effects'
+description: 'Allows you to add animation effects.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'pulse 1s infinite ease-in-out alternate'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_global_radius.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_global_radius
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: V_eQZf7ksB3KI5IJgOzGFjsQl2naWWUOvh7mG2sqWB4
+id: paragraph.main_title.mt_global_radius
+field_name: mt_global_radius
+entity_type: paragraph
+bundle: main_title
+label: 'Curvatura del Borde global'
+description: 'Le permite agregar curvatura globalmente al borde.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

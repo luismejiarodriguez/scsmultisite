@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_bradius_btleft.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: byZfMCl0v-EhjWVcce1PqxROjMlruM
+id: paragraph.vo_bradius_btleft
+field_name: vo_bradius_btleft
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Provides an IP Consumer authentication provider.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function services_api_key_auth_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the services_api_key_auth module.
+    case 'help.page.services_api_key_auth':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('API Key Auth') . '</p>';
+      $output .= '<p>' . t('The API Key Auth module provides an authentication
+      provider to authenticate users via a GET or POST Parameter (api_key=1234)') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_operation_alter().
+ */
+function services_api_key_auth_entity_operation_alter(array &$operations, EntityInterface $entity) {
+  if ($entity->getEntityTypeId() == 'api_key') {
+    $operations['delete']['url'] = Url::fromRoute('entity.api_key.delete_form', ['api_key' => $entity->id()]);
+    $operations['edit']['url'] = Url::fromRoute('entity.api_key.edit_form', ['api_key' => $entity->id()]);
+  }
+}

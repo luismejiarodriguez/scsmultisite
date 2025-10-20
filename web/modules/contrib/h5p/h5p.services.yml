@@ -1,0 +1,4 @@
+services:
+  h5p.asset_file_manager:
+    class: Drupal\h5p\AssetFileStorage
+    arguments: ['@file_system']

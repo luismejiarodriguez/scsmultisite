@@ -1,0 +1,21 @@
+services:
+  moodle_sync:
+    class: Drupal\moodle_sync\Service\MoodleSync
+    arguments: ['@config.factory']
+
+  moodle_sync.logger:
+    class: Drupal\moodle_sync\Service\MoodleSyncLogger
+    arguments: ['@config.factory']
+
+  moodle_sync_user.create_service:
+    class: Drupal\moodle_sync_user\Service\CreateService
+    arguments: ['@config.factory']
+
+  moodle_sync_user.delete_service:
+    class: Drupal\moodle_sync_user\Service\DeleteService
+    arguments: ['@config.factory']
+
+  moodle_sync_user.update_service:
+    class: Drupal\moodle_sync_user\Service\UpdateService
+    arguments: ['@config.factory']
+

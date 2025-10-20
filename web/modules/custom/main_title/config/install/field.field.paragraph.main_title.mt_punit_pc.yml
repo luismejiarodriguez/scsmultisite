@@ -1,0 +1,22 @@
+#field.field.paragraph.main_title.mt_punit_pc.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_punit_pc
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+id: paragraph.main_title.mt_punit_pc
+field_name: mt_punit_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Unit'
+description: 'Allows you to choose the measurement to apply the padding.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

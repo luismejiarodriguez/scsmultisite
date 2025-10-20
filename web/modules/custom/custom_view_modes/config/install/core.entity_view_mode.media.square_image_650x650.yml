@@ -1,0 +1,13 @@
+uuid: 38f0e111-0fdd-4f84-bb46-bb74db3260ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: rUrwTrNFope16SjQ_-lGxGMCG-ShJ4JMmHYqx9PRCXI
+id: media.square_image_650x650
+label: 'Imagen Cuadrada(650x650)'
+description: ''
+targetEntityType: media
+cache: true

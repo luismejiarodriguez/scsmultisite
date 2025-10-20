@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_course.config:
+  title: 'Moodle Sync Course'
+  route_name: moodle_sync_course.config
+  parent: moodle_sync.config
+  description: 'Settings for synching Drupal entities to Moodle courses.'

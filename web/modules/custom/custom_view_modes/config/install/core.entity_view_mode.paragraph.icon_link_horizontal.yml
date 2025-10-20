@@ -1,0 +1,11 @@
+#core.entity_view_mode.paragraph.icon_link_horizontal.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.icon_link_horizontal
+label: 'icon link horizontal'
+targetEntityType: paragraph
+cache: true

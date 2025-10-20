@@ -1,0 +1,104 @@
+paragraphs.main_menu:
+  css:
+    component:
+      templates/paragraphs/main_menu/main_menu.css: {}
+paragraphs.header_landing:
+  css:
+    component:
+      templates/paragraphs/header_landing/header_landing.css: {}
+paragraphs.hero_image:
+  css:
+    component:
+      templates/paragraphs/hero_image/hero_image.css: {}
+paragraphs.hero_video:
+  css:
+    component:
+      templates/paragraphs/hero_video/hero_video.css: {}
+paragraphs.card_full:
+  css:
+    component:
+      templates/paragraphs/card_full/card_full.css: {}
+paragraphs.podcast:
+  css:
+    component:
+      templates/paragraphs/podcast/podcast.css: {}
+paragraphs.carousel:
+  css:
+    component:
+      templates/paragraphs/carousel/carousel.css: {}
+paragraphs.social_link_icons:
+  css:
+    component:
+      templates/paragraphs/social_link_icons/social_link_icons.css: {}
+paragraphs.social_block:
+  css:
+    component:
+      templates/paragraphs/social_block/social_block.css: {}
+paragraphs.video_block:
+  css:
+    component:
+      templates/paragraphs/video_block/video_block.css: {}
+paragraphs.image_only:
+  css:
+    component:
+      templates/paragraphs/image_only/image_only.css: {}
+paragraphs.main_title:
+  css:
+    component:
+      templates/paragraphs/main_title/main_title.css: {}
+paragraphs.empty_section:
+  css:
+    component:
+      templates/paragraphs/empty_section/empty_section.css: {}
+paragraphs.accordion_landing:
+  css:
+    component:
+      templates/paragraphs/accordion_landing/accordion_landing.css: {}
+paragraphs.footer_landing:
+  css:
+    component:
+      templates/paragraphs/footer_landing/footer_landing.css: {}
+paragraphs.icon_only:
+  css:
+    component:
+      templates/paragraphs/icon_only/icon_only.css: {}
+paragraphs.only_map:
+  css:
+    component:
+      templates/paragraphs/only_map/only_map.css: {}
+paragraphs.contact_button:
+  css:
+    component:
+      templates/paragraphs/contact_button/contact_button.css: {}
+paragraphs.download_button:
+  css:
+    component:
+      templates/paragraphs/download_button/download_button.css: {}
+paragraphs.pageslide:
+  css:
+    component:
+      templates/paragraphs/pageslide/pageslide.css: {}
+paragraphs.video_only:
+  css:
+    component:
+      templates/paragraphs/video_only/video_only.css: {}
+paragraphs.text_only:
+  css:
+    component:
+      templates/paragraphs/text_only/text_only.css: {}
+paragraphs.custom_button:
+  css:
+    component:
+      templates/paragraphs/custom_button/custom_button.css: {}
+paragraphs.gallery_block:
+  css:
+    component:
+      templates/paragraphs/gallery_block/gallery_block.css: {}
+paragraphs.icon_link_text:
+  css:
+    component:
+      templates/paragraphs/icon_link_text/icon_link_text.css: {}
+paragraphs.whatssap_block:
+  css:
+    component:
+      templates/paragraphs/whatssap_block/whatssap_block.css: {}

@@ -1,0 +1,11 @@
+#paragraphs.paragraphs_type.video_only.yml
+
+langcode: en
+status: true
+dependencies: {  }
+id: video_only
+label: 'Video only'
+icon_uuid: null
+icon_default: null
+description: 'Allows you to add a video from YouTube, in any content block.'
+behavior_plugins: {  }

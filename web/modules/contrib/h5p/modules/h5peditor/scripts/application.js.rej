@@ -1,0 +1,26 @@
+--- modules/h5peditor/scripts/application.js
++++ modules/h5peditor/scripts/application.js
+@@ -52,11 +52,21 @@
+               var params = h5peditor.getParams();
+ 
+               if (params !== undefined && params.params !== undefined) {
+-                // Validate mandatory main title. Prevent submitting if that's not set.
++                // Validate mandatory main title. Prevent submitting if
++                // possible and that's not set.
+                 // Deliberatly doing it after getParams(), so that any other validation
+                 // problems are also revealed
+                 if (!h5peditor.isMainTitleSet()) {
+-                  return event.preventDefault();
++                  // If the event is not set (detach on AJAX serialize), just
++                  // set the missing title to some value as Drupal doesn't
++                  // allow to stop ajax form submission in any simple way.
++                  // @see https://www.drupal.org/project/h5p/issues/3281356.
++                  if (typeof(event) === 'undefined') {
++                    params.metadata.title = 'Title';
++                  }
++                  else {
++                    return event.preventDefault();
++                  }
+                 }
+ 
+                 // Set main library

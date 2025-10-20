@@ -1,0 +1,12 @@
+{
+  "name": "drupal/augmentor_openai_gpt3",
+  "type": "drupal-module",
+  "description": "Provides integration of Augmentor with OpenAI GPT3 API.",
+  "homepage": "http://drupal.org/project/augmentor_openai_gpt3",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/augmentor": "^1.1",
+    "orhanerday/open-ai": "^5.2",
+    "openai-php/client": ">=0.10"
+  }
+}

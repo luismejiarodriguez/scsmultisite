@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_gbradius.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_gbradius
+    - paragraphs.paragraphs_type.video_only
+id: paragraph.video_only.vo_gbradius
+field_name: vo_gbradius
+entity_type: paragraph
+bundle: video_only
+label: 'Global Radio from the Edge'
+description: 'Allows you to add radius around the entire image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

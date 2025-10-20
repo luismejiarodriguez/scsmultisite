@@ -1,0 +1,11 @@
+uuid: f89a918f-7e59-4e04-800a-e4fb33bcf8c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.header_image_2600x450
+label: header_image_2600x450
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,12 @@
+name: 'Request API Key Authentication Form Test'
+description: 'A test module which tests, whether "api_key" is a valid form element name.'
+type: module
+package: Custom
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - services_api_key_auth:services_api_key_auth
+
+# Information added by Drupal.org packaging script on 2025-02-13
+version: '4.0.0'
+project: 'services_api_key_auth'
+datestamp: 1739438376

@@ -1,0 +1,15 @@
+name: Moodle User Integration
+type: module
+description: 'User Moodle field and default integration'
+package: 'Moodle Integration'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - moodle_rest:moodle_rest
+  - drupal:user
+  - drupal:text
+  - drupal:migrate
+
+# Information added by Drupal.org packaging script on 2024-04-17
+version: '1.1.0-beta2'
+project: 'moodle_rest'
+datestamp: 1713349051

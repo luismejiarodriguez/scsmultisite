@@ -1,0 +1,15 @@
+uuid: bbe31284-6b7a-411f-8fbc-783ca1b046d7
+langcode: en
+status: true
+dependencies: {  }
+name: header_image_2600x350
+label: header_image_2600x350
+effects:
+  60eccbf9-4651-48d4-8773-ce13c92f4d6f:
+    uuid: 60eccbf9-4651-48d4-8773-ce13c92f4d6f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2600
+      height: 350
+      anchor: center-center

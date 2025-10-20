@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - moodle_rest_course
+      - node
+third_party_settings: {  }
+name: Course
+type: moodle_course
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

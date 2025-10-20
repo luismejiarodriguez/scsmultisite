@@ -1,0 +1,12 @@
+#core.entity_view_mode.paragraph.download_button.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.download_button
+label: 'Download Button'
+description: ''
+targetEntityType: paragraph
+cache: true

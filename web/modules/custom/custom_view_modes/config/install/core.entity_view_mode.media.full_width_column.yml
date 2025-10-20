@@ -1,0 +1,11 @@
+#core.entity_view_mode.media.full_width_column.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.full_width_column
+label: 'Full width Column'
+targetEntityType: media
+cache: true

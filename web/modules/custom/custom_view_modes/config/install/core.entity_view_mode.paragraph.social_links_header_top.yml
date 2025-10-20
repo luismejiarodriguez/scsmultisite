@@ -1,0 +1,11 @@
+#core.entity_view_mode.paragraph.social_links_header_top.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.social_links_header_top
+label: 'Social Links Header Top'
+targetEntityType: paragraph
+cache: true

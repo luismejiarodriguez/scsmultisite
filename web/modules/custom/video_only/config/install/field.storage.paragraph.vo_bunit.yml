@@ -1,0 +1,36 @@
+#field.storage.paragraph.vo_bunit.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 6n7HYBcTSEshjqmor8AVy5M
+id: paragraph.vo_bunit
+field_name: vo_bunit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pixeles
+      label: px
+    -
+      value: porcentaje
+      label: '%'
+    -
+      value: rem
+      label: rem
+    -
+      value: em
+      label: em
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

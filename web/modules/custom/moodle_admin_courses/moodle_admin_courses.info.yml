@@ -1,0 +1,6 @@
+name: 'Moodle Admin Courses'
+type: module
+description: 'Connect and Sync Drupal with Moodle Courses'
+package: accenture
+core_version_requirement: ^10 || ^11
+

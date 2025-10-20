@@ -1,0 +1,9 @@
+ul#courses-list {
+  list-style: none;
+  padding: 40px 20px;
+  margin: 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+

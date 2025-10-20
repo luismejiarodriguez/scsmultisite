@@ -1,0 +1,27 @@
+#field.storage.paragraph.mt_bordercolor.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 4MYFZBwQxGeUYJRUvq2oiFDPwe_E45m_gDS3qNf7IrM
+id: paragraph.mt_bordercolor
+field_name: mt_bordercolor
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

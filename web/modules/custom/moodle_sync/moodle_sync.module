@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function moodle_sync_views_data_alter(array &$data) {
+  // This 'full_time' field is a pseudo field and doesn't correspond with any
+  // specific database table. Instead, its data is computed by adding together
+  // the values of the `field_cook_time` and `field_prep_time` fields on the
+  // 'recipe' content type.
+  // @see \Drupal\recipe\Plugin\views\field\FullTime.
+  $data['node']['moodle_sync_link_field'] = [
+    'title' => t('Moodle Sync Link'),
+    'field' => [
+      'title' => t('Moodle Sync Link'),
+      'id' => 'moodle_sync_link_field',
+    ],
+  ];
+}

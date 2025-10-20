@@ -1,0 +1,127 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Padding #}
+{% set vonly_gpadding =  content.vo_padding.0|render %}
+{% set vonly_ptop =  content.vo_ptop.0|render %}
+{% set vonly_pright =  content.vo_pright.0|render %}
+{% set vonly_pbottom =  content.vo_pbottom.0|render %}
+{% set vonly_pleft =  content.vo_pleft.0|render %}
+{% set vonly_play_color =  content.vo_playcolor.0|render %}
+{% set vonly_img_effects =  content.vo_imgeffects.0|render %}
+{# Margin #}
+{% set vonly_mtop =  content.vo_mtop.0|render %}
+{% set vonly_mbottom =  content.vo_mbottom.0|render %}
+{# Border #}
+{% set vonly_gborder =  content.vo_gborder.0|render %}
+{% set vonly_border_top =  content.vo_btop.0|render %}
+{% set vonly_border_bottom =  content.vo_bbotom.0|render %}
+{# Border Radius #}
+{% set vonly_gbradius =  content.imonly_gbradius.0|render %}
+{% set vonly_bradius_topleft =  content.imonly_br_topleft.0|render %}
+{% set vonly_bradius_topright =  content.imonly_br_btright.0|render %}
+{% set vonly_bradius_btleft =  content.imonly_br_btleft.0|render %}
+{% set vonly_bradius_btright =  content.imonly_br_btright.0|render %}
+{# Extras #}
+{% set vonly_shadow =  content.imonly_box_shadow.0|render %}
+{% set vonly_animation =  content.vo_animation.0|render %}
+{% set vonly_ext_video =  content.vo_external_video.0|render %}
+
+<style>
+  {% if vonly_play_color is not empty %}
+  #video-only-{{ paragraph.id() }} .play-btn:hover::after {
+    border-left: 15px solid{{ content.vo_playcolor.0 }};
+    transform: scale(20);
+  }
+  #video-only-{{ paragraph.id() }} .play-btn {
+    background: radial-gradient({{ content.vo_playcolor.0 }} 50%, {{ content.vo_gradientplay.0 }} 52%);
+    border-radius: 50px;
+  }
+  #video-only-{{ paragraph.id() }} .play-btn:before {
+    border: 5px solid{{ content.vo_playcolor.0 }};
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    background: {{ content.vo_playcolor.0 }};
+  }
+  {% endif %}
+
+  #video-only-{{ paragraph.id() }} {
+  {% if vonly_mtop is not empty %} margin-top: {{ vonly_mtop }};  {% endif %}
+  {% if vonly_mbottom is not empty %} margin-bottom: {{ vonly_mbottom }};  {% endif %}
+  }
+
+  /* Padding */
+  #video-only-{{ paragraph.id() }} img {
+  {% if vonly_img_effects is not empty %}  filter: {{ vonly_img_effects }};  {% endif %}
+  {% if vonly_gpadding is not empty %} padding: {{ vonly_gpadding }} ;{% else %}
+    padding: {{ vonly_ptop }} {{ vonly_pright }} {{ vonly_pleft }} {{ vonly_pbottom }}; {% endif %}
+  {% if imonlygbradius is not empty  %}  border-radius: {{ imonlygbradius  }};
+  {% else %} border-radius: {{ imonlybrtleft }} {{ imonlybrtright }} {{ imonlybrbtright }} {{ imonlybrbtleft }}{% endif %};
+  {# Border #}{% if vonly_border_top == "1" %}   border-top: {{ content.vo_border_style.0 }} {{ content.vo_borderwidth.0 }} {{ content.vo_bordercolor.0 }};  {% endif %}
+  {% if vonly_border_bottom == "1" %} border-bottom: {{ content.vo_border_style.0 }} {{ content.vo_borderwidth.0 }} {{ content.vo_bordercolor.0 }}; {% endif %}
+  {% if vonly_gborder == "1" %} border: {{ content.vo_border_style.0 }} {{ content.	vo_borderwidth.0 }} {{ content.vo_bordercolor.0 }};  {% endif %}
+  {# Border Radius #}   {% if vonly_gbradius is not empty  %} border-radius: {{ vonly_gbradius }}; {% else %}
+    border-radius: {{ vonly_bradius_btleft }} {{ vonly_bradius_btright }} {{ vonly_bradius_topleft }} {{ vonly_bradius_topright }}; {% endif %}
+  }
+
+</style>
+
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+
+{{ attach_library('canalciudadano/paragraphs.video_only') }}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div id="vol-{{ paragraph.id() }}">
+        <section id="video-only-{{ paragraph.id() }}" class="area-padding video-block-wrapper">
+          <div class="position-relative">
+            {% if content.vo_imgstyle.0|render == 'square_image_650x650' %}
+              <img
+                src="{{ file_url(content.vo_cover[0]['#media'].field_media_image.entity.uri.value|image_style('square_image_650x650')) }}"
+                class="img-fluid {% if content.vo_imgeffects|render is not empty %} {{ content.vo_imgeffects.0 }} {% endif %}
+            {% if vonly_shadow is not empty %} {{ vonly_shadow }} {% endif %}
+            {% if vonly_animation is not empty %} {{ vonly_animation }} {% endif %}
+           "
+                alt="{{ content.vo_cover['#items'].entity.field_media_image.alt }}"
+                title="{{ content.vo_cover['#items'].entity.field_media_image.title }}">
+            {% else %}
+              <img
+                src="{{ file_url(content.vo_cover[0]['#media'].field_media_image.entity.uri.value|image_style('diapositiva_1200x650')) }}"
+                class="img-fluid {% if content.vo_imgeffects|render is not empty %} {{ content.vo_imgeffects.0 }} {% endif %}
+            {% if vonly_shadow is not empty %} {{vonly_shadow }} {% endif %}
+            {% if vonly_animation is not empty %} {{ vonly_animation }} {% endif %}
+          "
+                alt="{{ content.vo_cover['#items'].entity.field_media_image.alt }}"
+                title="{{ content.vo_cover['#items'].entity.field_media_image.title }}">
+            {% endif %}
+            {% if vonly_ext_video is not empty %}
+              <a href="{{ vonly_ext_video }}"
+                 class="play-btn mb-4 glightbox btn-watch-video d-flex align-items-center"></a>
+            {% endif %}
+          </div>
+        </section>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

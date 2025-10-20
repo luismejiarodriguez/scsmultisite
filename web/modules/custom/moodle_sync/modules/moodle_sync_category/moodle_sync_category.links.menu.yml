@@ -1,0 +1,6 @@
+moodle_sync_category_settings:  
+  parent: moodle_sync.config
+  route_name: moodle_sync_category.settings
+  title: 'Moodle Sync Category'
+  description: 'Settings for synching Drupal taxonomy terms to Moodle course categories.'
+  

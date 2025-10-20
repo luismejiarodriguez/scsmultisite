@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_template.config:
+  title: 'Moodle Sync Template'
+  route_name: moodle_sync_template.config
+  parent: moodle_sync.config
+  description: 'Settings for synching Drupal entities to Moodle templates.'

@@ -1,0 +1,16 @@
+name: Video only
+description: 'Video only Paragraphs Type'
+package: accenture
+
+
+type: module
+core_version_requirement: ^8 || ^9 || ^10| ^11
+
+dependencies:
+  - paragraphs:paragraphs
+  - media:media
+  - media_library:media_library
+
+project: video_only
+'interface translation project': video_only
+'interface translation server pattern': modules/custom/video_only/translations/video_only-%language.po

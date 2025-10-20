@@ -1,0 +1,619 @@
+#core.entity_form_display.paragraph.video_only.default.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_only.vo_bbottom
+    - field.field.paragraph.video_only.vo_bleft
+    - field.field.paragraph.video_only.vo_bright
+    - field.field.paragraph.video_only.vo_btop
+    - field.field.paragraph.video_only.vo_bunit
+    - field.field.paragraph.video_only.vo_gborder
+    - field.field.paragraph.video_only.vo_animation
+    - field.field.paragraph.video_only.vo_border_style
+    - field.field.paragraph.video_only.vo_bordercolor
+    - field.field.paragraph.video_only.vo_box_shadow
+    - field.field.paragraph.video_only.vo_bradius_btleft
+    - field.field.paragraph.video_only.vo_bradius_btright
+    - field.field.paragraph.video_only.vo_bradius_topleft
+    - field.field.paragraph.video_only.vo_bradius_topright
+    - field.field.paragraph.video_only.vo_cover
+    - field.field.paragraph.video_only.vo_external_video
+    - field.field.paragraph.video_only.vo_gbradius
+    - field.field.paragraph.video_only.vo_gradientplay
+    - field.field.paragraph.video_only.vo_imgeffects
+    - field.field.paragraph.video_only.vo_imgstyle
+    - field.field.paragraph.video_only.vo_mbottom
+    - field.field.paragraph.video_only.vo_mtop
+    - field.field.paragraph.video_only.vo_padding
+    - field.field.paragraph.video_only.vo_pbottom
+    - field.field.paragraph.video_only.vo_playcolor
+    - field.field.paragraph.video_only.vo_pleft
+    - field.field.paragraph.video_only.vo_pright
+    - field.field.paragraph.video_only.vo_ptop
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+    - field_group
+    - media_library
+third_party_settings:
+  field_group:
+    group_extras:
+      children:
+        - group_exset_video
+      label: Extras
+      region: content
+      parent_name: group_block
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_padding_settings:
+      children:
+        - vo_padding
+        - vo_ptop
+        - vo_pright
+        - vo_pbottom
+        - vo_pleft
+      label: 'Padding Settings'
+      region: content
+      parent_name: group_padding_video
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_border_settings:
+      children:
+        - group_color_width_style
+        - group_border_activate
+        - group_border_radius
+      label: 'Border Settings'
+      region: content
+      parent_name: group_border_video
+      weight: 16
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_border_radius:
+      children:
+        - group_border_radius_settings
+      label: 'Border Radius'
+      region: content
+      parent_name: group_border_settings
+      weight: 25
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_radius_settings:
+      children:
+        - vo_gbradius
+        - vo_bradius_topleft
+        - vo_bradius_topright
+        - vo_bradius_btright
+        - vo_bradius_btleft
+      label: 'Border Radius Settings'
+      region: content
+      parent_name: group_border_radius
+      weight: 24
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_play_button:
+      children:
+        - group_play_button_settings
+      label: 'Play Button'
+      region: content
+      parent_name: group_player
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_play_button_settings:
+      children:
+        - vo_playcolor
+        - vo_gradientplay
+      label: 'Play Button Settings'
+      region: content
+      parent_name: group_play_button
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_settings:
+      children:
+        - group_cover_image
+        - group_player
+        - group_block
+      label: SETTINGS
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        direction: horizontal
+        width_breakpoint: 640
+    group_player:
+      children:
+        - group_play_button
+      label: PLAYER
+      region: content
+      parent_name: group_settings
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_cover_image:
+      children:
+        - group_image
+      label: 'COVER IMAGE'
+      region: content
+      parent_name: group_settings
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_block:
+      children:
+        - group_extras
+        - group_padding_video
+        - group_border_video
+      label: BLOCK
+      region: content
+      parent_name: group_settings
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_border_activate:
+      children:
+        - group_border_activate_settings
+      label: 'Border Type'
+      region: content
+      parent_name: group_border_settings
+      weight: 24
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_activate_settings:
+      children:
+        - vo_bunit
+        - vo_gborder
+        - vo_btop
+        - vo_bright
+        - vo_bbottom
+        - vo_bleft
+      label: 'Border Type settings'
+      region: content
+      parent_name: group_border_activate
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_color_width_style:
+      children:
+        - group_color_width_style_settings
+      label: 'Color and Style'
+      region: content
+      parent_name: group_border_settings
+      weight: 23
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_color_width_style_settings:
+      children:
+        - vo_bordercolor
+        - vo_border_style
+      label: 'Color and Style Settings'
+      region: content
+      parent_name: group_color_width_style
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_image:
+      children:
+        - group_image_options
+      label: Image
+      region: content
+      parent_name: group_cover_image
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_image_options:
+      children:
+        - vo_cover
+        - vo_imgstyle
+        - vo_imgeffects
+      label: 'Image Settings'
+      region: content
+      parent_name: group_image
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_video_wrapper:
+      children:
+        - vo_external_video
+      label: VIDEO
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_exset_video:
+      children:
+        - vo_mtop
+        - vo_mbottom
+        - vo_animation
+        - vo_box_shadow
+      label: 'Extra Settings'
+      region: content
+      parent_name: group_extras
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: wrapper-inside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_padding_video:
+      children:
+        - group_padding_settings
+      label: Padding
+      region: content
+      parent_name: group_block
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_border_video:
+      children:
+        - group_border_settings
+      label: Border
+      region: content
+      parent_name: group_block
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: wrapper-outside
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: A-3i5GA66inGMURrrbJieCcnh5krBNosd5tD-nQeRko
+id: paragraph.video_only.default
+targetEntityType: paragraph
+bundle: video_only
+mode: default
+content:
+  vo_bbottom:
+    type: number
+    weight: 35
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bleft:
+    type: number
+    weight: 36
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bright:
+    type: number
+    weight: 34
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_btop:
+    type: number
+    weight: 33
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bunit:
+    type: options_select
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_gborder:
+    type: number
+    weight: 32
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_animation:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_border_style:
+    type: options_select
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_bordercolor:
+    type: color_field_widget_spectrum
+    weight: 24
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+    third_party_settings: {  }
+  vo_box_shadow:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_bradius_btleft:
+    type: number
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bradius_btright:
+    type: number
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bradius_topleft:
+    type: number
+    weight: 26
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_bradius_topright:
+    type: number
+    weight: 27
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_cover:
+    type: media_library_widget
+    weight: 9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  vo_external_video:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  vo_gbradius:
+    type: number
+    weight: 25
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  vo_gradientplay:
+    type: color_field_widget_spectrum
+    weight: 9
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '0'
+    third_party_settings: {  }
+  vo_imgeffects:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_imgstyle:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_mbottom:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_mtop:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_padding:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_pbottom:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_playcolor:
+    type: color_field_widget_spectrum
+    weight: 7
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+    third_party_settings: {  }
+  vo_pleft:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_pright:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  vo_ptop:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

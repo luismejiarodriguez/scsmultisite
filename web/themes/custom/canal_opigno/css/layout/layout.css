@@ -1,0 +1,38 @@
+/* Inicio */
+.page-front.user-not-logged-in .dashboard {
+  display: none !important;
+}
+h1.hometitle {
+  width: 100%;
+  max-width: 622.08px;
+  margin: auto;
+  color: #0F172A;
+  padding: 16px 8px;
+  font-size: 24px;
+  text-align: center;
+}
+ul.cat-home-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+ul.cat-home-list li {
+  width: 100%;
+  height: 56px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 18px 20px;
+  max-width: 365px;
+}
+ul.cat-home-list li a {
+  font-weight: bold;
+  color: #0F172A;
+  text-decoration: none;
+}
+ul.cat-home-list li a:after {
+  content:">";
+  margin-left: 10px;
+}

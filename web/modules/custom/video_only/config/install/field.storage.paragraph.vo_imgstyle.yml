@@ -1,0 +1,30 @@
+#field.storage.paragraph.vo_imgstyle.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: CjUMLGa2b_8gSM9u7Bn11DS21iakQYeHeK0EBPH2vEo
+id: paragraph.vo_imgstyle
+field_name: vo_imgstyle
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: diapositiva_1200x650
+      label: Rectangular
+    -
+      value: square_image_650x650
+      label: Cuadrada
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

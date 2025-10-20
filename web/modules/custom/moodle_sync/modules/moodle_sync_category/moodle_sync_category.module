@@ -1,0 +1,24 @@
+<?php
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\moodle_sync_category\Service\MoodleCategoryService;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function moodle_sync_category_taxonomy_term_insert(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_category.create')->createCategory($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function moodle_sync_category_taxonomy_term_update(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_category.update')->updateCategory($entity);
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function moodle_sync_category_taxonomy_term_delete(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_category.delete')->deleteCategory($entity);
+}

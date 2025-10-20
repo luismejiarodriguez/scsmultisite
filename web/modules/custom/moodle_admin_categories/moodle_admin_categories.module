@@ -1,0 +1,22 @@
+<?php
+
+
+
+/**
+ * @file
+ * Primary module hooks for Moodle Connector module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function moodle_admin_categories_theme(): array {
+  return [
+    'moodle_category_list' => [
+      'variables' => ['categories' => [], 'title' => '' ]
+    ],
+    'moodle_course_detail' => [
+      'variables' => ['course' => [], 'title' => '' ]
+    ],
+  ];
+}

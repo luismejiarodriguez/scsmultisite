@@ -1,0 +1,8 @@
+name: 'Moodle Admin Categories'
+type: module
+description: 'Connect and Sync Drupal with Moodle Categories'
+package: accenture
+core_version_requirement: ^10 || ^11
+
+dependencies:
+  - drupal:user

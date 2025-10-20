@@ -1,0 +1,9 @@
+services:
+  moodle_sync_enrollment.create:
+    class: Drupal\moodle_sync_enrollment\Service\CreateService
+
+  moodle_sync_enrollment.update:
+    class: Drupal\moodle_sync_enrollment\Service\UpdateService
+
+  moodle_sync_enrollment.node:
+    class: Drupal\moodle_sync_enrollment\Service\NodeService

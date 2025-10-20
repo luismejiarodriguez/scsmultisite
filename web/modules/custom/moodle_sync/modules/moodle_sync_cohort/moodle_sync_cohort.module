@@ -1,0 +1,46 @@
+<?php
+/*
+ * Module: moodle_sync_cohort.
+ *
+ * Synchronizes Cohorts from Drupal to Moodle.
+ *
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/*
+ * Implements HOOK_ENTITY_PRESAVE().
+ */
+function moodle_sync_cohort_user_presave($user) {
+  \Drupal::service('moodle_sync_cohort.update')->updateUserCohorts($user, null);
+}
+
+/*
+ * Implements HOOK_ENTITY_PRESAVE().
+ */
+function moodle_sync_cohort_profile_presave($profile) {
+  \Drupal::service('moodle_sync_cohort.update')->updateUserCohorts(null, $profile);
+}
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_cohort_taxonomy_term_update($term) {
+  if (!$term->isNew()) {
+    \Drupal::service('moodle_sync_cohort.update')->updateCohort($term);
+  }
+}
+
+/*
+ * Implements HOOK_ENTITY_INSERT().
+ */
+function moodle_sync_cohort_taxonomy_term_insert($term) {
+  \Drupal::service('moodle_sync_cohort.update')->createCohort($term);
+}
+
+/*
+ * Implements HOOK_ENTITY_DELETE().
+ */
+function moodle_sync_cohort_taxonomy_term_delete($term) {
+  \Drupal::service('moodle_sync_cohort.update')->deleteCohort($term);
+}

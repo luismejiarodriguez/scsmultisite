@@ -1,0 +1,16 @@
+name: Custom View Modes
+description: 'Create Custom View Modes'
+package: accenture
+
+
+type: module
+core_version_requirement: ^8 || ^9 || ^10| ^11
+
+dependencies:
+  - media:media
+  - media_library:media_library
+  - field_formatter_class:field_formatter_class
+
+project: custom_view_modes
+'interface translation project': custom_view_modes
+'interface translation server pattern': modules/custom/custom_view_modes/translations/custom_view_modes-%language.po

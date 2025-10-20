@@ -1,0 +1,16 @@
+name: Main Title
+description: 'Main Title Paragraph Type'
+package: accenture
+
+
+type: module
+core_version_requirement: ^8 || ^9 || ^10| ^11
+
+dependencies:
+  - paragraphs:paragraphs
+  - maxlength:maxlength
+  - field_permissions:field_permissions
+
+project: main_title
+'interface translation project': main_title
+'interface translation server pattern': modules/custom/main_title/translations/main_title-%language.po

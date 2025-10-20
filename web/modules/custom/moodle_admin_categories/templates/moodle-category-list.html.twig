@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display confirmation_data.
+ *
+ * Available variables:
+ * - foo: Foo variable description.
+ *
+ * @see template_preprocess_confirmation_data()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="wrapper-class">
+  {# Con esta línea recuparamos el título personalizado #}
+  <h2>{{ title }}</h2>
+
+  {{ dump(categories) }}
+
+  {% if categories is not empty %}
+    <ul>
+      {% for category in categories %}
+        <li>
+          {{ category.name }} (ID: {{ category.id }})
+          {% if category.description %}
+            <div>{{ category.description|raw }}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No categories returned from Moodle.</p>
+  {% endif %}
+</div>

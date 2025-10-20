@@ -1,0 +1,11 @@
+#paragraphs.paragraphs_type.main_title.yml
+
+langcode: en
+status: true
+dependencies: {  }
+id: main_title
+label: Main Title
+icon_uuid: null
+icon_default: null
+description: 'Allows you to add a title with tags (H1-H6) and other options'
+behavior_plugins: {  }

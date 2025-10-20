@@ -1,0 +1,49 @@
+<?php
+/*
+ * Module: moodle_sync_template.
+ *
+ * Synchronizes templates from Drupal to Moodle.
+ *
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/*
+ * Implements HOOK_ENTITY_INSERT().
+ */
+function moodle_sync_template_taxonomy_term_insert(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_template.create')->createTemplate($entity);
+}
+
+/*
+ * Implements HOOK_ENTITY_UPDATE().
+ */
+function moodle_sync_template_taxonomy_term_update(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_template.update')->updateTemplate($entity);
+}
+
+/*
+ * Implements HOOK_ENTITY_DELETE().
+ */
+function moodle_sync_template_taxonomy_term_delete(EntityInterface $entity) {
+  \Drupal::service('moodle_sync_template.delete')->deleteTemplate($entity);
+}
+
+/*
+ * Implements HOOK_FORM_ALTER().
+ */
+function moodle_sync_template_form_alter(&$form, &$form_state, $form_id) {
+
+  // Get config.
+  $config = \Drupal::config('moodle_sync_template.settings');
+  if ($config->get('template_hide')) {
+
+    // If form contains the template field, and is an edit form, hide the field.
+    $template_field = $config->get('template_field');
+    if (array_key_exists($template_field, $form)) {
+      if (str_contains($form_id, '_edit_form')) {
+        unset($form[$template_field]);
+      }
+    }
+  }
+}

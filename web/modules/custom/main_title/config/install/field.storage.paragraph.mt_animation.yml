@@ -1,0 +1,63 @@
+#field.storage.paragraph.mt_animation.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: if7gwkCMnN7-zW7xG-tTIcfSVRrjmsySwu5E3I5AzaY
+id: paragraph.mt_animation
+field_name: mt_animation
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fadein
+      label: 'Fade In'
+    -
+      value: flixx
+      label: 'Flix X'
+    -
+      value: lineup
+      label: LineUp
+    -
+      value: popoutin
+      label: Pop-outin
+    -
+      value: frontop
+      label: FrontTop
+    -
+      value: bounce
+      label: Bounce
+    -
+      value: bounce2
+      label: 'Bounce 2'
+    -
+      value: gelatine
+      label: Gelatine
+    -
+      value: swing
+      label: Swing
+    -
+      value: wobble
+      label: Wobble
+    -
+      value: bounceinright
+      label: 'Bounce in right'
+    -
+      value: hithere
+      label: 'Hi there'
+    -
+      value: pulse
+      label: Pulse
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

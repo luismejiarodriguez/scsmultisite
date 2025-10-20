@@ -1,0 +1,3 @@
+moodle_category_list:
+  render element: 'elements'
+  template: 'moodle-category-list'

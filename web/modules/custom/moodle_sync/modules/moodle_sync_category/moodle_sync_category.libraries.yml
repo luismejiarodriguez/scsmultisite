@@ -1,0 +1,5 @@
+moodle_sync_category_css:
+  version: 1.0
+  css:
+    theme:
+      css/moodle_sync_category.css: {}

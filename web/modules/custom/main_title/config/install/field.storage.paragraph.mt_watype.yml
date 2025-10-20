@@ -1,0 +1,109 @@
+#field.storage.paragraph.mt_watype.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.mt_watype
+field_name: mt_watype
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: wow_animated_zoomin
+      label: 'wow animated zoomIn'
+    -
+      value: wow_animated_zoomindown
+      label: 'wow animated zoomInDown'
+    -
+      value: wow_animated_zoominleft
+      label: 'wow animated zoomInLeft'
+    -
+      value: wow_animated_zoominright
+      label: 'wow animated zoomInRight'
+    -
+      value: wow_animated_slideindown
+      label: 'wow animated slideInDown'
+    -
+      value: wow_animated_slideinleft
+      label: 'wow animated slideInLeft'
+    -
+      value: wow_animated_slideinright
+      label: 'wow animated slideInRight'
+    -
+      value: wow_animated_slideinup
+      label: 'wow animated slideInUp'
+    -
+      value: wow_animated_flip
+      label: 'wow animated  flip'
+    -
+      value: wow_animated_flipinx
+      label: 'wow animated flipInX'
+    -
+      value: wow_animated_flipiny
+      label: 'wow animated flipInY'
+    -
+      value: wow_animated_flipoutx
+      label: 'wow animated  flipOutX'
+    -
+      value: wow_animated_lightspeedinright
+      label: 'wow animated lightSpeedInRight'
+    -
+      value: wow_animated_lightspeedinleft
+      label: 'wow animated lightSpeedInLeft'
+    -
+      value: wow_animated_lightspeedoutright
+      label: 'wow animated lightSpeedOutRight'
+    -
+      value: wow_animated_lightspeedoutleft
+      label: 'wow animated lightSpeedOutLeft'
+    -
+      value: wow_animated_rotatein
+      label: 'wow animated  rotateIn'
+    -
+      value: wow_animated_rotateindownleft
+      label: 'wow animated  rotateInDownLeft'
+    -
+      value: wow_animated_rotateindownright
+      label: 'wow animated  rotateInDownRight'
+    -
+      value: wow_animated_rotateinupleft
+      label: 'wow animated rotateInUpLeft'
+    -
+      value: wow_animated_rotateinupright
+      label: 'wow animated rotateInUpRight'
+    -
+      value: wow_animated_backindown
+      label: 'wow animated backInDown'
+    -
+      value: wow_animated_backinleft
+      label: 'wow animated backInLeft'
+    -
+      value: wow_animated_backinright
+      label: 'wow animated backInRight'
+    -
+      value: wow_animated_backinup
+      label: 'wow animated backInUp'
+    -
+      value: wow_animated_hinge
+      label: 'wow animated hinge'
+    -
+      value: wow_animated_jackinthebox
+      label: 'wow animated jackInTheBox'
+    -
+      value: wow_animated_rollin
+      label: 'wow animated rollIn'
+    -
+      value: wow_animated_rollout
+      label: 'wow animated rollOut'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

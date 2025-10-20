@@ -1,0 +1,16 @@
+name: 'Moodle Sync Enrollments'
+type: module
+package: 'Moodle Sync'
+description: 'Syncs Drupal entities to Moodle enrollments.'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:moodle_sync
+  - drupal:moodle_sync_course
+  - drupal:taxonomy
+  - drupal:registration
+configure: moodle_sync_enrollment.config
+
+# Information added by Drupal.org packaging script on 2025-04-04
+version: '1.0.0'
+project: 'moodle_sync'
+datestamp: 1743782383

@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function canalciudadano_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+/**
+ * Alter the search block form.
+ */
+function canalciudadano_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+    $form['search_block_form']['#title'] = t('Search');
+    $form['search_block_form']['#title_display'] = 'invisible';
+    $form['search_block_form']['#size'] = 30;
+    $form['keys']['#attributes']['placeholder'] = t('Search...');
+    $form['actions']['submit']['#value'] = t('Go');
+
+        // Cambiar tipo de botón para personalización avanzada.
+        $form['actions']['submit']['#type'] = 'submit';
+        $form['actions']['submit']['#attributes']['class'][] = 'search-submit-icon';
+
+        // Eliminar el texto (cuidado con accesibilidad)
+        $form['actions']['submit']['#value'] = '';
+  }
+}

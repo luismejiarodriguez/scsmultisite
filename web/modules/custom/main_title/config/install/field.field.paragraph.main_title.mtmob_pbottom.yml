@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mtmob_pbottom.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_pbottom
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mtmob_pbottom
+field_name: mtmob_pbottom
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Bottom Mobile'
+description: 'Allows you to add bottom padding for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

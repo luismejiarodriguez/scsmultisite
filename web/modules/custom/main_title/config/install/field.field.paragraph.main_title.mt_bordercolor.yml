@@ -1,0 +1,25 @@
+#field.field.paragraph.main_title.mt_bordercolor.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bordercolor
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+_core:
+  default_config_hash: 7azdjICZMGd3JfiK8hNILAUbkGjw1w_57mfhVuU_LCs
+id: paragraph.main_title.mt_bordercolor
+field_name: mt_bordercolor
+entity_type: paragraph
+bundle: main_title
+label: 'Color del borde'
+description: 'Le permite agregar o modificar el color del borde del bloque.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

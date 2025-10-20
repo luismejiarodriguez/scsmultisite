@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_bbottom.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bbottom
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mt_bbottom
+field_name: mt_bbottom
+entity_type: paragraph
+bundle: main_title
+label: 'Border Botton'
+description: 'Activate the border at the bottom.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

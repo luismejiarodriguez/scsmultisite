@@ -1,0 +1,12 @@
+# Module settings.
+moodle_sync.config:
+  title: 'Moodle Sync'
+  route_name: moodle_sync.config
+  parent: system.admin_config
+  description: 'Moodle Sync'
+moodle_sync.settings:
+  title: 'Moodle Sync Overview Settings'
+  route_name: moodle_sync.config
+  parent:  moodle_sync.config
+  description: 'Moodle Sync'
+  weight: -1

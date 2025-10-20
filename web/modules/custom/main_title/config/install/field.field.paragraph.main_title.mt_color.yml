@@ -1,0 +1,25 @@
+#field.field.paragraph.main_title.mt_color.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_color
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+_core:
+  default_config_hash: UygD6D-NEir63PJ1mxK8D2mZA3riaQy09JOyCQ5xVls
+id: paragraph.main_title.mt_color
+field_name: mt_color
+entity_type: paragraph
+bundle: main_title
+label: 'Color del texto'
+description: 'Le permite modificar o agregar un color al Título.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

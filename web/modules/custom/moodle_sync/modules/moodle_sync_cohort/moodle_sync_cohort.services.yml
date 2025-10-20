@@ -1,0 +1,13 @@
+services:
+  moodle_sync_cohort.create:
+    class: Drupal\moodle_sync_cohort\Service\CreateService
+    arguments: ['@config.factory']
+
+  moodle_sync_cohort.delete:
+    class: Drupal\moodle_sync_cohort\Service\DeleteService
+    arguments: ['@config.factory']
+
+  moodle_sync_cohort.update:
+    class: Drupal\moodle_sync_cohort\Service\UpdateService
+    arguments: ['@config.factory']
+

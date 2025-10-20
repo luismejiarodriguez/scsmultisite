@@ -1,0 +1,22 @@
+#field.field.paragraph.video_only.vo_bunit.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bunit
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+id: paragraph.video_only.vo_bunit
+field_name: vo_bunit
+entity_type: paragraph
+bundle: video_only
+label: 'Border unit'
+description: 'Allows you to choose the unit of measurement in which the borders will be applied.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

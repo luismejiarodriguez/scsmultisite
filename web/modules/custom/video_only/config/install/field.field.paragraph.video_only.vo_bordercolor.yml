@@ -1,0 +1,25 @@
+#field.field.paragraph.video_only.vo_bordercolor.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bordercolor
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+_core:
+  default_config_hash: gSNmDd_Odll3XIVMs7InnV-JPtA_3HGq3qbDVzj3eb4
+id: paragraph.video_only.vo_bordercolor
+field_name: vo_bordercolor
+entity_type: paragraph
+bundle: video_only
+label: 'Border Color'
+description: 'Allows you to add or modify the border color of the block.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -1,0 +1,28 @@
+#field.field.paragraph.video_only.vo_playcolor.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_playcolor
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+_core:
+  default_config_hash: S-tCjYq2vU7nnw65MHgmDFiQTF-mdgDx8Z5jzKlxdDI
+id: paragraph.video_only.vo_playcolor
+field_name: vo_playcolor
+entity_type: paragraph
+bundle: video_only
+label: 'Play button color'
+description: 'Allows you to add or change the color of the Play button'
+required: false
+translatable: true
+default_value:
+  -
+    color: '#09a6dd'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

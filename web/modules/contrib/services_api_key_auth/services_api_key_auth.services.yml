@@ -1,0 +1,6 @@
+services:
+  services_api_key_auth.authentication.api_key_auth:
+    class: Drupal\services_api_key_auth\Authentication\Provider\ApiKeyAuth
+    arguments: ['@config.factory', '@entity_type.manager','@current_route_match']
+    tags:
+      - { name: authentication_provider, provider_id: api_key_auth, priority: 100 }

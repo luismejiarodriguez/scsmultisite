@@ -1,0 +1,52 @@
+#field.storage.paragraph.vo_border_style.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: VVc5lCiVEug0gqyUoEnv0KU_2lD8l9bqqqSWqBgF5Ho
+id: paragraph.vo_border_style
+field_name: vo_border_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dotted
+      label: Dotted
+    -
+      value: dashed
+      label: Dashed
+    -
+      value: solid
+      label: Solid
+    -
+      value: double
+      label: Double
+    -
+      value: groove
+      label: Groove
+    -
+      value: ridge
+      label: Ridge
+    -
+      value: inset
+      label: Inset
+    -
+      value: outset
+      label: Outsed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

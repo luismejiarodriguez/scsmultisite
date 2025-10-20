@@ -1,0 +1,11 @@
+name: Moodle Sync
+type: module
+package: 'Moodle Sync'
+description: 'Uses Moodle webservices to sync Drupal entities to Moodle'
+core_version_requirement: ^10 || ^11
+configure: moodle_sync.settings
+
+# Information added by Drupal.org packaging script on 2025-04-04
+version: '1.0.0'
+project: 'moodle_sync'
+datestamp: 1743782383

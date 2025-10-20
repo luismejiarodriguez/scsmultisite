@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+#block-pss-page-title {
+  padding: 40px;
+  text-align: center;
+  background: #0021C9;
+  margin-top: 20px;
+}
+#block-pss-page-title h1.title {
+  color: #ffffff;
+}
+#block-pss-content {
+  background: #e3e7ef;
+  padding: 40px;
+  margin: 40px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+article.profile, .block-views-blockgestionar-pacientes-block-1 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 20px;
+  background: #91aee2;
+}
+table.vbo-table.table.table-hover.table-striped.views-table.views-view-table.cols-4 td,
+table.vbo-table.table.table-hover.table-striped.views-table.views-view-table.cols-4 th {
+  text-align: center;
+}
+td.views-field.views-field-views-bulk-operations-bulk-form {
+  display: flex;
+  justify-content: center;
+}

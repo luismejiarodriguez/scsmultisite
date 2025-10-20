@@ -1,0 +1,280 @@
+#core.entity_view_display.paragraph.video_only.default.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_only.vo_bbottom
+    - field.field.paragraph.video_only.vo_bleft
+    - field.field.paragraph.video_only.vo_bright
+    - field.field.paragraph.video_only.vo_btop
+    - field.field.paragraph.video_only.vo_bunit
+    - field.field.paragraph.video_only.vo_gborder
+    - field.field.paragraph.video_only.vo_animation
+    - field.field.paragraph.video_only.vo_border_style
+    - field.field.paragraph.video_only.vo_bordercolor
+    - field.field.paragraph.video_only.vo_box_shadow
+    - field.field.paragraph.video_only.vo_bradius_btleft
+    - field.field.paragraph.video_only.vo_bradius_btright
+    - field.field.paragraph.video_only.vo_bradius_topleft
+    - field.field.paragraph.video_only.vo_bradius_topright
+    - field.field.paragraph.video_only.vo_cover
+    - field.field.paragraph.video_only.vo_external_video
+    - field.field.paragraph.video_only.vo_gbradius
+    - field.field.paragraph.video_only.vo_gradientplay
+    - field.field.paragraph.video_only.vo_imgeffects
+    - field.field.paragraph.video_only.vo_imgstyle
+    - field.field.paragraph.video_only.vo_mbottom
+    - field.field.paragraph.video_only.vo_mtop
+    - field.field.paragraph.video_only.vo_padding
+    - field.field.paragraph.video_only.vo_pbottom
+    - field.field.paragraph.video_only.vo_playcolor
+    - field.field.paragraph.video_only.vo_pleft
+    - field.field.paragraph.video_only.vo_pright
+    - field.field.paragraph.video_only.vo_ptop
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+    - field_formatter_class
+    - options
+_core:
+  default_config_hash: H-EZ_uD_CmFqmJ-boodsgc_pWnLvpgWEx3hw4ENzj_E
+id: paragraph.video_only.default
+targetEntityType: paragraph
+bundle: video_only
+mode: default
+content:
+  vo_bbottom:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  vo_bleft:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  vo_bright:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  vo_btop:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  vo_bunit:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  vo_gborder:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  vo_animation:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  vo_border_style:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  vo_bordercolor:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 2
+    region: content
+  vo_box_shadow:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  vo_bradius_btleft:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  vo_bradius_btright:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  vo_bradius_topleft:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  vo_bradius_topright:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  vo_cover:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  vo_external_video:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  vo_gbradius:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  vo_gradientplay:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  vo_imgeffects:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  vo_imgstyle:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  vo_mbottom:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  vo_mtop:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  vo_padding:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  vo_pbottom:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  vo_playcolor:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  vo_pleft:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  vo_pright:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  vo_ptop:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+name: 'Moodle Sync Category'
+type: module
+package: 'Moodle Sync'
+description: 'Syncs Drupal taxonomy terms to Moodle categories.'
+core_version_requirement: ^10 || ^11
+libraries:
+  - moodle_sync_category/moodle_sync_category
+dependencies:
+  - drupal:moodle_sync
+  - drupal:taxonomy
+autoload:
+  psr-4:
+    Drupal\moodle_sync_category\: src/
+configure: moodle_sync_category.settings
+
+# Information added by Drupal.org packaging script on 2025-04-04
+version: '1.0.0'
+project: 'moodle_sync'
+datestamp: 1743782383

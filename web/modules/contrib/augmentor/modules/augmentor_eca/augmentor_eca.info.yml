@@ -1,0 +1,13 @@
+name: Augmentor ECA Rules
+type: module
+description: 'Provides additional eca rules for Augmentor.'
+package: Augmentor
+core_version_requirement: ^10.1 || ^11
+dependencies:
+  - augmentor:augmentor
+  - eca:eca
+
+# Information added by Drupal.org packaging script on 2025-07-14
+version: '1.2.2'
+project: 'augmentor'
+datestamp: 1752467449

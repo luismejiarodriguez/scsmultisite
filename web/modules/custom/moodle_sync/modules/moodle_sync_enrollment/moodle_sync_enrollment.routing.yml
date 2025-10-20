@@ -1,0 +1,7 @@
+moodle_sync_enrollment.config:
+  path: '/admin/config/moodle_sync/enrollment/settings'
+  defaults:
+    _form: '\Drupal\moodle_sync_enrollment\Form\MoodleSyncEnrollmentSettingsForm'
+    _title: 'Moodle Sync Enrollment Settings'
+  requirements:
+    _permission: 'administer site configuration'

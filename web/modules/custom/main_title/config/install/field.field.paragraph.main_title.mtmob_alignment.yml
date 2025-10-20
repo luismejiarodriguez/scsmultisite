@@ -1,0 +1,22 @@
+#field.field.paragraph.main_title.mtmob_alignment.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_alignment
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+id: paragraph.main_title.mtmob_alignment
+field_name: mtmob_alignment
+entity_type: paragraph
+bundle: main_title
+label: 'Align on Mobile'
+description: 'Allows you to align your elements exclusively on mobile devices.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

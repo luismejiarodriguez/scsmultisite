@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_border_style.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_border_style
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: OuqLIGQ2MxIs-ed5-_EKRvwpofmt2Rm4GiDpWYEaQT0
+id: paragraph.video_only.vo_border_style
+field_name: vo_border_style
+entity_type: paragraph
+bundle: video_only
+label: 'Border style'
+description: 'Allows you to set a specific border style'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_bright.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bright
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mt_bright
+field_name: mt_bright
+entity_type: paragraph
+bundle: main_title
+label: 'Border Right'
+description: 'Activate the border on the right side.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

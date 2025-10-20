@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_text.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_text
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: dQVjHbMX4At3Crz8xFIE7bKr_D076zJV-nXEYRpHf2k
+id: paragraph.main_title.mt_text
+field_name: mt_text
+entity_type: paragraph
+bundle: main_title
+label: 'Título principal'
+description: 'Le permite agregar el título principal'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Este es un ejemplo de título principal.'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+#field.field.paragraph.main_title.mt_waduration.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_waduration
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+id: paragraph.main_title.mt_waduration
+field_name: mt_waduration
+entity_type: paragraph
+bundle: main_title
+label: 'Animation Duration'
+description: 'Allows you to modify the duration of the animation effect.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

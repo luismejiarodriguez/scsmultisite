@@ -1,0 +1,12 @@
+#core.entity_view_mode.paragraph.normal_button.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.normal_button
+label: 'Normal Button'
+description: ''
+targetEntityType: paragraph
+cache: true

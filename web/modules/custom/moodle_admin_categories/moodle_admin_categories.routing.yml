@@ -1,0 +1,8 @@
+moodle_admin_categories.categories:
+  path: '/admin/moodle/categories'
+  defaults:
+    _controller: '\Drupal\moodle_admin_categories\Controller\MoodleAdminCategoriesController::getMoodleCategories'
+    _title: 'Moodle Categories'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_completion.config:
+  title: 'Moodle Sync Completion'
+  route_name: moodle_sync_completion.config
+  parent: moodle_sync.config
+  description: 'Moodle Sync Completion'

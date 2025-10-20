@@ -1,0 +1,79 @@
+#field.storage.paragraph.mt_global_radius.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: A4prWYp5sqpiy87S_8U047w-IdFi1F8Bfqti8HNYgt0
+id: paragraph.mt_global_radius
+field_name: mt_global_radius
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '5'
+      label: 5px
+    -
+      value: '10'
+      label: 10px
+    -
+      value: '20'
+      label: 20px
+    -
+      value: '25'
+      label: 25px
+    -
+      value: '30'
+      label: 30px
+    -
+      value: '35'
+      label: 35px
+    -
+      value: '40'
+      label: 40px
+    -
+      value: '45'
+      label: 45px
+    -
+      value: '50'
+      label: 50px
+    -
+      value: '60'
+      label: 60px
+    -
+      value: '70'
+      label: 70px
+    -
+      value: '80'
+      label: 80px
+    -
+      value: '90'
+      label: 90px
+    -
+      value: '100'
+      label: 100px
+    -
+      value: '150'
+      label: 150px
+    -
+      value: '200'
+      label: 200px
+    -
+      value: '360'
+      label: 360px
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+services:
+  moodle_sync.logger:
+    class: Drupal\moodle_sync\Service\MoodleSyncLogger
+    arguments: ['@config.factory']
+
+  moodle_sync.sync:
+    class: Drupal\moodle_sync\Service\MoodleSync
+    arguments: ['@config.factory']

@@ -1,0 +1,48 @@
+# Translation text custom module
+msgid "Slide Button and Caption"
+msgstr "Diapositiva con texto y botón"
+msgid "Slide Button and Caption"
+msgstr "Diapositiva con texto y botón"
+msgid "Slide Caption Center"
+msgstr "Diapositiva con texto centralizado"
+msgid "Slide Default"
+msgstr "Diapositiva simple"
+msgid "Horizontal Card"
+msgstr "Tarjeta horizontal"
+msgid "Download Button"
+msgstr "Botón Descarga"
+msgid "Contact Button"
+msgstr "Botón Contacta"
+msgid "BG Card"
+msgstr "Tarjeta con fondo"
+msgid "Normal Button"
+msgstr "Botón Simple"
+msgid "Full width Column"
+msgstr "Ancho Completo"
+msgid "square image(650x650)"
+msgstr "Imagen Cuadrada(650x650)"
+msgid "icon link horizontal"
+msgstr "Icono y Enlace horizontal"
+msgid "icon link vertical"
+msgstr "Icono y Enlace Vertical"
+msgid "Social Links Header Top"
+msgstr "Enlaces Redes Cabecera Superior"
+msgid "It allows you to choose different types of buttons, with their respective functionalities."
+msgstr "Permite elegir diferentes tipos de botones, con sus respectivas funcionalidades."
+msgid "Allows you to add curvature to the top right edge."
+msgstr "Le permite agregar curvatura al borde superior derecho."
+msgid "Allows you to add curvature to the bottom right edge."
+msgstr "Le permite agregar curvatura al borde inferior derecho."
+msgid "Allows you to add curvature to the top left edge."
+msgstr "Le permite agregar curvatura al borde superior izquierdo."
+
+
+
+
+
+
+
+
+
+
+

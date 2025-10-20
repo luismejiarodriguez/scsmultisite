@@ -1,0 +1,11 @@
+#core.entity_view_mode.paragraph.slide_caption_center.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.slide_caption_center
+label: 'Slide Caption Center'
+targetEntityType: paragraph
+cache: true

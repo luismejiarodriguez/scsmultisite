@@ -1,0 +1,11 @@
+#core.entity_view_mode.paragraph.icon_link_vertical.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.icon_link_vertical
+label: 'icon link vertical'
+targetEntityType: paragraph
+cache: true

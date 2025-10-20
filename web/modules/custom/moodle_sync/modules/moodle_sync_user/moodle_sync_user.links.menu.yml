@@ -1,0 +1,6 @@
+# Module settings.
+moodle_sync_user.config:
+  title: 'Moodle Sync User'
+  route_name: moodle_sync_user.config
+  parent: moodle_sync.config
+  description: 'Moodle Sync User'

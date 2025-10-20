@@ -1,0 +1,23 @@
+#field.storage.paragraph.vo_bradius_topright.yml
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: rr8TkMGxO7ghzwwXVhiIvRFft-nLPVw
+id: paragraph.vo_bradius_topright
+field_name: vo_bradius_topright
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

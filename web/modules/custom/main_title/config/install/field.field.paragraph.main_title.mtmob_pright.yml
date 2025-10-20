@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mtmob_pright.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_pright
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mtmob_pright
+field_name: mtmob_pright
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Right Mobile'
+description: 'Allows you to add right padding for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

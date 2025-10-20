@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_ptop.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_ptop
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: KSkdCwiOJ5D_QxihAK0N-x2YmxQxrNPFU
+id: paragraph.video_only.vo_ptop
+field_name: vo_ptop
+entity_type: paragraph
+bundle: video_only
+label: 'Padding Top'
+description: 'Allows you to add top side padding to the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

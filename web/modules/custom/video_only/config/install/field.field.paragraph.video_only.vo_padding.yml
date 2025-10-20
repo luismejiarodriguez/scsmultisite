@@ -1,0 +1,24 @@
+#field.field.paragraph.video_only.vo_padding.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_padding
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: '--35JTBGvyvjMiQhxhbCuXrEp3-UKD5cHbpHECvXHTs'
+id: paragraph.video_only.vo_padding
+field_name: vo_padding
+entity_type: paragraph
+bundle: video_only
+label: 'Global Padding'
+description: 'Allows you to modify the padding around the entire block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

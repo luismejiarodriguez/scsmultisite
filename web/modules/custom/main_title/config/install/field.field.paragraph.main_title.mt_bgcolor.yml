@@ -1,0 +1,25 @@
+#field.field.paragraph.main_title.mt_bgcolor.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bgcolor
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+_core:
+  default_config_hash: 6UziFrujJTrTtiHdbA88bu9RDIRpwDovjDwWyz3x3jY
+id: paragraph.main_title.mt_bgcolor
+field_name: mt_bgcolor
+entity_type: paragraph
+bundle: main_title
+label: 'Color del fondo'
+description: 'Le permite agregar o modificar el color de fondo del bloque.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

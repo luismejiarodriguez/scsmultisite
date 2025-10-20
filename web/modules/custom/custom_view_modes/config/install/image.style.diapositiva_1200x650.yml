@@ -1,0 +1,17 @@
+uuid: 005b5951-db72-4766-98aa-de4e1e097f25
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Me1saRjZevuuloh15HuP1KOFNou2_xdh5G-t0jOLXQk
+name: diapositiva_1200x650
+label: Diapositiva(1200x650)
+effects:
+  e050cf85-7492-4785-a092-a8ad4537ea3d:
+    uuid: e050cf85-7492-4785-a092-a8ad4537ea3d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 650
+      anchor: center-center

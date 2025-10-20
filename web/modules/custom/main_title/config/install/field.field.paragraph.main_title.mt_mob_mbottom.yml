@@ -1,0 +1,24 @@
+#field.field.paragraph.main_title.mt_mob_mbottom.yml
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_mob_mbottom
+    - paragraphs.paragraphs_type.main_title
+id: paragraph.main_title.mt_mob_mbottom
+field_name: mt_mob_mbottom
+entity_type: paragraph
+bundle: main_title
+label: 'Mobile Margin Bottom'
+description: 'Allows you to add a mobile-specific bottom margin.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer
