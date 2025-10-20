@@ -1,0 +1,17 @@
+uuid: 82afbbb8-c747-428e-8f84-d96910993ef8
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JQWcXtlm3dijKRdlBdg6vpkBeY_1BPrIhvuUohoiVhs
+name: user_connection
+label: 'User connection (55x55)'
+effects:
+  034f1847-3371-4ba0-8891-5bcf2eb4e82b:
+    uuid: 034f1847-3371-4ba0-8891-5bcf2eb4e82b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 55
+      height: 55
+      anchor: center-center

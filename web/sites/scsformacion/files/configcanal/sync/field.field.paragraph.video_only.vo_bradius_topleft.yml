@@ -1,0 +1,25 @@
+uuid: 1a12f5cd-6dab-4a66-82d6-4ffa85893986
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bradius_topleft
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: qWkJrL0hnI--YrpUT4sbijgpJ3nI0fNqDkr4w_Llx-M
+id: paragraph.video_only.vo_bradius_topleft
+field_name: vo_bradius_topleft
+entity_type: paragraph
+bundle: video_only
+label: 'Top left border radius'
+description: 'Allows you to add a radius to the top left of the image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

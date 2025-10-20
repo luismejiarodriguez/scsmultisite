@@ -1,0 +1,13 @@
+uuid: 5e0c64be-2d8d-4568-a0f4-cb0f8c78c443
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 0BwcP6sZvcPYz2MxOrKa_jTYDBGJGhsTkOQCLygEzoM
+id: paragraph.slide_caption_center
+label: 'Slide Caption Center'
+description: ''
+targetEntityType: paragraph
+cache: true

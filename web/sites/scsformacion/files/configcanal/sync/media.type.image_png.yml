@@ -1,0 +1,15 @@
+uuid: bd35b70f-3b2b-4216-8e73-e825ca503db6
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RWrZEJi5piVph4nYOYA-5kabrN-fQ_x5uEzU-b1SMs8
+id: image_png
+label: 'Image (png)'
+description: 'Represent images in png format only.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

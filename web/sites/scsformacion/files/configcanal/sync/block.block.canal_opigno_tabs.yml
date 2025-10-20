@@ -1,0 +1,28 @@
+uuid: cf657d70-5fdc-44f7-b79a-a5514ba40175
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: 7I8QELzS-4BySQtRt0UiNLi14p4E03VW_b6nWIFJ37w
+id: canal_opigno_tabs
+theme: canal_opigno
+region: content
+weight: -16
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/group/*\r\n/user/*/edit\r\n/user/*\r\n/opigno/calendar\r\n/opigno/calendar/*"

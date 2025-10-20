@@ -1,0 +1,22 @@
+uuid: 33f7244a-b74d-4919-a861-9c0a82ae16ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: F-3ZFExGu2aRfjNFhmA-2xbWC81CXMjGecvMcS8tL-E
+id: paragraph.mt_mleft_pc
+field_name: mt_mleft_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

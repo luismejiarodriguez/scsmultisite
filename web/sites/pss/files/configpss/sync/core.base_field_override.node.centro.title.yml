@@ -1,0 +1,18 @@
+uuid: c1276ae6-60d2-4d92-af7b-e22e56c0aff2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.centro
+id: node.centro.title
+field_name: title
+entity_type: node
+bundle: centro
+label: 'Nombre del centro'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

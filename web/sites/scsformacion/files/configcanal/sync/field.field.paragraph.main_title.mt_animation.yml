@@ -1,0 +1,23 @@
+uuid: 01f62dc0-47f5-4f01-a27b-8f7f1fb3c921
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_animation
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: pmpis-a9vZst24pAorf7X1a4FncrGgqHsLj2gcFPXiM
+id: paragraph.main_title.mt_animation
+field_name: mt_animation
+entity_type: paragraph
+bundle: main_title
+label: 'Efectos de animación'
+description: 'Permite agregar efectos de animación con CSS.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

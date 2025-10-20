@@ -1,0 +1,25 @@
+uuid: 3255e7b3-116e-4d24-811a-082da1c952f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: CUE7G8l5ad2MJrKjY5EruYwWXwTgQ_wrfToc1AgQwzI
+id: canal_opigno_sitebranding
+theme: canal_opigno
+region: header
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

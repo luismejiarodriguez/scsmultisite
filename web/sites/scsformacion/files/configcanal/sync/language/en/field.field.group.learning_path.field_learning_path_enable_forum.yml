@@ -1,0 +1,4 @@
+label: 'Enable Forum'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

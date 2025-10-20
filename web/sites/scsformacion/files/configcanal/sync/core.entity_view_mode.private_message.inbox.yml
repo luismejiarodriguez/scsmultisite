@@ -1,0 +1,13 @@
+uuid: cfb72c3e-239b-44d2-93f7-58a89e17f6fb
+langcode: es
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: ZfiDSEdeDse0qMWBsb0u9YVhJ05_ySCpkBuBi_DlFd0
+id: private_message.inbox
+label: 'Bandeja de entrada'
+description: ''
+targetEntityType: private_message
+cache: true

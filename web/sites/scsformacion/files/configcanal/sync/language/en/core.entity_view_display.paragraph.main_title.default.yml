@@ -1,0 +1,13 @@
+content:
+  mt_bgcolor:
+    settings:
+      format: hex
+  mt_bordercolor:
+    settings:
+      format: hex
+  mt_color:
+    settings:
+      format: hex
+  mt_titleline_color:
+    settings:
+      format: hex

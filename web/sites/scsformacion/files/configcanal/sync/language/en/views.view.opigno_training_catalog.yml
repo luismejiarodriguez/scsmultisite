@@ -1,0 +1,90 @@
+label: 'Opigno training catalogue'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: 'Reset filter'
+          exposed_sorts_label: Sort
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+            sort:
+              advanced:
+                combine_rewrite: "Created on Desc|Newest\r\nCreated on Asc|Oldest\r\nWeight Asc|Shortest\r\nWeight Desc|Longest\r\nTitle Asc|A to Z\r\nTitle Desc|Z to A"
+                collapsible_label: 'Sort options'
+            filter:
+              field_learning_path_category_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Any -|All Categories'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+      fields:
+        label_1:
+          separator: ', '
+        field_learning_path_category:
+          separator: ', '
+        field_learning_path_description:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            placeholder: Search
+        opigno_group_membership:
+          expose:
+            label: Visibility
+        field_learning_path_category_target_id:
+          expose:
+            label: Categories
+        field_learning_path_duration_target_id:
+          expose:
+            label: Duration
+        status:
+          expose:
+            label: Status
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Finished
+              2:
+                title: 'In progress'
+              3:
+                title: 'To start'
+              4:
+                title: Passed
+              5:
+                title: Failed
+      sorts:
+        created:
+          expose:
+            label: 'Created on'
+        weight:
+          expose:
+            label: Weight
+        label:
+          expose:
+            label: Title
+      title: 'Training catalogue'
+      empty:
+        area:
+          content:
+            value: "<h2>No training matches found from your search criteria.</h2>\r\n<p>Try changing your filters or try another search term.</p>"
+  training_catalogue:
+    display_title: 'Training catalogue'

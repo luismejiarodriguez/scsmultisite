@@ -1,0 +1,13 @@
+uuid: a03f294f-62da-4e98-8c9a-34161a869af1
+langcode: es
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: AS4Q6cwOEkP_HLnPxILUxLh8qFjlXVCqu0aiJGGVcvM
+id: private_message_thread.token
+label: Comodín
+description: ''
+targetEntityType: private_message_thread
+cache: true

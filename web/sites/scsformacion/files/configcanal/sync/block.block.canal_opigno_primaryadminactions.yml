@@ -1,0 +1,27 @@
+uuid: c144a464-5d80-4512-9932-c8cb1dcfdcf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: 5dMydvqYU9zH6jKww4861YTISyhovkEpa_pijz7WD40
+id: canal_opigno_primaryadminactions
+theme: canal_opigno
+region: content
+weight: -17
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /catalogue

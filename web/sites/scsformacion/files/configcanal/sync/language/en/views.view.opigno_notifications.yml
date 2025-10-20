@@ -1,0 +1,87 @@
+label: 'Opigno Notifications'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: Notifications
+      fields:
+        id:
+          separator: ', '
+        url:
+          separator: ', '
+        has_read:
+          separator: ', '
+        message:
+          alter:
+            text: '<div class="notification" data-id="{{ id }}" data-read="{{ has_read }}><a href="{{ url }}">{{ message }}</a></div>'
+            path: /notifications
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      sorts:
+        created:
+          expose:
+            label: 'Creation time'
+      arguments:
+        uid:
+          exception:
+            title: All
+  block_unread_dashboard:
+    display_title: 'Dashboard - Unread Notifications'
+    display_options:
+      title: 'Unread Notifications'
+      fields:
+        id:
+          separator: ', '
+        url:
+          separator: ', '
+        has_read:
+          separator: ', '
+        message:
+          alter:
+            text: '<div class="notification" data-id="{{ id }}" data-read="{{ has_read }}><a href="{{ url }}">{{ message }}</a></div>'
+            path: /notifications
+          separator: ', '
+      footer:
+        area_text_custom:
+          content: "<a class=\"see-more primary text-center\" href=\"{{ url('<front>') }}/notifications\">\r\n<span>{{ 'see more'|t }}</span>\r\n</a>"
+  page_all:
+    display_title: Page
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        url:
+          separator: ', '
+        created:
+          label: Date
+          separator: ', '
+        message:
+          label: Message
+          alter:
+            text: '<div class="notification" data-id="{{ id }}"><a href="{{ url }}">{{ message }}</a></div>'
+            path: '#'
+          separator: ', '
+        has_read:
+          label: 'Marked as read'
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+      sorts:
+        created:
+          expose:
+            label: 'Creation time'

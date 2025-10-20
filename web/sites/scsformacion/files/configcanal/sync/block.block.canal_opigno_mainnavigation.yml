@@ -1,0 +1,27 @@
+uuid: e1166cc6-902f-4640-b12d-5f498fb0edaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: jUhbsQMQ1TsVf-lixdJHuVfQMGdsgVbPqIyb0OlixZk
+id: canal_opigno_mainnavigation
+theme: canal_opigno
+region: header
+weight: -15
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

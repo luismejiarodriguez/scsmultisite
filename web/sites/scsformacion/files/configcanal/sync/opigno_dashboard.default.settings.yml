@@ -1,0 +1,2 @@
+positions: '{"1":[{"admin_label":"User statistics","context_definitions":[],"id":"opigno_user_stats_block"},{"admin_label":"Connections","context_definitions":[],"id":"opigno_user_connections_block"}],"2":[{"admin_label":"Recent posts","context_definitions":[],"id":"opigno_social_wall_block"},{"admin_label":"Training in progress","id":"views_block:latest_active_trainings-block","mandatory":false}],"3":[{"admin_label":"Opigno calendar block","id":"views_block:opigno_calendar-month_block","mandatory":false}]}'
+columns: 5

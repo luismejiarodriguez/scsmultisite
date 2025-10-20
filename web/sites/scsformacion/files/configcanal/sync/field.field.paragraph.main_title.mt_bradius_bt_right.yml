@@ -1,0 +1,23 @@
+uuid: 19c09d96-90d4-454c-95c8-403c793a57e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bradius_bt_right
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: WTqgK3_Qn_KhfarMPKT2tQ8MRv5KqCsX7efzIi3QYFY
+id: paragraph.main_title.mt_bradius_bt_right
+field_name: mt_bradius_bt_right
+entity_type: paragraph
+bundle: main_title
+label: 'Curvatura del borde inferior derecha'
+description: 'Le permite agregar curvatura al borde inferior derecho.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

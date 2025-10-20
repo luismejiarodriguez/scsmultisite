@@ -1,0 +1,17 @@
+uuid: b2e52c5f-824a-4ee1-af25-ecf3bf0d88b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - backup_migrate
+title: 'Run scheduled backups'
+id: backup_migrate_cron
+weight: 0
+module: backup_migrate
+callback: 'backup_migrate#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

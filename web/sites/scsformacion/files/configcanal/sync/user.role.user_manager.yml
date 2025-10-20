@@ -1,0 +1,42 @@
+uuid: ca17da38-6601-44be-984a-a13d10ddc025
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - contextual
+    - media
+    - opigno_class
+    - opigno_course
+    - opigno_moxtra
+_core:
+  default_config_hash: nYNpXp-G28h3XA0CDYq9e7V7xc0_F4ga5kJ5xzlZc-U
+id: user_manager
+label: 'Gestor de usuarios'
+weight: -6
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access media_entity_browser_groups entity browser pages'
+  - 'access users overview'
+  - 'administer ilt entities'
+  - 'administer meeting entities'
+  - 'administer users'
+  - 'assign collaborative_features role'
+  - 'cancel users by role'
+  - 'create opigno_class group'
+  - 'create users'
+  - 'delete any image media'
+  - 'delete own image media'
+  - 'edit any image media'
+  - 'edit own image media'
+  - 'edit users by role'
+  - 'manage group members in any group'
+  - 'message all groups'
+  - 'message anyone regardless of groups'
+  - 'opigno dashboard layout access'
+  - 'role-assign users by role'
+  - 'score ilt entities'
+  - 'score meeting'
+  - 'view users by role'

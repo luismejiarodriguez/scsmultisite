@@ -1,0 +1,23 @@
+uuid: f6cf885d-88ad-452e-a214-c0afaaadbed3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_global_radius
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: IjB_91Z5mOmw96GxRSxrKjtPNCsQIAJeZypeMh1SB54
+id: paragraph.main_title.mt_global_radius
+field_name: mt_global_radius
+entity_type: paragraph
+bundle: main_title
+label: 'Curvatura del Borde global'
+description: 'Le permite agregar curvatura globalmente al borde.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

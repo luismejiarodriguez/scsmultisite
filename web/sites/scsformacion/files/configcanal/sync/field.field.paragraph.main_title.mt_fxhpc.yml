@@ -1,0 +1,25 @@
+uuid: c65fdaef-3548-4ee0-84d5-a154fd75069e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_fxhpc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: bPfZER6jqBSh-BppOdrnAV1Mcxx-kXQwJO8FHd4NFys
+id: paragraph.main_title.mt_fxhpc
+field_name: mt_fxhpc
+entity_type: paragraph
+bundle: main_title
+label: 'Fixed height PC'
+description: 'Allows you to set the height on computers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

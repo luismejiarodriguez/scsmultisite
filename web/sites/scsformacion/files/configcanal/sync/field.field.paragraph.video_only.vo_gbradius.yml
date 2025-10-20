@@ -1,0 +1,25 @@
+uuid: 14e7953d-60cb-4729-bd50-7f8ab1530397
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_gbradius
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: iuEW3QD_CNko4pyr9bqpu2DqCvvkskKyi2siDIPZD5I
+id: paragraph.video_only.vo_gbradius
+field_name: vo_gbradius
+entity_type: paragraph
+bundle: video_only
+label: 'Global Radio from the Edge'
+description: 'Allows you to add radius around the entire image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

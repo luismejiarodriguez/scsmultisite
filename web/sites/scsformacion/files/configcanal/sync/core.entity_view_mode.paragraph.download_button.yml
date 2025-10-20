@@ -1,0 +1,13 @@
+uuid: 74e4975d-bfb5-4f7c-92b2-945389416c7f
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: m6sCm2HlLa6XXky6MM-OhrnEnMVp___9Kt-6FthEbzw
+id: paragraph.download_button
+label: 'Download Button'
+description: ''
+targetEntityType: paragraph
+cache: true

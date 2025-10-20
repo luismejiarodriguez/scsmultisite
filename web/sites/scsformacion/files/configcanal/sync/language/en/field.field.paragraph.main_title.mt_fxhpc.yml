@@ -1,0 +1,4 @@
+label: 'Fixed height PC'
+description: 'Allows you to set the height on computers.'
+settings:
+  suffix: px

@@ -1,0 +1,12 @@
+label: 'Media Entity Browser (Badge images) '
+display_configuration:
+  link_text: 'Select entities'
+widgets:
+  1d0b97b9-031b-4fbc-b221-c26961c0ee01:
+    settings:
+      submit_text: Upload
+    label: 'Upload a new image'
+  4d5661c8-390b-4a42-a68b-74505fafcb79:
+    settings:
+      submit_text: 'Select image'
+    label: 'Select an existing image'

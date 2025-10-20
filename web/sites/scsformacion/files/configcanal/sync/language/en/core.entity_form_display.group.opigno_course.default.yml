@@ -1,0 +1,6 @@
+third_party_settings:
+  field_group:
+    group_badges_settings:
+      label: 'Badges settings'
+    group_badges_params:
+      label: 'Badge params'

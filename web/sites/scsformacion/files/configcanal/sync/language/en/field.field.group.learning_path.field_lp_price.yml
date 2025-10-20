@@ -1,0 +1,2 @@
+label: 'LP price'
+description: 'The price you want to sell this training for. If left empty, the training will be available free of charge.'

@@ -1,0 +1,19 @@
+uuid: 4cd146bc-5d66-4aa1-9b93-7836e00f07df
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  module:
+    - opigno_module
+    - opigno_module_group
+_core:
+  default_config_hash: ffcewnwprd2fyBC6BnH_wAsMO7zHAWw_ikcOTJWlfq0
+id: group_content_type_162f6c7e7c4fa
+label: 'Learning Path: Opigno Module Group'
+description: 'Añade una entidad de módulo opigno a los grupos.'
+group_type: learning_path
+content_plugin: opigno_module_group
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1

@@ -1,0 +1,25 @@
+uuid: 850d226d-3f07-4ef8-9288-895559f1f0bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_activity.opigno_h5p
+    - opigno_module.opigno_activity_type.opigno_h5p
+  module:
+    - h5p
+_core:
+  default_config_hash: rwPEizRT8Pfn7gqckokBhlHIhdxRTKK6HclnFl_dB3c
+id: opigno_activity.opigno_h5p.opigno_h5p
+field_name: opigno_h5p
+entity_type: opigno_activity
+bundle: opigno_h5p
+label: Pregunta
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    h5p_content_id: null
+default_value_callback: ''
+settings: {  }
+field_type: h5p

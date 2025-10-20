@@ -1,0 +1,4 @@
+label: 'Padding Right Mobile'
+description: 'Allows you to add right padding for mobile only.'
+settings:
+  suffix: px

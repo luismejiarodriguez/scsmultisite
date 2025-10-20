@@ -912,3 +912,4 @@ $databases['default']['default'] = array (
 $settings['config_sync_directory'] = 'sites/scsformacion/files/configcanal/sync';
 $settings['file_private_path'] = '../private';
 $settings['file_temp_path'] = '../tmp';
+$settings['update_free_access'] = TRUE;

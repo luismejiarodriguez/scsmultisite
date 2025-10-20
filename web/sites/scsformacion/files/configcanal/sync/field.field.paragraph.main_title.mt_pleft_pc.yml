@@ -1,0 +1,25 @@
+uuid: 6dfb9d7d-be8f-4741-86d9-e5f7af0a3740
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_pleft_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 8GDFH3Q0S1VPRrHI1IFd2RqcsS_YSDbCrTGufSty0c4
+id: paragraph.main_title.mt_pleft_pc
+field_name: mt_pleft_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Padding lado izquierdo'
+description: 'Allows you to add Left Padding to the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

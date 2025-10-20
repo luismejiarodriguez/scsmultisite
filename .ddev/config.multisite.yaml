@@ -1,0 +1,12 @@
+additional_hostnames:
+  - scsformacion
+  - pss
+  - scsgcambio
+hooks:
+  post-start:
+    - exec: mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS scsformacion; GRANT ALL ON scsformacion.* to 'db'@'%';"
+      service: db
+    - exec: mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS pss; GRANT ALL ON pss.* to 'db'@'%';"
+      service: db
+    - exec: mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS scsgcambio; GRANT ALL ON scsgcambio.* to 'db'@'%';"
+      service: db

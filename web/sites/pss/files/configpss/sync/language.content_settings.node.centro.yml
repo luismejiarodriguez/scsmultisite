@@ -1,0 +1,11 @@
+uuid: 2b86698a-1186-4603-9d06-2699b5d47826
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.centro
+id: node.centro
+target_entity_type_id: node
+target_bundle: centro
+default_langcode: site_default
+language_alterable: false

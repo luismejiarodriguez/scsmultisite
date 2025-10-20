@@ -1,0 +1,25 @@
+uuid: 5848e0f3-07e2-4e74-8d7f-6f53fd2cb549
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_imgstyle
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: NRqnFXpnvs0q31mBnZJ08GZBJ7VYw05y6b6jOM1_zdY
+id: paragraph.video_only.vo_imgstyle
+field_name: vo_imgstyle
+entity_type: paragraph
+bundle: video_only
+label: 'Image Style'
+description: 'Allows you to decide whether the image will appear square or rectangular.'
+required: false
+translatable: true
+default_value:
+  -
+    value: diapositiva_1200x650
+default_value_callback: ''
+settings: {  }
+field_type: list_string

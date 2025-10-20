@@ -1,0 +1,12 @@
+uuid: bbb7c9cc-2de2-4650-9a66-b064a460cb5f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2MbB6QA3bBrEr-pi1Yi17OA22XZXKqOTS5_5rqDmPlY
+id: video_only
+label: Video
+icon_uuid: null
+icon_default: null
+description: 'Permite añadir un video desde youtube, en cualquier bloque de contenido.'
+behavior_plugins: {  }

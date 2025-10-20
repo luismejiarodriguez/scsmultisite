@@ -1,0 +1,13 @@
+uuid: 10187cea-3029-4df9-9153-2ccf2cf2e666
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: bVo8RjESiICxWhRH3XxjYxQjlNVD48joQgRKDCMw9dU
+id: paragraph.icon_link_vertical
+label: 'icon link vertical'
+description: ''
+targetEntityType: paragraph
+cache: true

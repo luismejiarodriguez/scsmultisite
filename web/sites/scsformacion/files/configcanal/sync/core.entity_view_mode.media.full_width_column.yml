@@ -1,0 +1,13 @@
+uuid: 7b272342-e3a7-423a-8dc2-96550aa6e78d
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: jbot4IjV2NfYsyzADlBtTML261JZkse9yL3x_dlDcTs
+id: media.full_width_column
+label: 'Full width Column'
+description: ''
+targetEntityType: media
+cache: true

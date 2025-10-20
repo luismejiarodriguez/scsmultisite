@@ -1,0 +1,11 @@
+uuid: b18fb05b-6b16-4da5-8546-5122ca5111ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_principal_home
+id: taxonomy_term.categoria_principal_home
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_principal_home
+default_langcode: site_default
+language_alterable: false

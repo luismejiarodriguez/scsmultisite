@@ -1,0 +1,29 @@
+uuid: 0c79c8a4-d53a-45a0-9187-5d3c94695ecf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.centro.field_administrador_de_centro
+    - field.field.node.centro.field_correo_electronico_del_cen
+    - field.field.node.centro.field_pacientes
+    - field.field.node.centro.field_telefono
+    - node.type.centro
+  module:
+    - user
+id: node.centro.teaser
+targetEntityType: node
+bundle: centro
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_administrador_de_centro: true
+  field_correo_electronico_del_cen: true
+  field_pacientes: true
+  field_telefono: true
+  langcode: true

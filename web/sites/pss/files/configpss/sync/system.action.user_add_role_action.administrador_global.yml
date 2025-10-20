@@ -1,0 +1,14 @@
+uuid: 4bfe2072-87ff-4ab5-a91d-9419163536c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_global
+  module:
+    - user
+id: user_add_role_action.administrador_global
+label: 'Añade el rol Administrador Global al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_global

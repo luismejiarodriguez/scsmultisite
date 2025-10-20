@@ -1,0 +1,25 @@
+uuid: 241c423f-b792-4d67-908f-0f598de621c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_gpadding_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: QeOfdm0kmkw36OP-QTenrJUkeD3KmqX5mqGK44jLgtw
+id: paragraph.main_title.mt_gpadding_pc
+field_name: mt_gpadding_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Global'
+description: 'Allows you to modify the padding around the entire title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,55 @@
+uuid: f44b1fd2-48f4-40d4-9c91-be0433c8d864
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.centro.field_administrador_de_centro
+    - field.field.node.centro.field_correo_electronico_del_cen
+    - field.field.node.centro.field_pacientes
+    - field.field.node.centro.field_telefono
+    - node.type.centro
+  module:
+    - user
+id: node.centro.default
+targetEntityType: node
+bundle: centro
+mode: default
+content:
+  field_administrador_de_centro:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_correo_electronico_del_cen:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_pacientes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_telefono:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,35 @@
+uuid: 56ef9125-7a8c-4359-9223-6ad0b0e8d481
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: va_YhPj1nLZcBgEAH-GVCf50SH_EFb2TviTPUDw-Nlc
+id: paragraph.vo_bunit
+field_name: vo_bunit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pixeles
+      label: px
+    -
+      value: porcentaje
+      label: '%'
+    -
+      value: rem
+      label: rem
+    -
+      value: em
+      label: em
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

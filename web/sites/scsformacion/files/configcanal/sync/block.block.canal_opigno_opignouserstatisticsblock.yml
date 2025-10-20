@@ -1,0 +1,37 @@
+uuid: 77294d8c-43cb-4a8c-977b-5ce5c6dc9747
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_dashboard
+    - system
+    - user
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: oVfJ_TdqsWGb4SnWiE3yGwUwM65yrRqPzOoCA3WLAw0
+id: canal_opigno_opignouserstatisticsblock
+theme: canal_opigno
+region: content
+weight: -6
+provider: null
+plugin: opigno_user_stats_block
+settings:
+  id: opigno_user_stats_block
+  label: 'Opigno User statistics block'
+  label_display: '0'
+  provider: opigno_dashboard
+  without_stats: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

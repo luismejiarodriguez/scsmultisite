@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: 9Tge9ALR2R8xiJPmaBjg3nvcS45CfgZ33Zr_uEJ-HcY
+queue_mail_keys: 'message_notify_*'
+queue_mail_queue_time: 15
+queue_mail_queue_wait_time: 0
+threshold: 50
+requeue_interval: 10800

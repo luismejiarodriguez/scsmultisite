@@ -1,0 +1,22 @@
+uuid: daa82b43-9de1-4145-9227-1bcb9cccb489
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pss
+_core:
+  default_config_hash: lMge-tmWRy_GEdgNM8jBgLwOKkiwfxmu-mnjkfCyJ_8
+id: pss_content
+theme: pss
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

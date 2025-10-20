@@ -1,0 +1,13 @@
+uuid: c6778f16-b5f8-4093-b7d7-cd5f352aabee
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: AUE831F1x42r4R4QEiZgtLcUT7mo_QoRg6803e8uhtw
+id: group.preview
+label: 'Vista previa'
+description: ''
+targetEntityType: group
+cache: true

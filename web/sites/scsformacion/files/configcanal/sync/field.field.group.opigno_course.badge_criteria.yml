@@ -1,0 +1,25 @@
+uuid: 7866f674-81dc-4651-869f-81d3851cdd1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.badge_criteria
+    - group.type.opigno_course
+  module:
+    - options
+_core:
+  default_config_hash: xTi0WxlBJhO87cF9iefENs0-ycrYScFmQeeKYhRlixc
+id: group.opigno_course.badge_criteria
+field_name: badge_criteria
+entity_type: group
+bundle: opigno_course
+label: 'Criterios de la credencial'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: finished
+default_value_callback: ''
+settings: {  }
+field_type: list_string

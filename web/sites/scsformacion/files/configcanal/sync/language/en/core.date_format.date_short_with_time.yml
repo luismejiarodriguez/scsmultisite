@@ -1,0 +1,2 @@
+label: 'Date short with the time'
+pattern: 'd M Y - H\h:i'

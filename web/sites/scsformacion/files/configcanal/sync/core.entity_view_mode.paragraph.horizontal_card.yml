@@ -1,0 +1,13 @@
+uuid: eea229bf-d785-4844-ae59-458b30000813
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: XP1elDw-riTzzAvDg_czwxQ_3Q149HcC8g1NG2tJ6Wk
+id: paragraph.horizontal_card
+label: 'Horizontal Card'
+description: ''
+targetEntityType: paragraph
+cache: true

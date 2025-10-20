@@ -1,0 +1,22 @@
+uuid: f72c5db5-70a2-4279-b25a-339c34e2fe22
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+_core:
+  default_config_hash: twKB-JTp1WG1ToozMUBcmnm4Nuc-vQpoBvrak4HXtQQ
+id: media.tft_folder
+field_name: tft_folder
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

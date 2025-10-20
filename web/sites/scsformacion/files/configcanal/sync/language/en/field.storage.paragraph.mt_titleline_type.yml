@@ -1,0 +1,12 @@
+settings:
+  allowed_values:
+    -
+      label: underline
+    -
+      label: overline
+    -
+      label: line-through
+    -
+      label: 'underline overline'
+    -
+      label: 'underline line-through'

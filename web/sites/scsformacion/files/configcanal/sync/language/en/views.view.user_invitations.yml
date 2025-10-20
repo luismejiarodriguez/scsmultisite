@@ -1,0 +1,74 @@
+label: 'User invitations'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Search
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        name:
+          separator: ', '
+        field_first_name:
+          separator: ', '
+        field_last_name:
+          separator: ', '
+        mail:
+          separator: ', '
+      title: 'Search new connections'
+      empty:
+        area:
+          content:
+            value: '<h2>No users matching your search criteria.</h2>'
+  network:
+    display_title: Network
+    display_options:
+      filters:
+        combine:
+          expose:
+            placeholder: Search
+      title: 'Your connections'
+  suggested:
+    display_title: Suggested
+    display_options:
+      fields:
+        name_1:
+          separator: ', '
+        field_first_name:
+          separator: ', '
+        field_last_name:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            placeholder: Search
+      exposed_form:
+        options:
+          submit_button: Search
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              secondary_label: 'Advanced options'

@@ -1,0 +1,21 @@
+uuid: 02aec5d6-9b6e-4e1d-a9c2-68f6e874e5a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.badge_name
+    - group.type.opigno_course
+_core:
+  default_config_hash: '-voNPQvb_9ZB0n4SqLBn_--8AC2UczbF2C4VYKhV3JM'
+id: group.opigno_course.badge_name
+field_name: badge_name
+entity_type: group
+bundle: opigno_course
+label: Nombre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

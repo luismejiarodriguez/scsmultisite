@@ -1,0 +1,25 @@
+uuid: 7d7a1bad-bfc4-470b-9c39-7c3639560c5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_mob_mtop
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: v3SLZtbqQfHb4QP7TYTO5Oo-EElr4j4loKjNQUYgYk8
+id: paragraph.main_title.mt_mob_mtop
+field_name: mt_mob_mtop
+entity_type: paragraph
+bundle: main_title
+label: 'Mobile Margin Top'
+description: 'Allows you to add a mobile-specific top margin.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

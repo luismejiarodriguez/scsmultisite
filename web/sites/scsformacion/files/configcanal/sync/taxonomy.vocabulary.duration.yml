@@ -1,0 +1,11 @@
+uuid: 79a9f0aa-cffb-4c22-a3df-36ef6e62aa73
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XHvJwMF1mkmlkkHqMuGxxU1BWJWbR8ltuzOadP6FUn8
+name: Duración
+vid: duration
+description: null
+weight: 0
+new_revision: false

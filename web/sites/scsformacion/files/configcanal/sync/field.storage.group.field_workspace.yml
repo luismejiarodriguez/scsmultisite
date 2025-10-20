@@ -1,0 +1,25 @@
+uuid: 77684269-e633-42ee-90cf-2af6be017b45
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - opigno_moxtra
+  enforced:
+    module:
+      - opigno_moxtra
+_core:
+  default_config_hash: k0AouBfAofPQMwWJxjUcbjtNhy64L0zROGr4ZyQXnvk
+id: group.field_workspace
+field_name: field_workspace
+entity_type: group
+type: entity_reference
+settings:
+  target_type: opigno_moxtra_workspace
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

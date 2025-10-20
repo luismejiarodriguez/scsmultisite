@@ -1,0 +1,50 @@
+uuid: 925789a2-f97a-432e-a025-3f815ab03016
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 9ar8gjRjpMawZqxZj_-xT5Fq_tOp6KJhUxJWGNaKq24
+id: paragraph.vo_imgeffects
+field_name: vo_imgeffects
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: brightness
+      label: Brightness
+    -
+      value: dropshadow
+      label: 'Drop Shadow'
+    -
+      value: grayscale
+      label: Grayscale
+    -
+      value: invert
+      label: Invert
+    -
+      value: saturate
+      label: Saturate
+    -
+      value: sepia
+      label: Sepia
+    -
+      value: huerotate
+      label: 'Hue Rotate'
+    -
+      value: opacity
+      label: Opacidad
+    -
+      value: blur
+      label: Blur
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

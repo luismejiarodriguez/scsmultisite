@@ -1,0 +1,20 @@
+settings:
+  allowed_values:
+    -
+      label: 'data-wow-duration="2s"'
+    -
+      label: 'data-wow-duration="3s"'
+    -
+      label: 'data-wow-duration="4s"'
+    -
+      label: 'data-wow-duration="5s"'
+    -
+      label: 'data-wow-duration="6s"'
+    -
+      label: 'data-wow-duration="7s"'
+    -
+      label: 'data-wow-duration="8s"'
+    -
+      label: 'data-wow-duration="9s"'
+    -
+      label: 'data-wow-duration="10s"'

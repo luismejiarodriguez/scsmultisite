@@ -1,0 +1,35 @@
+label: 'Post sharing badges'
+display:
+  default:
+    display_title: Master
+    display_options:
+      fields:
+        uid:
+          format_plural_string: !!binary MQNAY291bnQ=
+        entity_id:
+          format_plural_string: !!binary MQNAY291bnQ=
+        opigno_badge_name:
+          alter:
+            text: "<a href=\"#\" data-opigno-post-attachment-id=\"{{ entity_id }}\" data-opigno-attachment-type=\"badge\" data-opigno-attachment-entity-type=\"{{ typology == 'Module' ? 'opigno_module' : 'group' }}\">\r\n  <span class=\"text\">{{ opigno_badge_name }}</span>\r\n</a>"
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+      empty:
+        area:
+          content:
+            value: 'You have currently no badges to share'
+      arguments:
+        uid:
+          exception:
+            title: All
+  badges:
+    display_title: Block

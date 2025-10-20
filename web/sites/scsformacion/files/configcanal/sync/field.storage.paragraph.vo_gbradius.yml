@@ -1,0 +1,22 @@
+uuid: 04038db9-b6f1-42e3-8ab4-402cfe39e90b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: bOSDci5hU2lqNkOqEJv97orWXC_vZZajQP4M5pWgBJo
+id: paragraph.vo_gbradius
+field_name: vo_gbradius
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

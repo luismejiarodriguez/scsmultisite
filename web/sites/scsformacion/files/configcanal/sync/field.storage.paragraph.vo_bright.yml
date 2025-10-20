@@ -1,0 +1,22 @@
+uuid: adaa8e7e-a3c5-44f0-a73f-4e2e171df73c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: zDpH6SmkvAvkY1ocVg1J2ykTaJQDIWh99zCWAM--toA
+id: paragraph.vo_bright
+field_name: vo_bright
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

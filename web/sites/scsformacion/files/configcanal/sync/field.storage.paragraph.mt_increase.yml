@@ -1,0 +1,41 @@
+uuid: c8df45fa-e499-407c-994f-e43a5f4d3c12
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: w23zMm82kqDrOtX2_visRFdRzhDetwlnMbE5Fi9_QFc
+id: paragraph.mt_increase
+field_name: mt_increase
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Immense
+    -
+      value: '2'
+      label: 'Very big'
+    -
+      value: '3'
+      label: 'Quite big'
+    -
+      value: '4'
+      label: 'Something big'
+    -
+      value: '5'
+      label: 'Bastante grande'
+    -
+      value: '6'
+      label: 'Menos grande'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

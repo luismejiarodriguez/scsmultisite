@@ -1,0 +1,23 @@
+uuid: 7d9bcaa9-3034-4a64-8313-b25c5e82e309
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_text
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: Y42DZvY7Cv5dw-g-CcpHzumIwQPBHbvksNE-_w_ifG0
+id: paragraph.main_title.mt_text
+field_name: mt_text
+entity_type: paragraph
+bundle: main_title
+label: 'Título principal'
+description: 'Le permite agregar el título principal'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Este es un ejemplo de título principal.'
+default_value_callback: ''
+settings: {  }
+field_type: string

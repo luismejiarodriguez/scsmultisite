@@ -1,0 +1,25 @@
+uuid: 6b236677-c5ff-4436-85f4-6da8fc0e12de
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bleft
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: YB2wkRZulE6ZVvP5G4XFL1FAaLjcc81PTYB82jY7Zp8
+id: paragraph.main_title.mt_bleft
+field_name: mt_bleft
+entity_type: paragraph
+bundle: main_title
+label: 'Border Left'
+description: 'Activate the border on the left side.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

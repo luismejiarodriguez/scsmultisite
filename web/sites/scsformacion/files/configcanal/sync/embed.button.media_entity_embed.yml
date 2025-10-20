@@ -1,0 +1,27 @@
+uuid: cc3cd535-fd55-44e4-bf69-ebc469d66dc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.media_entity_browser
+    - media.type.tft_file
+  module:
+    - entity_embed
+    - media
+_core:
+  default_config_hash: uRiSHdnRNAKFX2hL4Y4UtIdABwCxfnzPDJHCbi6iFGw
+label: 'Media Entity Embed'
+id: media_entity_embed
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - tft_file
+  display_plugins:
+    - 'view_mode:media.full'
+  entity_browser: media_entity_browser
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

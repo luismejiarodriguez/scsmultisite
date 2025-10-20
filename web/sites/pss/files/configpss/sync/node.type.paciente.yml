@@ -1,0 +1,17 @@
+uuid: 0e72d1de-64e7-4a9d-84cd-e413fff176b6
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Paciente
+type: paciente
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

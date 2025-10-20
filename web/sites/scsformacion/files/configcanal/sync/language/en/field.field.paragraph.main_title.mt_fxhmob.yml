@@ -1,0 +1,4 @@
+label: 'Fixed height Mobile'
+description: 'Allows you to set the height on mobile devices.'
+settings:
+  suffix: px

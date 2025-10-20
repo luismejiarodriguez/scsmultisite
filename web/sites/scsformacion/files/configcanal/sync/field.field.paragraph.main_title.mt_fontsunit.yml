@@ -1,0 +1,23 @@
+uuid: 8ffe44d5-53c0-4a39-854a-179e964e5b91
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_fontsunit
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: ksqd8PMOuvl5zkAGZRnkxuoAI3Qz4gZMoF_v_afO_nY
+id: paragraph.main_title.mt_fontsunit
+field_name: mt_fontsunit
+entity_type: paragraph
+bundle: main_title
+label: 'Font Size Unit'
+description: 'Allows you to choose the unit of measurement that will be applied to the font size on the button.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

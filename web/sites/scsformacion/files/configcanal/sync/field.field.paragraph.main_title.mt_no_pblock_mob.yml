@@ -1,0 +1,25 @@
+uuid: c9d219ef-e7bd-432f-811d-05b032bbcdb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_no_pblock_mob
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: TEAauxPYX7yNEM2YK1Q0uG1UDELVlr97urA1VBsshjU
+id: paragraph.main_title.mt_no_pblock_mob
+field_name: mt_no_pblock_mob
+entity_type: paragraph
+bundle: main_title
+label: 'Remove Padding Block'
+description: 'Removes block padding on mobile devices.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

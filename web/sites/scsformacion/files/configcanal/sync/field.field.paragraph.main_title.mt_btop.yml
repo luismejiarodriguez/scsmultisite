@@ -1,0 +1,25 @@
+uuid: 0c76a02e-1e0d-4c23-b40a-4fab3a3206e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_btop
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 6iNZ0Rqo40mLLLTPpg9UbEGzwBoXE7WNVlXT1MOSRv8
+id: paragraph.main_title.mt_btop
+field_name: mt_btop
+entity_type: paragraph
+bundle: main_title
+label: 'Border Top'
+description: 'Activate the border at the top.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

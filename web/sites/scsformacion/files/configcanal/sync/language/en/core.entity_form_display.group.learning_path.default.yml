@@ -1,0 +1,7 @@
+content:
+  field_lp_price:
+    settings:
+      placeholder: '0.00'
+  field_required_trainings:
+    settings:
+      placeholder: 'Training name'

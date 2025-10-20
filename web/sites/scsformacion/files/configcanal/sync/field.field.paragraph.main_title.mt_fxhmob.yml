@@ -1,0 +1,25 @@
+uuid: 9085717e-7adf-44bb-8757-cc1695b98f76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_fxhmob
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 4MUjm47-buQ_Ir80IDZ98iO_BeejFntswQ2eeu7tdX0
+id: paragraph.main_title.mt_fxhmob
+field_name: mt_fxhmob
+entity_type: paragraph
+bundle: main_title
+label: 'Fixed height Mobile'
+description: 'Allows you to set the height on mobile devices.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

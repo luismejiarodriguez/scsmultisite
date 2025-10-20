@@ -1,0 +1,13 @@
+uuid: 2918616c-4013-4835-ac96-0bddf8239646
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dP2M1rDcpNyZODjf5gDKlFo0CqBDaQBJe-kRwo24i6w
+id: media.embedded_display
+label: 'Pantalla integrada'
+description: ''
+targetEntityType: media
+cache: true

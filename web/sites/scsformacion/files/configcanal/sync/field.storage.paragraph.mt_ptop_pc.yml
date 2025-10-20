@@ -1,0 +1,22 @@
+uuid: 39fd272a-16f2-4840-a8e2-d3ccb9dd325e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 3l-OLFy-PdX93yYFnaJ8Dj4Rv9KYFD9fNeYIP70GYdU
+id: paragraph.mt_ptop_pc
+field_name: mt_ptop_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 6b44842c-760d-4887-9b86-7ac6a549d3ec
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pss
+_core:
+  default_config_hash: re6hDBxxB9AP9cfyv3nYhvbOBo_6kHyWBJwFmVFFwoo
+id: pss_secondary_local_tasks
+theme: pss
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

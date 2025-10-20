@@ -1,0 +1,29 @@
+uuid: 6a01fccc-52f5-4a38-9c90-f0ca361d300d
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - options
+_core:
+  default_config_hash: DEWG80F0FENSoPCqNt83xKoOKxETgqL2Jw3tOBuWgHk
+id: group.badge_criteria
+field_name: badge_criteria
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: finished
+      label: Terminado
+    -
+      value: success
+      label: Éxito
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

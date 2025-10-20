@@ -1,0 +1,11 @@
+uuid: 81265488-612f-4eef-b053-e616cf0a8504
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.paciente
+id: node.paciente
+target_entity_type_id: node
+target_bundle: paciente
+default_langcode: site_default
+language_alterable: false

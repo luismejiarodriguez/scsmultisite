@@ -1,0 +1,22 @@
+uuid: 708bdd48-f6af-4df3-8e77-081e30cca7ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: b1l6HWBJDwdNfwjLb4_-G9HIM30dlI0jYaHCHbAhXV8
+id: paragraph.mt_mob_mbottom
+field_name: mt_mob_mbottom
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

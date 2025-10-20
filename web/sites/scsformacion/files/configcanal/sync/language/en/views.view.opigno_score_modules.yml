@@ -1,0 +1,101 @@
+label: 'Opigno Score Modules'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Score activity'
+      fields:
+        id_1:
+          separator: ', '
+        name_1:
+          label: User
+          separator: ', '
+        finished:
+          label: 'Date finished'
+          separator: ', '
+        nothing:
+          label: Evaluate
+          alter:
+            text: Evaluate
+            path: '/module/{{ id }}/results/{{ id_1 }}'
+        id:
+          separator: ', '
+        name:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          content:
+            value: 'There are no module to evaluate'
+  dashboard_notavaluated_modules:
+    display_title: 'Dashboard - Not evaluated modules'
+    display_options:
+      title: 'Manual scoring required'
+      fields:
+        id:
+          separator: ', '
+        name:
+          separator: ', '
+        name_1:
+          separator: ', '
+        id_1:
+          separator: ', '
+        nothing:
+          alter:
+            text: "<strong>{{\"Module\"|t}} {{name}}</strong>\r\n<p class=\"sub-label\">{{\"submited by\"|t}} {{name_1}}</p>"
+            path: '/module/{{ id }}/results/{{ id_1 }}'
+      footer:
+        area_text_custom:
+          content: "<a href=\"{{ path('view.opigno_score_modules.opigno_not_evaluated') }}\">\r\n{{ 'See all pending scores'|t }}\r\n</a>"
+      block_description: 'Opigno: not evaluated modules'
+  opigno_not_evaluated:
+    display_title: 'Manual scoring required'
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        id_1:
+          separator: ', '
+        name:
+          label: 'Module Name'
+          separator: ', '
+        name_1:
+          label: User
+          separator: ', '
+        started:
+          label: 'Date started'
+          separator: ', '
+        finished:
+          label: 'Date finished'
+          separator: ', '
+        nothing:
+          label: Evaluate
+          alter:
+            text: Evaluate
+            path: '/module/{{ id }}/results/{{ id_1 }}'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset

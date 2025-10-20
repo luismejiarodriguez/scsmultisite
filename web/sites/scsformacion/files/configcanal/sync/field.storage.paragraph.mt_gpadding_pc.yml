@@ -1,0 +1,22 @@
+uuid: 34697ef3-091a-4076-ac55-f1688bd72f40
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: jBtQ2YSVQZaBROaV-RNw3W1RugaK3WBJIAlppTVWNZw
+id: paragraph.mt_gpadding_pc
+field_name: mt_gpadding_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

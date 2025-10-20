@@ -1,0 +1,38 @@
+uuid: 1a0cd324-6e11-4fed-9271-0d12cc5b6732
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xnVR6zJoToZ3FhnWNkhiMbMGCfFvXjcHz4wR7qDNK_g
+name: 'Post HTML'
+format: post_html
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <br> <p>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

@@ -1,0 +1,4 @@
+label: 'Create a group'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

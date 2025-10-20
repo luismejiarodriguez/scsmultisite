@@ -1,0 +1,26 @@
+uuid: 17d75271-621d-4cf0-a9f5-817308aa6794
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - canal_opigno
+id: canal_opigno_dashboard_opigno_social_wall_block
+theme: canal_opigno
+region: header
+weight: -6
+provider: null
+plugin: opigno_social_wall_block
+settings:
+  id: opigno_social_wall_block
+  label: 'Dashboard: Recent posts'
+  label_display: ''
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

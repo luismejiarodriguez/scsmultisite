@@ -1,0 +1,24 @@
+uuid: 0c04883e-42c7-4f1c-9f61-a8ad295b4520
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_titleline_color
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+_core:
+  default_config_hash: sO4apyZMtvHIswb9_0w21eP2MAt62_ZVKTKSIkyn8UI
+id: paragraph.main_title.mt_titleline_color
+field_name: mt_titleline_color
+entity_type: paragraph
+bundle: main_title
+label: 'Color Línea decorativa'
+description: 'Permite agregar o modificar el color de la línea que acompaña al texto (Si la opción está activada).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

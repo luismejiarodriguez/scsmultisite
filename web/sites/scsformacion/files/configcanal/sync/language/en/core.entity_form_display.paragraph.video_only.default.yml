@@ -1,0 +1,65 @@
+third_party_settings:
+  field_group:
+    group_extras:
+      label: Extras
+    group_padding_settings:
+      label: 'Padding Settings'
+    group_border_settings:
+      label: 'Border Settings'
+    group_border_radius:
+      label: 'Border Radius'
+    group_border_radius_settings:
+      label: 'Border Radius Settings'
+    group_play_button:
+      label: 'Play Button'
+    group_play_button_settings:
+      label: 'Play Button Settings'
+    group_settings:
+      label: SETTINGS
+    group_player:
+      label: PLAYER
+    group_cover_image:
+      label: 'COVER IMAGE'
+    group_block:
+      label: BLOCK
+    group_border_activate:
+      label: 'Border Type'
+    group_border_activate_settings:
+      label: 'Border Type settings'
+    group_color_width_style:
+      label: 'Color and Style'
+    group_color_width_style_settings:
+      label: 'Color and Style Settings'
+    group_image:
+      label: Image
+    group_image_options:
+      label: 'Image Settings'
+    group_video_wrapper:
+      label: VIDEO
+    group_exset_video:
+      label: 'Extra Settings'
+    group_padding_video:
+      label: Padding
+    group_border_video:
+      label: Border
+content:
+  vo_bordercolor:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+  vo_gradientplay:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+  vo_playcolor:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'

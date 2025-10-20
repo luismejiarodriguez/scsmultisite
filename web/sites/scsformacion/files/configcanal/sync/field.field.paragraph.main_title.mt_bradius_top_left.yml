@@ -1,0 +1,23 @@
+uuid: 69785d47-f817-4bca-94c7-c21b592ff324
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bradius_top_left
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: kTsDkWmwsA9HjUGh9IFUmMIHrXoh1b9thwpC4KlcYQg
+id: paragraph.main_title.mt_bradius_top_left
+field_name: mt_bradius_top_left
+entity_type: paragraph
+bundle: main_title
+label: 'Curvatura del borde superior izquierda'
+description: 'Le permite agregar curvatura al borde superior izquierdo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

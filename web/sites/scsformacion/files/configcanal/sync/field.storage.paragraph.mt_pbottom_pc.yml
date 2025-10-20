@@ -1,0 +1,22 @@
+uuid: 69c9753f-6615-498c-b9be-b3c0c31857f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 8502Lzgg7GWXSS_DAtYBAymEthO1Q10oHGLNq_IMVSM
+id: paragraph.mt_pbottom_pc
+field_name: mt_pbottom_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

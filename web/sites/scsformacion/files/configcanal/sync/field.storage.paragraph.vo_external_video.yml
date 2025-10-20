@@ -1,0 +1,23 @@
+uuid: 100164b4-28ad-4216-805a-dd404250f61f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: t7glqd-XL0J3Sw0min7duinxyIce7Tyblxv6EZnei2s
+id: paragraph.vo_external_video
+field_name: vo_external_video
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

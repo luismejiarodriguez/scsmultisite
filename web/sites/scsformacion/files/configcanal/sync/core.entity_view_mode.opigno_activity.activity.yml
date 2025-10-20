@@ -1,0 +1,13 @@
+uuid: b96f902f-88b9-47ef-9c8b-db1bcbcba052
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: fw-_SLdN-fI8wS7Mqf7BaGn7-wmAe3XeLPo__Xzmw2E
+id: opigno_activity.activity
+label: Actividad
+description: ''
+targetEntityType: opigno_activity
+cache: true

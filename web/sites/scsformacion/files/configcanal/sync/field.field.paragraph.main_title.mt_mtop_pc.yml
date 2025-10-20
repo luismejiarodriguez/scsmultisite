@@ -1,0 +1,25 @@
+uuid: 32188f20-4675-462d-9506-7e9e6f1534db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_mtop_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: gM8juZwPYfaZlus5vYp6OqYBPf1iyI_fdxiPxx8k_1A
+id: paragraph.main_title.mt_mtop_pc
+field_name: mt_mtop_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Margen superior del bloque'
+description: 'Allows you to add Top Margin to the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

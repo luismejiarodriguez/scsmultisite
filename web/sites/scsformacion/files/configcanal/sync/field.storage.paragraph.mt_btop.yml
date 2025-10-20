@@ -1,0 +1,22 @@
+uuid: 0f91bd6a-3c75-49f5-b468-0c26a4fa4a1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: u96PK2EMUiUUaYJgdS6GH79znkWGA_GfUfvMqGo9_3A
+id: paragraph.mt_btop
+field_name: mt_btop
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: f30f009e-ae5d-414b-b590-f277982efa0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.pdf_file.field_media_file
+    - media.type.pdf_file
+id: media.pdf_file.media_library
+targetEntityType: media
+bundle: pdf_file
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_file: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

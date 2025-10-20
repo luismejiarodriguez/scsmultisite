@@ -1,0 +1,40 @@
+settings:
+  allowed_values:
+    -
+      label: 'Dancing Script'
+    -
+      label: Pacifico
+    -
+      label: LuckiestGuy-Regular
+    -
+      label: PlaypenSans-Regular
+    -
+      label: Englebert
+    -
+      label: Handlee
+    -
+      label: TitanOne-Regular
+    -
+      label: Sarabun
+    -
+      label: Mansalva
+    -
+      label: MuseoModerno-Light
+    -
+      label: MuseoModerno-BlackItalic
+    -
+      label: Monoton-Regular
+    -
+      label: Aclonica-Regular
+    -
+      label: FingerPaint-Regular
+    -
+      label: AbrilFatface-Regular
+    -
+      label: BethEllen-Regular
+    -
+      label: CaesarDressing-Regular
+    -
+      label: AlfaSlabOne-Regular
+    -
+      label: Barrio-Regular

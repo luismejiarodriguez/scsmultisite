@@ -1,0 +1,27 @@
+uuid: d95a6c40-727f-4664-ba4b-5776b7e91d3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_playcolor
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+_core:
+  default_config_hash: yo_jwvC2m8k2pG_wbdZmz1-7y7Be3lRZqdqXFUxusB4
+id: paragraph.video_only.vo_playcolor
+field_name: vo_playcolor
+entity_type: paragraph
+bundle: video_only
+label: 'Color del botón Play'
+description: 'Permite añadir o cambiar el color del botón Play'
+required: false
+translatable: true
+default_value:
+  -
+    color: '#09a6dd'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

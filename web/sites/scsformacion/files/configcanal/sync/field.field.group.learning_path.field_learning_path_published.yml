@@ -1,0 +1,25 @@
+uuid: 6d02e04d-cf19-440b-a941-b845424be2d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_learning_path_published
+    - group.type.learning_path
+_core:
+  default_config_hash: zrDkI_b8RKc6pM2Dj2oOlnX1h6-ex-ytOM49IS-RBOg
+id: group.learning_path.field_learning_path_published
+field_name: field_learning_path_published
+entity_type: group
+bundle: learning_path
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

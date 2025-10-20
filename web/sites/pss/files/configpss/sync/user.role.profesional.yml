@@ -1,0 +1,9 @@
+uuid: 29f56b21-be8b-4eec-a8ac-811529b4c241
+langcode: es
+status: true
+dependencies: {  }
+id: profesional
+label: Profesional
+weight: 6
+is_admin: null
+permissions: {  }

@@ -1,0 +1,2 @@
+label: 'Post date'
+pattern: 'd F Y - H\h i'

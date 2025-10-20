@@ -1,0 +1,2 @@
+label: 'Hour and minute'
+pattern: 'H\h:i'

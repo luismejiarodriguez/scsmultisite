@@ -1,0 +1,9 @@
+uuid: b6b7bb1a-6814-4e22-aac5-cf1fdda9d710
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoría Principal Home'
+vid: categoria_principal_home
+description: 'Para conectar los cursos con la clasificación principal que se muestra en la Home'
+weight: 0
+new_revision: false

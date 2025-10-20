@@ -1,0 +1,22 @@
+uuid: 65f91d73-a8b8-40bb-9add-d2cb27899521
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: iE2NNIRc5jdRNrdOM7a0ALwS2i-0AdhqPdrLQxfTW6A
+id: paragraph.vo_bleft
+field_name: vo_bleft
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

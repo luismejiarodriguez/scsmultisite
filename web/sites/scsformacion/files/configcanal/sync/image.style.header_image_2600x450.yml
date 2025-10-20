@@ -1,0 +1,17 @@
+uuid: 917ee30f-e2a2-499c-a054-2a51058b1d4e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 24WbkFnvHYF8qjHE_tN3w5ax_AaMQ7TMA1VNuyLDHK4
+name: header_image_2600x450
+label: header_image_2600x450
+effects:
+  85838466-488d-447d-bbb7-be78b568a181:
+    uuid: 85838466-488d-447d-bbb7-be78b568a181
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2600
+      height: 450
+      anchor: center-center

@@ -1,0 +1,23 @@
+uuid: 247d4c57-48f4-4468-baa0-4306dbf43ced
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_titleline_type
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: 7-65oOB-6JATp7vjrNpgbplPHa0JsLmS-W5A4GRLdok
+id: paragraph.main_title.mt_titleline_type
+field_name: mt_titleline_type
+entity_type: paragraph
+bundle: main_title
+label: 'Tipo de Línea decorativa'
+description: 'Le permite elegir el tipo de línea decorativa (Si la opción está activada)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

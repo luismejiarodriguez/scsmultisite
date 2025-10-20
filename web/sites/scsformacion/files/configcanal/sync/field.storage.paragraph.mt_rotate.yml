@@ -1,0 +1,22 @@
+uuid: 724c0589-4429-40b4-b96b-c6290a269281
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: pNCEPqAT953O13feZifptbsisJOG-6c_YUXZIULBBfA
+id: paragraph.mt_rotate
+field_name: mt_rotate
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

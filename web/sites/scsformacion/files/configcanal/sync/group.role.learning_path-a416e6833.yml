@@ -1,0 +1,19 @@
+uuid: 05923f9f-4e4d-4b3a-bc8c-3ded0c3c01a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  enforced:
+    config:
+      - user.role.administrator
+_core:
+  default_config_hash: mQpBMzxL6Bnz8ByV9uEyzqyQCxYN5Cw1i_KWBy4H41w
+id: learning_path-a416e6833
+label: 'Super administrator'
+weight: 2
+internal: true
+audience: outsider
+group_type: learning_path
+permissions_ui: false
+permissions: {  }

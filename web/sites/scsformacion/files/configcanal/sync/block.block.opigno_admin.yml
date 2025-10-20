@@ -1,0 +1,27 @@
+uuid: de354418-2c07-40f4-a4b2-44b7ab44d7d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.opigno-admin
+  module:
+    - system
+  theme:
+    - aristotle
+_core:
+  default_config_hash: OxZbGTw8igHQCvlD_kaYspcrGAPAoRH7HlphV8dlLs0
+id: opigno_admin
+theme: aristotle
+region: admin_opigno
+weight: 0
+provider: null
+plugin: 'system_menu_block:opigno-admin'
+settings:
+  id: 'system_menu_block:opigno-admin'
+  label: 'Admin Opigno'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

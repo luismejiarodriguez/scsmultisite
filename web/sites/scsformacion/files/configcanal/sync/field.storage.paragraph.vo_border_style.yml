@@ -1,0 +1,51 @@
+uuid: 48875044-d901-41da-ae34-043d127209dc
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: oo9CCajQVgAFeAx6X-zf9HFXhhcGyN_8NlEi43RRBPQ
+id: paragraph.vo_border_style
+field_name: vo_border_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dotted
+      label: Dotted
+    -
+      value: dashed
+      label: Dashed
+    -
+      value: solid
+      label: Sólido
+    -
+      value: double
+      label: Double
+    -
+      value: groove
+      label: Groove
+    -
+      value: ridge
+      label: Ridge
+    -
+      value: inset
+      label: Inset
+    -
+      value: outset
+      label: Outsed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,82 @@
+uuid: 35210b41-56d3-4325-97ca-3575d2329883
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - contact
+    - dropzonejs
+    - fontawesome
+    - layout_paragraphs_permissions
+    - media
+    - navigation
+    - opigno_calendar_event
+    - opigno_class
+    - opigno_course
+    - opigno_moxtra
+    - opigno_social
+    - paragraphs_type_permissions
+    - shortcut
+    - system
+    - userprotect
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Usuario autenticado'
+weight: -9
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access navigation'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'add members to calendar event'
+  - 'create forum content'
+  - 'create opigno_calendar_event'
+  - 'create opigno_post'
+  - 'delete own forum content'
+  - 'delete own opigno calendar event'
+  - 'dropzone upload files'
+  - 'duplicate layout paragraphs components'
+  - 'edit layout paragraphs plugin config'
+  - 'edit own forum content'
+  - 'manage own commerce_payment_method'
+  - 'opigno dashboard layout access'
+  - 'post comments'
+  - 'reorder layout paragraphs components'
+  - 'restful get achievements_resource'
+  - 'restful get opigno_calendar_events_resource'
+  - 'restful get opigno_notification_resource'
+  - 'restful get private_message_last_for_threads_resource'
+  - 'restful get private_message_resource'
+  - 'restful get private_message_threads_resource'
+  - 'restful get private_messages_resource'
+  - 'restful get trainings_catalogue_resource'
+  - 'restful patch opigno_notification_resource'
+  - 'restful patch private_message_thread_update_resource'
+  - 'restful post color_rest_resource'
+  - 'restful post token_rest_resource'
+  - 'search content'
+  - 'skip comment approval'
+  - 'take modules'
+  - 'update own opigno calendar event'
+  - 'use private messaging system'
+  - 'use text format basic_html'
+  - 'use text format post_html'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
+  - 'view commerce_product'
+  - 'view ilt entities'
+  - 'view media'
+  - 'view meeting entities'
+  - 'view own commerce_order'
+  - 'view own module results'
+  - 'view own opigno calendar event'
+  - 'view paragraph content main_title'
+  - 'view paragraph content video_only'
+  - 'view published module entities'

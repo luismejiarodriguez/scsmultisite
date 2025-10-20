@@ -1,0 +1,9 @@
+label: 'Documents file'
+display_configuration:
+  link_text: 'Select entities'
+widgets:
+  3726304c-be0b-4b15-9534-a64d2dc5fbf4:
+    label: dropzonejs
+    settings:
+      submit_text: 'Select entities'
+      dropzone_description: 'Drop files here to upload them'

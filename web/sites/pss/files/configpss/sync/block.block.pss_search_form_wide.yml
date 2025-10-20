@@ -1,0 +1,23 @@
+uuid: 0e35614d-ead1-44cb-b59b-80ded2b78fa1
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - pss
+_core:
+  default_config_hash: CwEcQRrmuJaluD941vlqrsAgPqzIeWet9WLRMwVzlh4
+id: pss_search_form_wide
+theme: pss
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

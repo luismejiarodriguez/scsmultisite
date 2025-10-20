@@ -1,0 +1,13 @@
+uuid: 373a114c-ffe4-4b8b-83bf-49933df99ee1
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: mXZYhIEFg26yCsHY5BSK28eNfQRUjFwckAYqVWKSmJY
+id: paragraph.slide_button_and_caption
+label: 'Slide Button and Caption'
+description: ''
+targetEntityType: paragraph
+cache: true

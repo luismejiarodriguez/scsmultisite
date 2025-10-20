@@ -1,0 +1,22 @@
+uuid: 9eb5150e-795e-48a6-a4a7-55617e41ff9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: cwy4De87uB-C--cSCT0mXXH9frhRyms-n5aEarH-Plc
+id: paragraph.mt_pright_pc
+field_name: mt_pright_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

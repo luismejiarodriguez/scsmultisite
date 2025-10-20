@@ -1,0 +1,13 @@
+uuid: 055d48e6-38ef-4fe0-b6c7-b58884c85feb
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: _0tzrLdDI9FZpxTW6V18JaBrjS5JGfvBCoeo91bH8bY
+id: media.header_image_2600x250
+label: header_image_2600x250
+description: ''
+targetEntityType: media
+cache: true

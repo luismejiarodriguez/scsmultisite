@@ -1,0 +1,11 @@
+uuid: 4573c1b8-f376-4921-8ce4-1bfaefc42ebf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.centro
+id: taxonomy_term.centro
+target_entity_type_id: taxonomy_term
+target_bundle: centro
+default_langcode: site_default
+language_alterable: false

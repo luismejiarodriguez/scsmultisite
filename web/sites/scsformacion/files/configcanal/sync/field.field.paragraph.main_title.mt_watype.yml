@@ -1,0 +1,23 @@
+uuid: 2d2c17e5-6345-44eb-94a7-4f37eb087c48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_watype
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: XY5EJN1BlgZPmINy_y0q-JGpjDfz1uhtLD9vYTf56rg
+id: paragraph.main_title.mt_watype
+field_name: mt_watype
+entity_type: paragraph
+bundle: main_title
+label: 'Wow animation type'
+description: 'Allows you to add additional animation effect'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

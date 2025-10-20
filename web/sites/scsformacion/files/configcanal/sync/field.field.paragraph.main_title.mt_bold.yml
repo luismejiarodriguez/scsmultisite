@@ -1,0 +1,25 @@
+uuid: d5440cb7-2f14-4a42-9e19-977f1eed347e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bold
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: cY6Pk92dtzy86oeoFWGN-3vk7E1i3FKCfuKVTnll-D0
+id: paragraph.main_title.mt_bold
+field_name: mt_bold
+entity_type: paragraph
+bundle: main_title
+label: 'Texto en negrita'
+description: 'Permite aumentar el grosor del texto'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

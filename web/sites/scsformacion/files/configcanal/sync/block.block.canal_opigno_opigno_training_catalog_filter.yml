@@ -1,0 +1,31 @@
+uuid: 2d96cf0d-294d-494f-9d56-76824867887d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_training_catalog
+  module:
+    - system
+    - views
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: oTJ60ukDuHNRK9tZH7K6X12QHZ_bgWjMOUANVpJyfqE
+id: canal_opigno_opigno_training_catalog_filter
+theme: canal_opigno
+region: sidebar_first
+weight: -1
+provider: null
+plugin: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+settings:
+  id: 'views_exposed_filter_block:opigno_training_catalog-training_catalogue'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /catalogue

@@ -1,0 +1,25 @@
+uuid: d7b607b3-745b-4134-aa24-e779f571bc77
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_htag
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: 5uOSSZhdamCT3kn-oQx8CKpYsudqJkzeHoHvsyEgTJg
+id: paragraph.main_title.mt_htag
+field_name: mt_htag
+entity_type: paragraph
+bundle: main_title
+label: 'Etiqueta H'
+description: 'Permite agregar o modificar la etiqueta tipo (H1-H6), utilizada para fines de Posicionamiento SEO'
+required: false
+translatable: true
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

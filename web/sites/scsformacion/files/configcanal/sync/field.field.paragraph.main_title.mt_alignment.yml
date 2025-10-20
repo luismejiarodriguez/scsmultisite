@@ -1,0 +1,25 @@
+uuid: f04b67ed-4c17-4ced-8d57-fa5319c2e6ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_alignment
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: bzLPtbzZXZ-Ox1ZSXTQRBdBKNNKU6_oHwjCJsOa5MfQ
+id: paragraph.main_title.mt_alignment
+field_name: mt_alignment
+entity_type: paragraph
+bundle: main_title
+label: 'Alinear textos'
+description: 'Permite alinear el Título dentro de su contenedor.'
+required: false
+translatable: true
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

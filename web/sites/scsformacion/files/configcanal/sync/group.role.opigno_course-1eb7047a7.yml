@@ -1,0 +1,19 @@
+uuid: 5cdf5850-c027-4c0f-91ef-878dc2619221
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  enforced:
+    config:
+      - user.role.content_manager
+_core:
+  default_config_hash: oS6TURi4z5WSENkmNgmfQh9KJBSi-IG_8Rv1BmNddjY
+id: opigno_course-1eb7047a7
+label: 'Content manager'
+weight: 3
+internal: true
+audience: outsider
+group_type: opigno_course
+permissions_ui: false
+permissions: {  }

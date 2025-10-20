@@ -1,0 +1,72 @@
+label: 'Dashboard: Last content'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        uid:
+          label: 'Authored by'
+          separator: ', '
+        created:
+          label: 'Authored on'
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        type:
+          expose:
+            label: 'Content type'
+        title:
+          expose:
+            label: Title
+        uid:
+          expose:
+            label: 'Authored by'
+      title: 'All content'
+  embed_1:
+    display_title: 'Dashboard: Last content'
+    display_options:
+      display_description: 'Show last content in a filterable table.'
+  embed_2:
+    display_title: 'Dashboard: My last content'
+    display_options:
+      filters:
+        type:
+          expose:
+            label: 'Content type'
+        title:
+          expose:
+            label: Title
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        created:
+          label: 'Authored on'
+          separator: ', '
+        operations:
+          label: Operations
+      arguments:
+        uid:
+          exception:
+            title: All
+      title: 'My content'

@@ -1,0 +1,40 @@
+uuid: 9968dfd1-be9d-4d03-b985-4f6a8349036c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.paciente.field_estado
+    - field.field.node.paciente.field_nif_nie
+    - node.type.paciente
+  module:
+    - user
+id: node.paciente.default
+targetEntityType: node
+bundle: paciente
+mode: default
+content:
+  field_estado:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_nif_nie:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

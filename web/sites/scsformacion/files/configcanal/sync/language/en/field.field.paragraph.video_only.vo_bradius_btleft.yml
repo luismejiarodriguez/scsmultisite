@@ -1,0 +1,4 @@
+label: 'Bottom left border radius'
+description: 'Allows you to add a radius to the bottom left of the image.'
+settings:
+  suffix: px

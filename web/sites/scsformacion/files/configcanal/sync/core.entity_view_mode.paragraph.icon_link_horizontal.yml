@@ -1,0 +1,13 @@
+uuid: 6292a18b-768c-49f0-b7cf-03e33c422676
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: EI6tcNEg6MKK4DGu2B69cTqgrTRHV09k7Ei54qSDR4Q
+id: paragraph.icon_link_horizontal
+label: 'icon link horizontal'
+description: ''
+targetEntityType: paragraph
+cache: true

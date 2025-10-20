@@ -1,0 +1,22 @@
+uuid: f17b5305-89ba-4cf8-b8c8-7e9439cb912b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ohYtCa7DM1bOvyZyOKGI9vPuWL3GHuAtKqdUclMyjAI
+id: paragraph.mtmob_pbottom
+field_name: mtmob_pbottom
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

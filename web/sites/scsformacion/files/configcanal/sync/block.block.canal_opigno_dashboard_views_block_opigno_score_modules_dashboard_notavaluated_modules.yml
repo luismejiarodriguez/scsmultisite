@@ -1,0 +1,32 @@
+uuid: 00142863-1949-496d-8e68-c82bf2be22cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opigno_score_modules
+  module:
+    - system
+    - views
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: lbARl4l25LqduMCYY2cVNpcoqKVvIWaG9riVpsIfKiU
+id: canal_opigno_dashboard_views_block_opigno_score_modules_dashboard_notavaluated_modules
+theme: canal_opigno
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:opigno_score_modules-dashboard_notavaluated_modules'
+settings:
+  id: 'views_block:opigno_score_modules-dashboard_notavaluated_modules'
+  label: 'Dashboard: Opigno: not evalueated modules'
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

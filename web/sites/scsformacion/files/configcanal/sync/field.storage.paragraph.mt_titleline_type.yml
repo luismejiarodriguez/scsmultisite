@@ -1,0 +1,42 @@
+uuid: ff39ec51-9a49-4359-a7b2-3cf657658f70
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: X8gVsVgOncHH88VjclHYCAiRctyxuZg0oJb2LZ8xJyE
+id: paragraph.mt_titleline_type
+field_name: mt_titleline_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: underline
+      label: underline
+    -
+      value: overline
+      label: overline
+    -
+      value: line_through
+      label: line-through
+    -
+      value: underline_overline
+      label: 'underline overline'
+    -
+      value: underline_line_through
+      label: 'underline line-through'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

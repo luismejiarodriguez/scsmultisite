@@ -1,0 +1,27 @@
+uuid: df093e98-7e7b-4852-b234-4a99be0db31b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.opigno_answer.opigno_h5p.field_correct_response
+    - field.field.opigno_answer.opigno_h5p.field_response
+    - field.field.opigno_answer.opigno_h5p.field_xapidata
+    - opigno_module.opigno_answer_type.opigno_h5p
+_core:
+  default_config_hash: wxVkOeYfZV63_VhA2Yx_Qv3qrGXYH3rL_VIXZPPEPf8
+id: opigno_answer.opigno_h5p.default
+targetEntityType: opigno_answer
+bundle: opigno_h5p
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  field_correct_response: true
+  field_response: true
+  field_xapidata: true

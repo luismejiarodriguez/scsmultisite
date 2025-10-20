@@ -1,0 +1,22 @@
+label: 'User connections'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        uid:
+          separator: ', '
+      title: 'Pending connections'
+      arguments:
+        invitee:
+          exception:
+            title: All
+  pending:
+    display_title: Pending

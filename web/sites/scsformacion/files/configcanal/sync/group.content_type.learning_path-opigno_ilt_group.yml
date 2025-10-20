@@ -1,0 +1,19 @@
+uuid: 774ce5f4-3117-442b-8fb9-e4c01a0a6de0
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  module:
+    - opigno_ilt
+_core:
+  default_config_hash: y0b40iOFGTampFNaJnPXVng19VI9YQ4Gs6HhSjvui4s
+id: learning_path-opigno_ilt_group
+label: 'Learning Path: Instructor-Led Training Group'
+description: 'Añade a los grupos una entidad de formación dirigida por un instructor.'
+group_type: learning_path
+content_plugin: opigno_ilt_group
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: true

@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: Public
+    -
+      label: Semi-private
+    -
+      label: Private

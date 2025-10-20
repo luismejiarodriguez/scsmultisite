@@ -1,0 +1,19 @@
+uuid: e227073c-511c-4bee-8ffe-4741dab1d31b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.centro
+id: node.centro.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: centro
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

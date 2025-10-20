@@ -1,0 +1,27 @@
+uuid: 5c831de5-f807-4b10-8ae4-4e1c92129cd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - pss
+_core:
+  default_config_hash: b29uM-3YM1CXBC9f-NejvUw-6gF2moxMb-dqkWKFI00
+id: pss_account_menu
+theme: pss
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

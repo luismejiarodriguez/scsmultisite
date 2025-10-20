@@ -1,0 +1,13 @@
+uuid: 5dbb84ea-81a7-4733-b8b3-0eef7bd9802c
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: FsUjcmy01VsS7kwodRoqrT_R9VokcdTUlgMycPTp_RA
+id: group.catalog_item
+label: 'Catalog item'
+description: ''
+targetEntityType: group
+cache: true

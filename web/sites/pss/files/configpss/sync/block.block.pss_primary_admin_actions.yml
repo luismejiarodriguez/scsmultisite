@@ -1,0 +1,20 @@
+uuid: ab50d79c-799e-4afb-bb29-52be46fd1c93
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pss
+_core:
+  default_config_hash: odT9wvFybj6QF_yDtOu7O1SIOUQrKAfI0H4RdmcLPkY
+id: pss_primary_admin_actions
+theme: pss
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

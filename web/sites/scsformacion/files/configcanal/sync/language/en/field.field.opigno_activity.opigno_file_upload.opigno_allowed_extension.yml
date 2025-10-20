@@ -1,0 +1,4 @@
+label: 'Allowed extension'
+default_value:
+  -
+    value: 'txt doc docx xls xlsx ppt pptx pdf odt ods odp'

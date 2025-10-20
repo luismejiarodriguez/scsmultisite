@@ -1,0 +1,5 @@
+label: 'Automatically expire results for periodic re-certification'
+description: 'Automatically expire results for periodic re-certification.'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

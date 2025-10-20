@@ -1,0 +1,2 @@
+label: 'Post short date'
+pattern: 'd F Y'

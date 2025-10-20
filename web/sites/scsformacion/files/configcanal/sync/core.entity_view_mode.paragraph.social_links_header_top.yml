@@ -1,0 +1,13 @@
+uuid: f5199244-a2d4-4527-b203-145d0e98a200
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: cRufwwmmvar8MKMaBvYYJB9NvK5_BpiJQQ-F9qYLMyo
+id: paragraph.social_links_header_top
+label: 'Social Links Header Top'
+description: ''
+targetEntityType: paragraph
+cache: true

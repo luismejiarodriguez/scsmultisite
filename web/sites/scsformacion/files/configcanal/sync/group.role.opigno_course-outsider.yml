@@ -1,0 +1,16 @@
+uuid: e8bbd716-29b3-4689-9793-4bda68cf25f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+_core:
+  default_config_hash: 7newsQw66ATqKDKstCl2lb4Sk76nYeE6m1ZGCXG2w94
+id: opigno_course-outsider
+label: Forastero
+weight: -101
+internal: true
+audience: outsider
+group_type: opigno_course
+permissions_ui: true
+permissions: {  }

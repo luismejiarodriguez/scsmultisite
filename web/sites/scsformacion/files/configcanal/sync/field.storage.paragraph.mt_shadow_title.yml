@@ -1,0 +1,20 @@
+uuid: feb099fe-d192-4b2d-ad7e-fd55621584c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: KlHr2CTQlpZcjcuI1fRM8WOuBfP2VIAIb5YzMBRARxs
+id: paragraph.mt_shadow_title
+field_name: mt_shadow_title
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

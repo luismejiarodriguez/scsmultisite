@@ -1,0 +1,21 @@
+uuid: d3328037-0c10-439d-95e0-990ed724f8fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.paciente
+id: node.paciente.field_estado
+field_name: field_estado
+entity_type: node
+bundle: paciente
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activo
+  off_label: Inactivo
+field_type: boolean

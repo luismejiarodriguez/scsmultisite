@@ -1,0 +1,9 @@
+uuid: 978f5452-51ce-4e31-8360-218cad413031
+langcode: es
+status: true
+dependencies: {  }
+id: administrador_de_centro
+label: 'Administrador de centro'
+weight: 5
+is_admin: null
+permissions: {  }

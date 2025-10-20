@@ -1,0 +1,32 @@
+uuid: 3fdfb1d0-224b-400d-8f15-2a0179ad5637
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: SprBxQ7uDkvvBF2RXEPg4jKCnFq7LEW3v_htzd-h5oI
+id: paragraph.mt_alignment
+field_name: mt_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: center
+      label: Centrado
+    -
+      value: left
+      label: Izquierda
+    -
+      value: right
+      label: Derecha
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

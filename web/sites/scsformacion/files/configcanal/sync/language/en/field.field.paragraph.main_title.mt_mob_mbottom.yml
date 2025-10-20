@@ -1,0 +1,4 @@
+label: 'Mobile Margin Bottom'
+description: 'Allows you to add a mobile-specific bottom margin.'
+settings:
+  suffix: px

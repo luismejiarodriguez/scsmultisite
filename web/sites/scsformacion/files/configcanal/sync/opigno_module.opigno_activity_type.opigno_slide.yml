@@ -1,0 +1,11 @@
+uuid: dfe8f387-8f23-411a-9ada-fed467c23327
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _QO0_fC5Q10WZxFKxFnHtgXIHNb36WqHP-1w5wD3BuI
+id: opigno_slide
+label: Deslizar
+description: 'This makes possible to create a slide, using the rich HTML editor.'
+summary: null
+image: null

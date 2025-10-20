@@ -1,0 +1,25 @@
+uuid: 5f2f54e3-e9a5-4e3e-9dd5-19cf911e8045
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_rotate
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: KWlz4gfUXDCDvNQLq2_baCggkulz27msc7--5l2ug-8
+id: paragraph.main_title.mt_rotate
+field_name: mt_rotate
+entity_type: paragraph
+bundle: main_title
+label: Girar
+description: 'Allows you to rotate the component using numeric values, positive or negative.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: deg
+field_type: integer

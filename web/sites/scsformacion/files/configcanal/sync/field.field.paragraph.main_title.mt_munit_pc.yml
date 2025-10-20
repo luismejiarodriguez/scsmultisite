@@ -1,0 +1,23 @@
+uuid: 35c14d9a-4253-4a6a-9157-dbdc928eea63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_munit_pc
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: Ps9n2GXrn20kjH472qAII2IltEDle6FBhyO9dLKP32g
+id: paragraph.main_title.mt_munit_pc
+field_name: mt_munit_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Margin Unit'
+description: 'Allows you to choose the unit of measurement in which the margins will be applied.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

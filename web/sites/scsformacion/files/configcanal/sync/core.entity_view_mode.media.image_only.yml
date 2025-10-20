@@ -1,0 +1,13 @@
+uuid: 948e4d25-d9f4-4db7-802f-60533db90f11
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: sbzcgtXvc0zjbV3AejaLPkxKwqaNSyO0lvbm-2gT5Hg
+id: media.image_only
+label: 'Sólo imagen'
+description: ''
+targetEntityType: media
+cache: true

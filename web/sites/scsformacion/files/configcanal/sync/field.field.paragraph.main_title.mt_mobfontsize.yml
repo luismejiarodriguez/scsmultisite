@@ -1,0 +1,25 @@
+uuid: cc64f648-a072-4991-afce-18db33f4e138
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_mobfontsize
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: x0qPT8LTz_jt9YpC6xrQe1h0dP2BEN7tI5h2QeDNZUw
+id: paragraph.main_title.mt_mobfontsize
+field_name: mt_mobfontsize
+entity_type: paragraph
+bundle: main_title
+label: 'Mobile Font Size'
+description: 'Allows you to define a specific font size for mobile devices.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

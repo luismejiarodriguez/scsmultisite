@@ -1,0 +1,5 @@
+label: 'Título principal'
+description: 'Le permite agregar el título principal'
+default_value:
+  -
+    value: 'Este es un ejemplo de título principal.'

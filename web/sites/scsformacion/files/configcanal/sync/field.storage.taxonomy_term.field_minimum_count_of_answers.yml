@@ -1,0 +1,22 @@
+uuid: 1c4b8df9-0453-4200-a76c-94ceefdb01e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: NDPHmdfkLscG0UdfG4ekKAM-mlRp85s6eW5H0jCwFC4
+id: taxonomy_term.field_minimum_count_of_answers
+field_name: field_minimum_count_of_answers
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

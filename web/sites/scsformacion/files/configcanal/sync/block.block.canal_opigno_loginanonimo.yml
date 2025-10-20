@@ -1,0 +1,25 @@
+uuid: 0853f475-1d9d-4431-9a6e-662747dd1a2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.login-anonimo
+  module:
+    - system
+  theme:
+    - canal_opigno
+id: canal_opigno_loginanonimo
+theme: canal_opigno
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:login-anonimo'
+settings:
+  id: 'system_menu_block:login-anonimo'
+  label: 'Login Anónimo'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

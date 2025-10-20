@@ -1,0 +1,35 @@
+uuid: 98cea4cd-15f9-4c23-99a4-e094e1cb1d1c
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: UtPHe1mH8_5eD9Mk24yoA0WdIUesCUEWiYi3SZt0HVY
+id: paragraph.mt_munit_pc
+field_name: mt_munit_pc
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pixeles
+      label: px
+    -
+      value: porcentaje
+      label: '%'
+    -
+      value: rem
+      label: rem
+    -
+      value: em
+      label: em
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

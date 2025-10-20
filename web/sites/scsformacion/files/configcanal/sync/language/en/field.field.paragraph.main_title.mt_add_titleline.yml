@@ -1,0 +1,5 @@
+label: 'Añadir Línea decorativa'
+description: 'Añade una línea con varias opciones de personalización.'
+settings:
+  on_label: Activado
+  off_label: Desactivado

@@ -1,0 +1,9 @@
+uuid: e454b513-f304-4adf-b6f7-8d451b1e7544
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JmR8QuskKmj4xO2471rfieI5YDygwFKVuf2UYkN33TI
+label: Social
+id: social
+description: "Posts will be visible for user's connections."

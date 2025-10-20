@@ -1,0 +1,23 @@
+uuid: 072b82aa-c0fd-43cd-8c74-2897a7d651ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_pleft
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: xLfM6FmYE-WsK-udyrQ9Y4QKfwafREUyOnaV5N7TaSA
+id: paragraph.video_only.vo_pleft
+field_name: vo_pleft
+entity_type: paragraph
+bundle: video_only
+label: 'Padding left side'
+description: 'Allows you to add left padding to the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,13 @@
+uuid: 0b326a76-7477-4907-a335-20cb7d2e6d3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: Wpd_AfMnoQRM85J06Buojy4whxY3GOu2uQzlASTjWTw
+id: opigno_activity.token
+label: Comodín
+description: ''
+targetEntityType: opigno_activity
+cache: true

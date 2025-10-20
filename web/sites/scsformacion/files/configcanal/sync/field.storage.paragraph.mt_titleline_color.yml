@@ -1,0 +1,26 @@
+uuid: 155ce5b7-8945-4ba2-95e0-109a3fe776e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - color_field
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 1xmu4CWSb9rGR52l13IXuDrEjDH3teCR6sFfnKDyfME
+id: paragraph.mt_titleline_color
+field_name: mt_titleline_color
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: e841d12d-1acd-4dc2-af94-3747ad7db499
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_fontsize
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: NjV9JY3jLL2hYyCQcgfdJ2klCA2GH800Ey1MuNbhug8
+id: paragraph.main_title.mt_fontsize
+field_name: mt_fontsize
+entity_type: paragraph
+bundle: main_title
+label: 'Tamaño del texto'
+description: 'Allows you to define the size applied to the text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

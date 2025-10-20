@@ -1,0 +1,10 @@
+content:
+  vo_bordercolor:
+    settings:
+      format: hex
+  vo_gradientplay:
+    settings:
+      format: hex
+  vo_playcolor:
+    settings:
+      format: hex

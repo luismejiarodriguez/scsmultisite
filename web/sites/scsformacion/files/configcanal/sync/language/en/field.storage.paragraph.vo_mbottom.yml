@@ -1,0 +1,50 @@
+settings:
+  allowed_values:
+    -
+      label: 5px
+    -
+      label: 10px
+    -
+      label: 15px
+    -
+      label: 20px
+    -
+      label: 25px
+    -
+      label: 30px
+    -
+      label: 35px
+    -
+      label: 40px
+    -
+      label: 45px
+    -
+      label: 50px
+    -
+      label: 55px
+    -
+      label: 60px
+    -
+      label: 65px
+    -
+      label: 70px
+    -
+      label: 75px
+    -
+      label: 80px
+    -
+      label: 85px
+    -
+      label: 90px
+    -
+      label: 95px
+    -
+      label: 100px
+    -
+      label: 125px
+    -
+      label: 150px
+    -
+      label: 175px
+    -
+      label: 200px

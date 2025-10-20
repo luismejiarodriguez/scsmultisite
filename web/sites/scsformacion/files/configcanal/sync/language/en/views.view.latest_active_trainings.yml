@@ -1,0 +1,28 @@
+label: 'Training in progress'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Training in progress'
+      fields:
+        label:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: "You haven't started training yet.\r\n<a class=\"btn btn-rounded\" href=\"{{ path('view.opigno_training_catalog.training_catalogue') }}\">{{ 'Start your first training'|t }}</a>"
+      arguments:
+        uid:
+          exception:
+            title: All
+      footer:
+        area_text_custom:
+          content: "<a href=\"{{ path('view.opigno_training_catalog.training_catalogue', {}, {'query': {'opigno_group_membership': 1}}) }}\">See all your training</a>"
+  block:
+    display_title: Block

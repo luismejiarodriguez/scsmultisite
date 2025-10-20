@@ -1,0 +1,23 @@
+uuid: b42f9e36-ea0b-4a8d-8090-43943731fd57
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: url_paginas
+label: 'URL Paginas'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  8ef782ed-2427-4b20-8e80-3eff866fe380:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8ef782ed-2427-4b20-8e80-3eff866fe380
+    context_mapping:
+      node: node
+    bundles:
+      dashboard_page: dashboard_page
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,13 @@
+uuid: 36926ac8-a6cd-4c7b-bdec-72601d5979c9
+langcode: es
+status: true
+dependencies:
+  module:
+    - h5p
+_core:
+  default_config_hash: znNK5-RpcN5IYxM-GmeF9GKRsYuP50S5ny_lDv77qZo
+id: h5p_content.token
+label: Comodín
+description: ''
+targetEntityType: h5p_content
+cache: true

@@ -1,0 +1,29 @@
+uuid: b873f552-9f00-4bdc-9054-7c34b8018a0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.categorias_home
+  module:
+    - system
+    - views
+  theme:
+    - canal_opigno
+id: canal_opigno_views_block__categorias_home_block_1_2
+theme: canal_opigno
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:categorias_home-block_1'
+settings:
+  id: 'views_block:categorias_home-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,27 @@
+uuid: 1655344e-d81b-4ea9-9dd5-e3a4d9917287
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - contact
+    - media
+    - opigno_class
+    - opigno_course
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Usuario anónimo'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'opigno dashboard layout access'
+  - 'restful post color_rest_resource'
+  - 'search content'
+  - 'take modules'
+  - 'use text format restricted_html'
+  - 'view media'

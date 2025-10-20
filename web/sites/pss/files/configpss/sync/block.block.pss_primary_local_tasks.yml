@@ -1,0 +1,22 @@
+uuid: e4f52d22-dd03-4110-b9be-741eab9c03fb
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pss
+_core:
+  default_config_hash: 4K7e_CLzwbFPERlsOdU8gtjH1YT8IyXkxwWjlEwjKCk
+id: pss_primary_local_tasks
+theme: pss
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

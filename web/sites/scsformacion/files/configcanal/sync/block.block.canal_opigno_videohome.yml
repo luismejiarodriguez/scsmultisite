@@ -1,0 +1,38 @@
+uuid: 1caab826-04eb-4bba-bb63-8dfef37a4175
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4a96865b-4a66-4e41-960d-c982c59ab803'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - canal_opigno
+id: canal_opigno_videohome
+theme: canal_opigno
+region: anonymous
+weight: -15
+provider: null
+plugin: 'block_content:4a96865b-4a66-4e41-960d-c982c59ab803'
+settings:
+  id: 'block_content:4a96865b-4a66-4e41-960d-c982c59ab803'
+  label: 'Video Home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

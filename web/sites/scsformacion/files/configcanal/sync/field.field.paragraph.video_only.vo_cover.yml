@@ -1,0 +1,31 @@
+uuid: 7e32f092-af49-4c72-a7ce-764a2c4b270f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_cover
+    - media.type.image
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: nh6K2_99hVLOqWHXGVlxq8xjcit5TkwCEFxTCF92y2c
+id: paragraph.video_only.vo_cover
+field_name: vo_cover
+entity_type: paragraph
+bundle: video_only
+label: 'Cover image'
+description: 'Le permite agregar una imagen de portada para el video'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

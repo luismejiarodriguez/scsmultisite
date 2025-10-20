@@ -1,0 +1,79 @@
+label: 'Groups list'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        id_1:
+          label: 'Group ID'
+          separator: ', '
+        label:
+          label: Name
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: Owner
+          separator: ', '
+        operations:
+          label: 'Operations links'
+      filters:
+        label:
+          expose:
+            label: Name
+        type:
+          expose:
+            label: 'Group type'
+      title: Groups
+  courses_list:
+    display_title: Courses
+    display_options:
+      title: Courses
+      menu:
+        title: Courses
+      filters:
+        label:
+          expose:
+            label: Name
+        type:
+          expose:
+            label: 'Group type'
+  page_1:
+    display_title: Groups
+    display_options:
+      filters:
+        label:
+          expose:
+            label: Name
+        type:
+          expose:
+            label: 'Group type'
+  trainings_list:
+    display_title: Trainings
+    display_options:
+      filters:
+        label:
+          expose:
+            label: Name
+      title: Trainings
+      menu:
+        title: Trainings

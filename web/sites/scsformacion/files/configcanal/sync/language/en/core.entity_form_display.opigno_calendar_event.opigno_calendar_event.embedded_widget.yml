@@ -1,0 +1,10 @@
+third_party_settings:
+  field_group:
+    group_customize_calendar_item:
+      format_settings:
+        popup_link:
+          text: 'Customize calendar item'
+        popup_labels:
+          title: 'Customize calendar item'
+          close_text: Done
+      label: 'Customize calendar item'

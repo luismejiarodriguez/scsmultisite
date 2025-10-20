@@ -1,0 +1,5 @@
+label: 'Texto con efecto sombra'
+description: 'Permite alinear el Título dentro de su contenedor.'
+settings:
+  on_label: Activado
+  off_label: Desactivado

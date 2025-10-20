@@ -1,0 +1,13 @@
+uuid: a37c6dae-24d1-46bf-b9e0-87e55603fdd8
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_social
+_core:
+  default_config_hash: eBMAGP9pTYD7Tdw1AkKFdK5eS_eFpWe4-DI38NWeA6c
+id: opigno_post.preview
+label: 'Vista previa'
+description: ''
+targetEntityType: opigno_post
+cache: true

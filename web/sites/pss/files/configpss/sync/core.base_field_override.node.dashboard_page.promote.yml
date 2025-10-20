@@ -1,0 +1,22 @@
+uuid: cc9cacfd-545b-474a-b4ee-769a7dfdd159
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dashboard_page
+id: node.dashboard_page.promote
+field_name: promote
+entity_type: node
+bundle: dashboard_page
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

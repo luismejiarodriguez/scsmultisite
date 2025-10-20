@@ -1,0 +1,23 @@
+uuid: 24c261ec-a0c3-4dc9-aeca-fa94ae40a203
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: 2ZzqD1pv7IU2-3BQgFJ67dwM5mAkbkvCtuol1csttIw
+id: taxonomy_term.field_level_names
+field_name: field_level_names
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

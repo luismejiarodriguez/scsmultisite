@@ -1,0 +1,20 @@
+uuid: 12033397-0fb3-4c86-ab09-697d6dd83b2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: TXGpwWw3yC4JF6kx56biC23FT9EPqbZa-yseTLzqeNw
+id: group.field_guided_navigation
+field_name: field_guided_navigation
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

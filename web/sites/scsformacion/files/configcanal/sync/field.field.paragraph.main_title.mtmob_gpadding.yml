@@ -1,0 +1,25 @@
+uuid: 38de2351-6a3a-4223-a05f-25c48aa41cef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_gpadding
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: plXPyfT5v-zz3r2Hv3uMq7YkEPsuHHhbsMTlT9EcU5Q
+id: paragraph.main_title.mtmob_gpadding
+field_name: mtmob_gpadding
+entity_type: paragraph
+bundle: main_title
+label: 'Global Mobile Padding'
+description: 'Allows you to add padding around the entire block for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

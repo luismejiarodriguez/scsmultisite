@@ -1,0 +1,19 @@
+uuid: bdee9dda-7ad6-44fb-9723-78bd2d6d84af
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  enforced:
+    config:
+      - user.role.user_manager
+_core:
+  default_config_hash: 7cKwzddzM-96Sg_1Bm7TFd1y3zg9FSCqmiQew5W8B6A
+id: opigno_course-b2b679d24
+label: 'Gestor de usuarios'
+weight: 4
+internal: true
+audience: outsider
+group_type: opigno_course
+permissions_ui: false
+permissions: {  }

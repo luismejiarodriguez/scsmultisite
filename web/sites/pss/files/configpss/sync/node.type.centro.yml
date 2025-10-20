@@ -1,0 +1,17 @@
+uuid: ed5b1815-3462-4bb2-9573-94eb38f27192
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Centro
+type: centro
+description: 'Centro médico al que pertenecen los usuarios'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

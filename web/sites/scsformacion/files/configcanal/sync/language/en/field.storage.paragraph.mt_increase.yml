@@ -1,0 +1,14 @@
+settings:
+  allowed_values:
+    -
+      label: Immense
+    -
+      label: 'Very big'
+    -
+      label: 'Quite big'
+    -
+      label: 'Something big'
+    -
+      label: 'Bastante grande'
+    -
+      label: 'Menos grande'

@@ -1,0 +1,23 @@
+uuid: dbaf1e2f-17ab-43b2-a733-bef074e64cfb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_punit_pc
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: MCeAWhKzvPvsRPNlzf5X3XjsKGLBWirQTEaIrtGkaT0
+id: paragraph.main_title.mt_punit_pc
+field_name: mt_punit_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Unidad de Padding'
+description: 'Permite elegir la medida para aplicar el padding.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

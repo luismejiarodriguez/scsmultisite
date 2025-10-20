@@ -1,0 +1,17 @@
+uuid: d89c4d2a-9ce9-4612-819f-8992b31f0c63
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qbQLSabOi6iv_C2-JHzOIzceBLF5Pn4_mszprV0dMnU
+name: square_image_650x650
+label: 'Imagen Cuadrada(650x650)'
+effects:
+  e362851d-45af-45b3-bc93-7a11c67679f6:
+    uuid: e362851d-45af-45b3-bc93-7a11c67679f6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 650
+      height: 650
+      anchor: center-center

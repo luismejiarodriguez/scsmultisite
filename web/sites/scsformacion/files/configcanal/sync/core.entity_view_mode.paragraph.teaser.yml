@@ -1,0 +1,13 @@
+uuid: 4db99e57-c893-4085-8045-40559b5f4d2c
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: yykQmg2MGFnnoIhcqjGSfz6PbvHBb8JDYM05MsjDTtI
+id: paragraph.teaser
+label: Resumen
+description: ''
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,23 @@
+uuid: 66ba1104-6ac4-4a78-a0ab-53cad1210cc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_increase
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: 7UYSzU6eB4-JpwfpYzOEbAoBbQ_xQZhDLYiJ9KwgiWk
+id: paragraph.main_title.mt_increase
+field_name: mt_increase
+entity_type: paragraph
+bundle: main_title
+label: 'Aumentar tamaño'
+description: 'Allows you to exponentially increase the size and thickness of the text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

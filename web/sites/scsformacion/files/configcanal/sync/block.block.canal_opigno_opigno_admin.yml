@@ -1,0 +1,27 @@
+uuid: c1de39b3-6b19-432d-aba6-938d2e19a4a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.opigno-admin
+  module:
+    - system
+  theme:
+    - canal_opigno
+_core:
+  default_config_hash: OxZbGTw8igHQCvlD_kaYspcrGAPAoRH7HlphV8dlLs0
+id: canal_opigno_opigno_admin
+theme: canal_opigno
+region: header
+weight: -12
+provider: null
+plugin: 'system_menu_block:opigno-admin'
+settings:
+  id: 'system_menu_block:opigno-admin'
+  label: 'Opigno admin'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

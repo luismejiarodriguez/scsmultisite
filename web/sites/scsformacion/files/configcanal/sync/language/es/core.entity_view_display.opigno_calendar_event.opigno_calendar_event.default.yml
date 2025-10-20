@@ -1,0 +1,4 @@
+content:
+  date_daterange:
+    settings:
+      separator: '-'

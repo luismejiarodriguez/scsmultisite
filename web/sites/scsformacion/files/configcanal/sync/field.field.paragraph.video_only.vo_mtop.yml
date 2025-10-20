@@ -1,0 +1,23 @@
+uuid: e2c15396-ceec-42a7-b8aa-6a9c402ec1b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_mtop
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: pdaIpInnucZALrJkCgMfH6XAREtd4y-bjGJSd0x4eRY
+id: paragraph.video_only.vo_mtop
+field_name: vo_mtop
+entity_type: paragraph
+bundle: video_only
+label: 'Margen superior del bloque'
+description: 'Le permite agregar un margen superior personalizado'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

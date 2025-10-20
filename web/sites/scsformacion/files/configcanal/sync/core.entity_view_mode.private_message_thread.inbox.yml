@@ -1,0 +1,13 @@
+uuid: 7aa0aae4-ff62-4a8f-ab92-44b36e913f8c
+langcode: es
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: oFIXnx5sHjxyZL1448nGFA3zxzF4MKDrqpuMkJaXAFc
+id: private_message_thread.inbox
+label: 'Bandeja de entrada'
+description: ''
+targetEntityType: private_message_thread
+cache: true

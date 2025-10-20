@@ -1,0 +1,102 @@
+label: 'Opigno calendar'
+description: 'A calendar view of all the Opigno calendar events.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          separator: ', '
+        date_daterange:
+          separator: ', '
+      header:
+        calendar_header:
+          content: '{{ arguments.date_daterange_value_year_month }}'
+        calendar_header_1:
+          admin_label: 'Calendar Pager'
+      use_more_text: more
+  month_block:
+    display_title: 'Month block'
+    display_options:
+      block_description: 'Opigno calendar block'
+      title: Calendar
+      arguments:
+        date_daterange_value_year_month:
+          exception:
+            title: All
+      fields:
+        id:
+          separator: ', '
+        title:
+          alter:
+            path: '{{ field_calendar_event_group }}'
+          separator: ', '
+        date_daterange:
+          separator: ', '
+  page_day:
+    display_title: Day
+    display_options:
+      menu:
+        title: Day
+      arguments:
+        date_daterange_value_full_date:
+          exception:
+            title: All
+      header:
+        calendar_header:
+          content: '{{ arguments.date_daterange_value_full_date }}'
+        calendar_header_1:
+          admin_label: 'Calendar Pager'
+  page_month:
+    display_title: Month
+    display_options:
+      menu:
+        title: Month
+      tab_options:
+        title: Calendar
+      arguments:
+        date_daterange_value_year_month:
+          exception:
+            title: All
+      header:
+        calendar_header:
+          content: '{{ arguments.date_daterange_value_year_month }}'
+        calendar_header_1:
+          admin_label: 'Calendar Pager'
+      title: Calendar
+      use_more_text: more
+  page_week:
+    display_title: Week
+    display_options:
+      menu:
+        title: Week
+      arguments:
+        date_daterange_value_year_week:
+          exception:
+            title: All
+      header:
+        calendar_header:
+          content: 'Week of {{ arguments.date_daterange_value_year_week }}'
+        calendar_header_1:
+          admin_label: 'Calendar Pager'
+  page_year:
+    display_title: Year
+    display_options:
+      arguments:
+        date_daterange_value_year:
+          exception:
+            title: All
+      header:
+        calendar_header:
+          content: '{{ arguments.date_daterange_value_year }}'
+        calendar_header_1:
+          admin_label: 'Calendar Pager'
+      menu:
+        title: Year

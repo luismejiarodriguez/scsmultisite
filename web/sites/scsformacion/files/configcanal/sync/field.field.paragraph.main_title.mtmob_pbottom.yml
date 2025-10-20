@@ -1,0 +1,25 @@
+uuid: 9d101e3b-ce3e-40e5-a74b-afb5a9ece98e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_pbottom
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: xpyHBRx5PqXLB8X7H7oS33_6OHeKNmCRl2sj4zaLOU8
+id: paragraph.main_title.mtmob_pbottom
+field_name: mtmob_pbottom
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Bottom Mobile'
+description: 'Allows you to add bottom padding for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

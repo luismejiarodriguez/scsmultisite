@@ -1,0 +1,20 @@
+uuid: 7db3875a-fd71-4386-8f70-3b5c3b903183
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_class
+    - opigno_course
+    - opigno_module
+_core:
+  default_config_hash: eK9nGeLabTfm6KOJPu0z0Nzdh3ub7vuNORltKWnXpO0
+id: statistics_reader
+label: 'Gestor de estadísticas'
+weight: -7
+is_admin: null
+permissions:
+  - 'opigno dashboard layout access'
+  - 'view any group statistics'
+  - 'view any user statistics'
+  - 'view global statistics'
+  - 'view module results'

@@ -1,0 +1,14 @@
+uuid: ae02ffc6-e00f-4a96-88f1-0457ff018277
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.statistics_reader
+  module:
+    - user
+id: user_remove_role_action.statistics_reader
+label: 'Remove the Statistics manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: statistics_reader

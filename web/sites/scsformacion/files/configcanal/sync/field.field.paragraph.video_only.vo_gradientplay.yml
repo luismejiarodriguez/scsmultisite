@@ -1,0 +1,27 @@
+uuid: 1ba3966a-25ba-477b-8124-17655eb72773
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_gradientplay
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+_core:
+  default_config_hash: 6sLk9fr-SytFAQyeuzcZWrFoR-8IoUe4YYSZw9CigDM
+id: paragraph.video_only.vo_gradientplay
+field_name: vo_gradientplay
+entity_type: paragraph
+bundle: video_only
+label: 'Color gradient effect Play button'
+description: 'Allows you to add the gradient color that is applied to the play button.'
+required: false
+translatable: true
+default_value:
+  -
+    color: '#073c5f'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

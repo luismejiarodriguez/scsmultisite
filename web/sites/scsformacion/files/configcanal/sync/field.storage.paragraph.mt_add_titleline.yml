@@ -1,0 +1,24 @@
+uuid: 628d309d-0462-4be2-9ea7-496e36e3ffb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: HVdX8Q8VDdkVdd1fhhf19Redgs1MRVldivVc0kv7tKQ
+id: paragraph.mt_add_titleline
+field_name: mt_add_titleline
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

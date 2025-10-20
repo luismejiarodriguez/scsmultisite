@@ -1,0 +1,5 @@
+display_configuration:
+  link_text: 'Seleccione entidades'
+widgets:
+  1756bd49-fdcb-4390-918d-4b1302747727:
+    label: 'Cargar una nueva imagen'

@@ -1,0 +1,25 @@
+uuid: 090be8ec-7af3-4452-a2d5-a0648fd21aa9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bleft
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: 5kwBWs6l_FI1kiW1l_IV29dmgaLgLInjeKnW2jz482Q
+id: paragraph.video_only.vo_bleft
+field_name: vo_bleft
+entity_type: paragraph
+bundle: video_only
+label: 'Border Left'
+description: 'Activate the border on the left side.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

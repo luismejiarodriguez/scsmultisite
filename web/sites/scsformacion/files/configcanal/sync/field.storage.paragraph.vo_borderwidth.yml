@@ -1,0 +1,53 @@
+uuid: f1397fa2-f895-4d14-aae1-55c586376a14
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: xGx6p6nv1mAlr64RuHKk0GsYWZvnmQnClnvXFkb2UIA
+id: paragraph.vo_borderwidth
+field_name: vo_borderwidth
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 1px
+    -
+      value: '2'
+      label: 2px
+    -
+      value: '3'
+      label: 3px
+    -
+      value: '4'
+      label: 4px
+    -
+      value: '5'
+      label: 5px
+    -
+      value: '6'
+      label: 6px
+    -
+      value: '7'
+      label: 7px
+    -
+      value: '8'
+      label: 8px
+    -
+      value: '9'
+      label: 9px
+    -
+      value: '10'
+      label: 10px
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

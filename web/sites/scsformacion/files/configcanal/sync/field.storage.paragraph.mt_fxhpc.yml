@@ -1,0 +1,22 @@
+uuid: 6b71c251-1196-4c77-9439-b29fdcf859de
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ePTreZm1VOtEnLw8Gcsn5RXWX97xjZr9WsMv1fC8MGs
+id: paragraph.mt_fxhpc
+field_name: mt_fxhpc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

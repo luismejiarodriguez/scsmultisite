@@ -1,0 +1,28 @@
+settings:
+  allowed_values:
+    -
+      label: 'Fade In'
+    -
+      label: 'Flix X'
+    -
+      label: LineUp
+    -
+      label: Pop-outin
+    -
+      label: FrontTop
+    -
+      label: Bounce
+    -
+      label: 'Bounce 2'
+    -
+      label: Gelatine
+    -
+      label: Swing
+    -
+      label: Wobble
+    -
+      label: 'Bounce in right'
+    -
+      label: 'Hi there'
+    -
+      label: Pulse

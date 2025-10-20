@@ -1,0 +1,19 @@
+uuid: d145f7e3-48d5-435c-b244-af4d6d34e599
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo_electronico_del_cen
+    - node.type.centro
+id: node.centro.field_correo_electronico_del_cen
+field_name: field_correo_electronico_del_cen
+entity_type: node
+bundle: centro
+label: 'Correo electrónico del centro'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

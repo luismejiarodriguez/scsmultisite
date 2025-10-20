@@ -1,0 +1,557 @@
+uuid: 85cf3ac2-e374-4cb3-abd9-83433c9da567
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_title.mt_add_titleline
+    - field.field.paragraph.main_title.mt_alignment
+    - field.field.paragraph.main_title.mt_animation
+    - field.field.paragraph.main_title.mt_bbottom
+    - field.field.paragraph.main_title.mt_bgcolor
+    - field.field.paragraph.main_title.mt_bk_box_shadow
+    - field.field.paragraph.main_title.mt_bleft
+    - field.field.paragraph.main_title.mt_bold
+    - field.field.paragraph.main_title.mt_border_style
+    - field.field.paragraph.main_title.mt_bordercolor
+    - field.field.paragraph.main_title.mt_bradius_bt_left
+    - field.field.paragraph.main_title.mt_bradius_bt_right
+    - field.field.paragraph.main_title.mt_bradius_top_left
+    - field.field.paragraph.main_title.mt_bradius_top_right
+    - field.field.paragraph.main_title.mt_bright
+    - field.field.paragraph.main_title.mt_btop
+    - field.field.paragraph.main_title.mt_bunit
+    - field.field.paragraph.main_title.mt_color
+    - field.field.paragraph.main_title.mt_font_family
+    - field.field.paragraph.main_title.mt_fontsize
+    - field.field.paragraph.main_title.mt_fontsunit
+    - field.field.paragraph.main_title.mt_fxhmob
+    - field.field.paragraph.main_title.mt_fxhpc
+    - field.field.paragraph.main_title.mt_gborder
+    - field.field.paragraph.main_title.mt_global_radius
+    - field.field.paragraph.main_title.mt_gpadding_pc
+    - field.field.paragraph.main_title.mt_htag
+    - field.field.paragraph.main_title.mt_increase
+    - field.field.paragraph.main_title.mt_mbottom_pc
+    - field.field.paragraph.main_title.mt_mleft_pc
+    - field.field.paragraph.main_title.mt_mob_mbottom
+    - field.field.paragraph.main_title.mt_mob_mtop
+    - field.field.paragraph.main_title.mt_mobfontsize
+    - field.field.paragraph.main_title.mt_mright_pc
+    - field.field.paragraph.main_title.mt_mtop_pc
+    - field.field.paragraph.main_title.mt_munit_pc
+    - field.field.paragraph.main_title.mt_no_pblock_mob
+    - field.field.paragraph.main_title.mt_pbottom_pc
+    - field.field.paragraph.main_title.mt_pleft_pc
+    - field.field.paragraph.main_title.mt_pright_pc
+    - field.field.paragraph.main_title.mt_ptop_pc
+    - field.field.paragraph.main_title.mt_punit_pc
+    - field.field.paragraph.main_title.mt_rotate
+    - field.field.paragraph.main_title.mt_shadow_title
+    - field.field.paragraph.main_title.mt_text
+    - field.field.paragraph.main_title.mt_titleline_color
+    - field.field.paragraph.main_title.mt_titleline_type
+    - field.field.paragraph.main_title.mt_wadelay
+    - field.field.paragraph.main_title.mt_waduration
+    - field.field.paragraph.main_title.mt_watype
+    - field.field.paragraph.main_title.mtmob_alignment
+    - field.field.paragraph.main_title.mtmob_gpadding
+    - field.field.paragraph.main_title.mtmob_pbottom
+    - field.field.paragraph.main_title.mtmob_pleft
+    - field.field.paragraph.main_title.mtmob_pright
+    - field.field.paragraph.main_title.mtmob_ptop
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - color_field
+    - field_formatter_class
+    - options
+_core:
+  default_config_hash: gfzaW2-bdNj2Yl-5R54aPBWQj-Wg3f8uS6TE3-3SFVw
+id: paragraph.main_title.default
+targetEntityType: paragraph
+bundle: main_title
+mode: default
+content:
+  mt_add_titleline:
+    type: boolean
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 23
+    region: content
+  mt_alignment:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  mt_animation:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  mt_bbottom:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  mt_bgcolor:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  mt_bk_box_shadow:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  mt_bleft:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  mt_bold:
+    type: boolean
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 8
+    region: content
+  mt_border_style:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  mt_bordercolor:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  mt_bradius_bt_left:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  mt_bradius_bt_right:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  mt_bradius_top_left:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  mt_bradius_top_right:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  mt_bright:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  mt_btop:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  mt_bunit:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  mt_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  mt_font_family:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: font-name
+    weight: 2
+    region: content
+  mt_fontsize:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 36
+    region: content
+  mt_fontsunit:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  mt_fxhmob:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  mt_fxhpc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  mt_gborder:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  mt_global_radius:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  mt_gpadding_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 51
+    region: content
+  mt_htag:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  mt_increase:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 41
+    region: content
+  mt_mbottom_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 47
+    region: content
+  mt_mleft_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 44
+    region: content
+  mt_mob_mbottom:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 43
+    region: content
+  mt_mob_mtop:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 42
+    region: content
+  mt_mobfontsize:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 40
+    region: content
+  mt_mright_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 45
+    region: content
+  mt_mtop_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 46
+    region: content
+  mt_munit_pc:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 54
+    region: content
+  mt_no_pblock_mob:
+    type: boolean
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 55
+    region: content
+  mt_pbottom_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 52
+    region: content
+  mt_pleft_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 49
+    region: content
+  mt_pright_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 50
+    region: content
+  mt_ptop_pc:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 48
+    region: content
+  mt_punit_pc:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  mt_rotate:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 53
+    region: content
+  mt_shadow_title:
+    type: boolean
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 10
+    region: content
+  mt_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  mt_titleline_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 28
+    region: content
+  mt_titleline_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  mt_wadelay:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 39
+    region: content
+  mt_waduration:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 38
+    region: content
+  mt_watype:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 37
+    region: content
+  mtmob_alignment:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  mtmob_gpadding:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  mtmob_pbottom:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  mtmob_pleft:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 35
+    region: content
+  mtmob_pright:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  mtmob_ptop:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 32
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

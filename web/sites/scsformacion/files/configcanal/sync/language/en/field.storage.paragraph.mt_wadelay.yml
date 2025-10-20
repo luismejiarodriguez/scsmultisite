@@ -1,0 +1,20 @@
+settings:
+  allowed_values:
+    -
+      label: 'data-wow-delay="2s"'
+    -
+      label: 'data-wow-delay="3s"'
+    -
+      label: 'data-wow-delay="4s"'
+    -
+      label: 'data-wow-delay="5s"'
+    -
+      label: 'data-wow-delay="6s"'
+    -
+      label: 'data-wow-delay="7s"'
+    -
+      label: 'data-wow-delay="8s"'
+    -
+      label: 'data-wow-delay="9s"'
+    -
+      label: 'data-wow-delay="10s"'

@@ -1,0 +1,22 @@
+uuid: d8684bc5-5ec0-423f-a265-2a5d20f04258
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: KL1wjJ-VFkK2LD4wo0FWzDR8wbOzVXwgeraOzZ1bwG0
+id: paragraph.vo_btop
+field_name: vo_btop
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

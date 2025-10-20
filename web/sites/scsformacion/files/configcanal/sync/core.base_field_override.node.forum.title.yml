@@ -1,0 +1,20 @@
+uuid: a1cbb500-ae86-412c-abbe-cb0bfe5b53ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.forum
+_core:
+  default_config_hash: UeZ24XgnXo-lT7KPfQfyzNVVF1m7AY3dHM0_1UU3UFo
+id: node.forum.title
+field_name: title
+entity_type: node
+bundle: forum
+label: Asunto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+uuid: 793ec134-45a6-4bc7-91b3-876c2fe0f073
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_calendar_event
+_core:
+  default_config_hash: pu_VNSn2lSes_2MEZUumeBIRbl3tMPSb2aAq6LcgHBE
+id: opigno_calendar_event.embedded_display
+label: 'Pantalla integrada'
+description: ''
+targetEntityType: opigno_calendar_event
+cache: true

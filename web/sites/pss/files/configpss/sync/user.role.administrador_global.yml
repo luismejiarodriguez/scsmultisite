@@ -1,0 +1,9 @@
+uuid: e947c12d-c57c-4790-b499-f61adeb12315
+langcode: es
+status: true
+dependencies: {  }
+id: administrador_global
+label: 'Administrador Global'
+weight: 4
+is_admin: null
+permissions: {  }

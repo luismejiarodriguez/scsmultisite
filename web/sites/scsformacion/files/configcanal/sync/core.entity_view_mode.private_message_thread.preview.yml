@@ -1,0 +1,13 @@
+uuid: e1d056a7-5cc2-4f19-8be9-16c5c504c81e
+langcode: es
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: sb7dMBfOx0AvyooS0gPR6zBMEg0GVEupWRCum9NCPWA
+id: private_message_thread.preview
+label: 'Vista previa'
+description: ''
+targetEntityType: private_message_thread
+cache: true

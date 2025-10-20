@@ -1,0 +1,22 @@
+uuid: 22077658-0b15-4a2e-bfcc-a732c186877f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ns67TNtkclt0LYveTrLqUa9-JULoiw8AC8nRGv7wMkw
+id: paragraph.mt_bbottom
+field_name: mt_bbottom
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

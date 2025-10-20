@@ -1,0 +1,14 @@
+uuid: 78ee2eec-3f4f-4287-8a23-10cd1e0d5d5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_centro
+  module:
+    - user
+id: user_add_role_action.administrador_de_centro
+label: 'Añade el rol Administrador de centro al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_de_centro

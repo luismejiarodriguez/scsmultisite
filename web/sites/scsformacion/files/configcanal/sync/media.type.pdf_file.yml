@@ -1,0 +1,15 @@
+uuid: 445773ee-f06e-4170-b707-58bea4917df1
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: D-ZcAAFPFmEoJItxoVZY6lc6kFZQksq1lR_2cJezR_I
+id: pdf_file
+label: 'File (PDF)'
+description: 'A reusable local PDF file.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

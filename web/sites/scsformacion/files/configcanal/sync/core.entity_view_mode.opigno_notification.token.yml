@@ -1,0 +1,13 @@
+uuid: 0e461daa-c352-4105-a3ef-62487db1465c
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_notification
+_core:
+  default_config_hash: BFa_iKBn2QRGP7cIFaHjXA7xiktb9Z4bq9Dg5UtPb2I
+id: opigno_notification.token
+label: Comodín
+description: ''
+targetEntityType: opigno_notification
+cache: true

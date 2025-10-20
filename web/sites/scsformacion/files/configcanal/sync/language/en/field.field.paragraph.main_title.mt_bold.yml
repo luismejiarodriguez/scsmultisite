@@ -1,0 +1,5 @@
+label: 'Texto en negrita'
+description: 'Permite aumentar el grosor del texto'
+settings:
+  on_label: Activado
+  off_label: Desactivado

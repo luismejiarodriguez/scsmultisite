@@ -1,0 +1,13 @@
+uuid: 6cb25f70-5e3a-4831-b151-b5765cca4540
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: 1DQ2ly1qGGzWaXmwOwocyrO_Tf-bbZLFLA6EXkHjAu4
+id: group.dashboard_item
+label: 'Dashboard item'
+description: ''
+targetEntityType: group
+cache: true

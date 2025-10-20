@@ -1,0 +1,17 @@
+uuid: a0feb00b-c2b9-47e8-90ba-2614ec83830a
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+_core:
+  default_config_hash: QxGVPrsGLQGeagIS20u26EcACKCUDfTh8OlQIUl4I6o
+id: opigno_course-member
+label: Miembro
+weight: -100
+internal: true
+audience: member
+group_type: opigno_course
+permissions_ui: true
+permissions:
+  - 'view group'

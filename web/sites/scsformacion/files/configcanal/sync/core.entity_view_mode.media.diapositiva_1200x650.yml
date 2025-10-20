@@ -1,0 +1,13 @@
+uuid: 34248078-2b75-4f55-97d0-7f30ac416046
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: DFW6ek9sFgBS0aIC7a10aOuElmG8VDsM_0KmxRvh2Us
+id: media.diapositiva_1200x650
+label: Diapositiva(1200x650)
+description: ''
+targetEntityType: media
+cache: true

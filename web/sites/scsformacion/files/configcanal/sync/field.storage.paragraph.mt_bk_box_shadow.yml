@@ -1,0 +1,57 @@
+uuid: 7cadc2c2-f84c-44cc-9c26-1e4ab7b5a9b5
+langcode: es
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: PzcMsZm-AQtwh5VdO0FgLtnzsdXImPx0fEANdgBCQrE
+id: paragraph.mt_bk_box_shadow
+field_name: mt_bk_box_shadow
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: sombraa
+      label: 'Sombra 1'
+    -
+      value: sombrab
+      label: 'Sombra 2'
+    -
+      value: sombrac
+      label: 'Sombra 3'
+    -
+      value: sombrad
+      label: 'Sombra 4'
+    -
+      value: sombraf
+      label: 'Sombra 5'
+    -
+      value: sombrag
+      label: 'Sombra 6'
+    -
+      value: sombrah
+      label: 'Sombra 7'
+    -
+      value: sombrai
+      label: 'Sombra 8'
+    -
+      value: sombraj
+      label: 'Sombra 9'
+    -
+      value: sombrak
+      label: 'Sombra 10'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

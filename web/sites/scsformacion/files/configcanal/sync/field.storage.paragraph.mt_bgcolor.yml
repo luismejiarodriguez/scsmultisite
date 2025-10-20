@@ -1,0 +1,22 @@
+uuid: 30db76af-e1fc-49ef-9b68-88e8eddc4edc
+langcode: es
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: y5DRtp01gMLqyhyBKb7qsFOcGsofqdi6RG3fx4uyG00
+id: paragraph.mt_bgcolor
+field_name: mt_bgcolor
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

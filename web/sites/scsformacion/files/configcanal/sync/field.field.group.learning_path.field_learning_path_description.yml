@@ -1,0 +1,24 @@
+uuid: e33bbf7b-902d-46bb-a623-01834915c79b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_learning_path_description
+    - group.type.learning_path
+  module:
+    - text
+_core:
+  default_config_hash: brB3kiHJEgsgL0TdbRQ-pPqHtjEtYVzY0tVaWhFq2xE
+id: group.learning_path.field_learning_path_description
+field_name: field_learning_path_description
+entity_type: group
+bundle: learning_path
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

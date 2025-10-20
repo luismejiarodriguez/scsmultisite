@@ -1,0 +1,22 @@
+uuid: 733232d9-9851-479b-ba7b-ff6751328c74
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Sk8s_c6eYLLUhEI7fj1HGNdhgDp6-lgAr1s5baBXxOk
+id: paragraph.mt_gborder
+field_name: mt_gborder
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

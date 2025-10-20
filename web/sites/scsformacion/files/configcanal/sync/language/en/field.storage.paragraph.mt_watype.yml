@@ -1,0 +1,60 @@
+settings:
+  allowed_values:
+    -
+      label: 'wow animated zoomIn'
+    -
+      label: 'wow animated zoomInDown'
+    -
+      label: 'wow animated zoomInLeft'
+    -
+      label: 'wow animated zoomInRight'
+    -
+      label: 'wow animated slideInDown'
+    -
+      label: 'wow animated slideInLeft'
+    -
+      label: 'wow animated slideInRight'
+    -
+      label: 'wow animated slideInUp'
+    -
+      label: 'wow animated  flip'
+    -
+      label: 'wow animated flipInX'
+    -
+      label: 'wow animated flipInY'
+    -
+      label: 'wow animated  flipOutX'
+    -
+      label: 'wow animated lightSpeedInRight'
+    -
+      label: 'wow animated lightSpeedInLeft'
+    -
+      label: 'wow animated lightSpeedOutRight'
+    -
+      label: 'wow animated lightSpeedOutLeft'
+    -
+      label: 'wow animated  rotateIn'
+    -
+      label: 'wow animated  rotateInDownLeft'
+    -
+      label: 'wow animated  rotateInDownRight'
+    -
+      label: 'wow animated rotateInUpLeft'
+    -
+      label: 'wow animated rotateInUpRight'
+    -
+      label: 'wow animated backInDown'
+    -
+      label: 'wow animated backInLeft'
+    -
+      label: 'wow animated backInRight'
+    -
+      label: 'wow animated backInUp'
+    -
+      label: 'wow animated hinge'
+    -
+      label: 'wow animated jackInTheBox'
+    -
+      label: 'wow animated rollIn'
+    -
+      label: 'wow animated rollOut'

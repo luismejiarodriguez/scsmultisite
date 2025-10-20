@@ -1,0 +1,8 @@
+uuid: ad8638b0-c43b-4a9d-a699-a3960e593304
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AdOvlgEH6CAJjPbfmNjMcWVbP9LbV8YypbDdHPlO2bE
+id: opigno_tincan
+label: 'Tincan package'

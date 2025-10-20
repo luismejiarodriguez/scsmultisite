@@ -1,0 +1,27 @@
+uuid: bace2597-978e-43c7-9af5-7bfcd95cf7db
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - pss
+_core:
+  default_config_hash: TqnsFZaiv6h0iOUSCeT0uagZgkvfNxKs6oi_NwH4Fjc
+id: pss_main_menu
+theme: pss
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

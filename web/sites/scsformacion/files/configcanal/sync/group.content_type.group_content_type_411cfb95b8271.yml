@@ -1,0 +1,19 @@
+uuid: ed4fe60b-074b-4561-b263-f5a07728c31c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+  module:
+    - opigno_module
+    - opigno_module_group
+_core:
+  default_config_hash: K5evEygro3vhRCc46C8cKicYFR_jvpNwdKEuT54vu40
+id: group_content_type_411cfb95b8271
+label: 'Course: Opigno Module Group'
+description: 'Añade una entidad de módulo opigno a los grupos.'
+group_type: opigno_course
+content_plugin: opigno_module_group
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1

@@ -1,0 +1,26 @@
+uuid: 6f14cd2c-4b4c-4450-84d1-754632421b2c
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - canal_opigno
+id: canal_opigno_dashboard_opigno_user_connections_block
+theme: canal_opigno
+region: header
+weight: -9
+provider: null
+plugin: opigno_user_connections_block
+settings:
+  id: opigno_user_connections_block
+  label: 'Dashboard: Connections'
+  label_display: ''
+  provider: opigno_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

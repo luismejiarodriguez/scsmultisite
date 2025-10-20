@@ -1,0 +1,24 @@
+uuid: db4f1964-1edf-4893-9c95-127a1cfa8c15
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bordercolor
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - color_field
+_core:
+  default_config_hash: JMLGSzjO9v2Pqz53eDvaTBmJjWX1m_eeW-ycwzCnNhM
+id: paragraph.video_only.vo_bordercolor
+field_name: vo_bordercolor
+entity_type: paragraph
+bundle: video_only
+label: 'Color del borde'
+description: 'Le permite agregar o modificar el color del borde del bloque.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

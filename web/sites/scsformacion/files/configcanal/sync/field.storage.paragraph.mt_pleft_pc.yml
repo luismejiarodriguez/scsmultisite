@@ -1,0 +1,22 @@
+uuid: 569c4b24-0957-4db0-9163-2bade840892b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Svfu-RJFvM4Yma5AyFVikavPkaMyj_LFcpfmPdX3sZI
+id: paragraph.mt_pleft_pc
+field_name: mt_pleft_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

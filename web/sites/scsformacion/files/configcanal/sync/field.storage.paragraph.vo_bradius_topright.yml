@@ -1,0 +1,22 @@
+uuid: eef13fd1-ee95-4be9-99be-639dadd119f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: '-UPiJnjW3kE-iwKoQsbkuXgDqzkPHN-LvFqW5RldMu0'
+id: paragraph.vo_bradius_topright
+field_name: vo_bradius_topright
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

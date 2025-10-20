@@ -1,0 +1,13 @@
+uuid: a7258ecb-9388-4d48-ae6e-c3822bf4e56e
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: radPbIQY3CX9dgnotR861UC6mBfGSMITL2uke3lfMBk
+id: paragraph.normal_button
+label: 'Normal Button'
+description: ''
+targetEntityType: paragraph
+cache: true

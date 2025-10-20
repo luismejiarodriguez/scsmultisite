@@ -1,0 +1,25 @@
+uuid: 421991ab-8e17-47c6-917d-057cbe36858a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_animation
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: hlCeItIbthfNJ-tZCwCVNK5ZKn7sOAvxJNHfWC68xlw
+id: paragraph.video_only.vo_animation
+field_name: vo_animation
+entity_type: paragraph
+bundle: video_only
+label: 'Animation effects'
+description: 'Allows you to add animation effects.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'pulse 1s infinite ease-in-out alternate'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

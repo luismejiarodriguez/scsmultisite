@@ -1,0 +1,17 @@
+uuid: b3930f88-835d-4ac1-b20c-77cfced57f30
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vlDV7p_WYOUoNzipk_KI7cVa29aiGVQ9NJv95XOdEO0
+name: catalog_thumbnail
+label: 'Miniaturas de catálogo'
+effects:
+  568d15d2-1a74-4925-acff-cea38f2e1aed:
+    uuid: 568d15d2-1a74-4925-acff-cea38f2e1aed
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 545
+      height: 340
+      anchor: center-center

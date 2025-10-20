@@ -1,0 +1,21 @@
+uuid: 94ba859a-b612-4ef9-8626-06c3aeb9f974
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.badge_description
+    - group.type.opigno_course
+_core:
+  default_config_hash: IO_4d8C_jwBA7btLnXIW8W72Rcrh_Vin1Ao-OFwHCoc
+id: group.opigno_course.badge_description
+field_name: badge_description
+entity_type: group
+bundle: opigno_course
+label: 'Descripción de credencial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

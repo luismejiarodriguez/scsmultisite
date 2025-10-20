@@ -1,0 +1,25 @@
+uuid: b29df6ff-76fc-4d8f-982c-8c8935803e1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_bradius_btleft
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: gkKym8-k_mJgydy8xklc123R5iFem25S6PoslObJA2E
+id: paragraph.video_only.vo_bradius_btleft
+field_name: vo_bradius_btleft
+entity_type: paragraph
+bundle: video_only
+label: 'Bottom left border radius'
+description: 'Allows you to add a radius to the bottom left of the image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

@@ -1,0 +1,4 @@
+label: 'Global Radio from the Edge'
+description: 'Allows you to add radius around the entire image.'
+settings:
+  suffix: px

@@ -1,0 +1,19 @@
+uuid: dfd11692-f8bb-4fd6-8657-9ceb2298ad14
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+  enforced:
+    config:
+      - user.role.statistics_reader
+_core:
+  default_config_hash: yXBIn1zDWG7rCsL_djbLtgB8ow7hAg02yIQNdBahuQ8
+id: learning_path-9b4c10f4d
+label: 'Gestor de estadísticas'
+weight: 5
+internal: true
+audience: outsider
+group_type: learning_path
+permissions_ui: false
+permissions: {  }

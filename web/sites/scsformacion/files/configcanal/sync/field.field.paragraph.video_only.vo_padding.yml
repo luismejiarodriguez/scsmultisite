@@ -1,0 +1,23 @@
+uuid: afc648a9-829a-451b-8d76-5bd0c03f11c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_padding
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: v6BNp3b0iuMLJN252L53RBFIM1xaSAiPkzfujDnfrv4
+id: paragraph.video_only.vo_padding
+field_name: vo_padding
+entity_type: paragraph
+bundle: video_only
+label: 'Padding Global'
+description: 'Le permite modificar el relleno alrededor de todo el bloque.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

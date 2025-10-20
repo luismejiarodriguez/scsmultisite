@@ -1,0 +1,11 @@
+uuid: 149356df-33c1-4552-973a-da73963aa484
+langcode: es
+status: true
+dependencies:
+  module:
+    - dashboards
+id: dashboard.token
+label: Token
+description: ''
+targetEntityType: dashboard
+cache: true

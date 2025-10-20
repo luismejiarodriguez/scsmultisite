@@ -1,0 +1,17 @@
+uuid: 6f5ba3fb-5bfb-4852-bdfe-9ec850a54f9c
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RqSVk-t7fhPdgxXakJEma7wnP8EKFyURTpzAjPg7wzk
+name: learning_path_thumbnail
+label: 'Miniatura del itinerario de aprendizaje'
+effects:
+  1ed761d3-24fd-439d-864e-79ff65747563:
+    uuid: 1ed761d3-24fd-439d-864e-79ff65747563
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 318
+      height: 318
+      anchor: center-center

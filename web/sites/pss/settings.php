@@ -909,4 +909,7 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/pss/files/config_Sd8wruehVhLeA6VknyrxkPEW7ovS72d-Yhei2gDHjadQM7WBCdAs01-tXclCepilR8t8pcsmQQ/sync';
+$settings['config_sync_directory'] = 'sites/pss/files/configpss/sync';
+$settings['file_private_path'] = '../private';
+$settings['file_temp_path'] = '../tmp';
+$settings['update_free_access'] = TRUE;

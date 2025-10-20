@@ -1,0 +1,18 @@
+settings:
+  allowed_values:
+    -
+      label: Dotted
+    -
+      label: Dashed
+    -
+      label: Solid
+    -
+      label: Double
+    -
+      label: Groove
+    -
+      label: Ridge
+    -
+      label: Inset
+    -
+      label: Outsed

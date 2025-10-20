@@ -1,0 +1,14 @@
+uuid: 11409543-455b-486c-86a3-feec35fc1da4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_centro
+  module:
+    - user
+id: user_remove_role_action.administrador_de_centro
+label: 'Remove the Administrador de centro role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_de_centro

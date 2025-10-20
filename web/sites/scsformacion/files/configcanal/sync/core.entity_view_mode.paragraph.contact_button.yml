@@ -1,0 +1,13 @@
+uuid: fd6cba0b-f23b-4b42-9a64-d4cfdf742520
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: L4wSzQVGlUjBTMShHf5OIwvO5G2txKY00hME1LPrI94
+id: paragraph.contact_button
+label: 'Contact Button'
+description: ''
+targetEntityType: paragraph
+cache: true

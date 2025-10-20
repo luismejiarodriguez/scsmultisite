@@ -1,0 +1,22 @@
+uuid: 27eb642a-b45c-48da-8f41-e97179e9c003
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 3bbYh1IZ935fO18upXKEwT9UzUFBU7BpTg5nSjW8mC8
+id: paragraph.mtmob_ptop
+field_name: mtmob_ptop
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

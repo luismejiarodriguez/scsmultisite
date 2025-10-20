@@ -1,0 +1,111 @@
+third_party_settings:
+  field_group:
+    group_mobile_settings:
+      label: 'Configuración móviles'
+    group_border_radius:
+      label: 'Radio del borde'
+    group_animation_effects_settings:
+      label: 'Animation Effects Settings'
+    group_margin_settings:
+      label: 'Margin Settings'
+    group_font_size:
+      label: 'Font Size '
+    group_font_size_settings:
+      label: 'Font Size Settings'
+    group_border_block:
+      label: 'Border Block'
+    group_border_radius_block:
+      label: 'Border Radius'
+    group_text_line_decoration:
+      label: 'Text Line Decoration'
+    group_margin_block:
+      label: Margin
+    group_other_block_settings:
+      label: 'Other Block'
+    group_more_settings:
+      label: 'Other Block Settings'
+    group_style_color_and_width:
+      label: 'Color, Width and Style'
+    group_border_style_and_color:
+      label: 'Color, Width and Style Settings'
+    group_settings:
+      label: SETTINGS
+    group_text:
+      label: EXTRAS
+    group_block_title:
+      label: BLOCK
+    group_mobile_maint:
+      label: MOBILE
+    group_mobile_padding:
+      label: 'Padding global móvil'
+    group_mobile_pad_settings:
+      label: 'Mobile Padding Settings'
+    group_border_type:
+      label: 'Border Type'
+    group_border_type_settings:
+      label: 'Border Type Settings'
+    group_text_extra:
+      label: 'Text Extra'
+    group_extra_settings:
+      label: 'Text Extra Settings'
+    group_wow_animation:
+      label: 'WOW Animation'
+    group_wow_animation_settings:
+      label: 'WOW Animation Settings'
+    group_align_and_rotate:
+      label: 'Align and Rotate'
+    group_align_and_rotate_settings:
+      label: 'Align and Rotate Settings'
+    group_bold_shadow_and_color:
+      label: 'Color, Bold and Shadow'
+    group_bold_scolor_settings:
+      label: 'Color, Bold and Shadow Settings'
+    group_mobile_margin:
+      label: 'Mobile Margin'
+    group_mobile_margin_settings:
+      label: 'Mobile Margin Settings'
+    group_extras_mobile:
+      label: Extras
+    group_animation_effects_maint:
+      label: 'ANIMATION EFFECTS'
+    group_text_line_decoration_setti:
+      label: 'Text Line Decoration Settings'
+    group_padding_mt:
+      label: Padding
+    group_padding_set_mt:
+      label: 'Padding Settings'
+    group_title:
+      label: TITLE
+    group_border_block_settings:
+      label: 'Border Block Settings'
+    group_anieffects_mt:
+      label: 'Animation Effects'
+content:
+  mt_bgcolor:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+  mt_bordercolor:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'
+  mt_color:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elegir
+      allow_empty: '1'
+  mt_titleline_color:
+    settings:
+      show_input: '1'
+      show_buttons: '1'
+      cancel_text: Cancelar
+      choose_text: Elije
+      allow_empty: '1'

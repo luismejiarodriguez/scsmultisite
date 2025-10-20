@@ -1,0 +1,23 @@
+uuid: 10de3154-9766-49d8-8e34-a0ad1fecba8d
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - pss
+_core:
+  default_config_hash: W02_D3vpoWBz0dbJlwPIF50BeIWfv-zTYbPgBXuqQAM
+id: pss_search_form_narrow
+theme: pss
+region: sidebar_first
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (estrecho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

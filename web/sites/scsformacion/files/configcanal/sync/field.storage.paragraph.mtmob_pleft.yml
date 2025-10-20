@@ -1,0 +1,22 @@
+uuid: 1a17b0cc-ac5e-4347-a113-848276b2a5d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: FrhQhEu2XN-qIsK7KDnhY2PF2wOU86dtJfxHNkeiLLU
+id: paragraph.mtmob_pleft
+field_name: mtmob_pleft
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

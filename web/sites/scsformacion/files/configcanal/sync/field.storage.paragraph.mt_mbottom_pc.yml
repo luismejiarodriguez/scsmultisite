@@ -1,0 +1,22 @@
+uuid: cca7e028-28f9-4ba3-94ef-d81604198920
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: vgYlaYZ61a_H20H5I6UXJhYJDrC-qWqdkdf4lWqI2yM
+id: paragraph.mt_mbottom_pc
+field_name: mt_mbottom_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

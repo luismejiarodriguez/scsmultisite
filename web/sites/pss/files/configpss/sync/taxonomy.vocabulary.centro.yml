@@ -1,0 +1,9 @@
+uuid: aed0de35-cde4-4231-a938-281da691ee69
+langcode: es
+status: true
+dependencies: {  }
+name: Centro
+vid: centro
+description: 'Nombre del centro al que pertenecen los usuarios'
+weight: 0
+new_revision: false

@@ -1,0 +1,4 @@
+label: Rotate
+description: 'Allows you to rotate the component using numeric values, positive or negative.'
+settings:
+  suffix: deg

@@ -1,0 +1,8 @@
+uuid: a827016c-7039-48f6-8d66-49212f98b9d1
+langcode: en
+status: true
+dependencies: {  }
+id: login-anonimo
+label: 'Login Anónimo'
+description: ''
+locked: false

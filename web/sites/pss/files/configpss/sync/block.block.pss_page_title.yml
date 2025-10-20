@@ -1,0 +1,20 @@
+uuid: ac68631f-1f4a-4f4c-9635-590210b127d4
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pss
+_core:
+  default_config_hash: uFII-MezTie5UDJLM8vPnbkO1QFdH5Q0p8qim1yVs_Y
+id: pss_page_title
+theme: pss
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

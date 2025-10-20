@@ -1,0 +1,20 @@
+uuid: 2264aede-566c-48ca-ada2-8c2498194e7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: egnZUREMOaeCaiHZQBpahqI_WqY9xHhRKyGr-upVOo8
+id: paragraph.mt_bold
+field_name: mt_bold
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+uuid: 648013e3-388f-48ac-972e-30b85d393702
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: e4boj-bNHEuSD9HXk3DL0muS1uNOpIVwRMOAGCKNbV0
+id: paragraph.mt_bunit
+field_name: mt_bunit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pixeles
+      label: px
+    -
+      value: porcentaje
+      label: '%'
+    -
+      value: rem
+      label: rem
+    -
+      value: em
+      label: em
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

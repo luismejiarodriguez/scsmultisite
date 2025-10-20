@@ -1,0 +1,23 @@
+uuid: 7d3c6905-05fa-4bbe-8b20-5703832c067f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_imgeffects
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: 2nN3lUtIy49x4bVSk2ROtCh9FsSNf6LrDPrvFUjvFpQ
+id: paragraph.video_only.vo_imgeffects
+field_name: vo_imgeffects
+entity_type: paragraph
+bundle: video_only
+label: 'Image Effects'
+description: 'Allows you to apply CSS effects to the image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

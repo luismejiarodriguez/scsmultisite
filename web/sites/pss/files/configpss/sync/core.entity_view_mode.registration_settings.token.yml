@@ -1,0 +1,11 @@
+uuid: 83e18ef3-0523-4c94-ac89-06ee884782cf
+langcode: es
+status: true
+dependencies:
+  module:
+    - registration
+id: registration_settings.token
+label: Token
+description: ''
+targetEntityType: registration_settings
+cache: true

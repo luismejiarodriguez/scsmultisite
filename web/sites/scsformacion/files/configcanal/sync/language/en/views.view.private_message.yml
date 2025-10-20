@@ -1,0 +1,61 @@
+label: 'Recent messages'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Private Message'
+      fields:
+        rendered_entity:
+          alter:
+            path: '{{ view_private_message_thread }}'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        members_target_id:
+          exception:
+            title: All
+  block_all:
+    display_title: 'All Threads'
+    display_options:
+      fields:
+        rendered_entity:
+          alter:
+            path: '{{ view_private_message_thread }}'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+  block_dashboard:
+    display_title: 'Recent messages'
+    display_options:
+      title: 'Recent messages'
+      empty:
+        area_text_custom:
+          content: "No new messages for the moment.\r\n<a class=\"btn btn-rounded\" href=\"{{ path('private_message.private_message_page') }}\">{{ \"Send your first message\"|t }}</a>"
+      display_description: 'Recent messages'
+      footer:
+        area_text_custom:
+          content: "<a href=\"{{ path('private_message.private_message_page') }}\">{{ 'See all messages'|t }}</a>"

@@ -1,0 +1,29 @@
+uuid: 075195e9-4391-46a8-ad70-07d0dbd2f11a
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: tJe2xLtl00DUN_LwGwmhcgLsiKCZdnr6srYYShnd7FM
+id: paragraph.vo_imgstyle
+field_name: vo_imgstyle
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: diapositiva_1200x650
+      label: Rectangular
+    -
+      value: square_image_650x650
+      label: Cuadrada
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

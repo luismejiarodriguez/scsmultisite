@@ -1,0 +1,23 @@
+uuid: 32c6eaa0-aa65-4784-a36b-fac80b0d260b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_borderwidth
+    - paragraphs.paragraphs_type.video_only
+  module:
+    - options
+_core:
+  default_config_hash: pe09HdQtw4N9MBZHRLlkvpPsF6WUqhLAUQWWS7i3jrY
+id: paragraph.video_only.vo_borderwidth
+field_name: vo_borderwidth
+entity_type: paragraph
+bundle: video_only
+label: 'Border Block Width'
+description: 'Allows you to modify the width of the border around the block.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

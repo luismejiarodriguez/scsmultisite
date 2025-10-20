@@ -1,0 +1,12 @@
+label: 'Media Entity Browser (groups) '
+display_configuration:
+  link_text: 'Select entities'
+widgets:
+  1756bd49-fdcb-4390-918d-4b1302747727:
+    settings:
+      submit_text: upload
+    label: 'Upload a new image'
+  9db5be48-5784-49d3-b12c-add2aaffee60:
+    settings:
+      submit_text: 'Select image'
+    label: 'Select an existing image'

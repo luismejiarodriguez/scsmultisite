@@ -1,0 +1,4 @@
+label: 'Padding Left Mobile'
+description: 'Allows you to add left side padding for mobile only.'
+settings:
+  suffix: px

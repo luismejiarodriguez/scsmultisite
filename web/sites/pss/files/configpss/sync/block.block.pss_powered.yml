@@ -1,0 +1,22 @@
+uuid: fb5f7a0a-43e7-4747-9c6d-7257ec4fd3a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pss
+_core:
+  default_config_hash: 7qAWC5WUZYaamMmdqFjenshQk8etC8m9gIQxvNj-ddA
+id: pss_powered
+theme: pss
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

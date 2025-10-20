@@ -1,0 +1,25 @@
+uuid: 6783d715-6647-482c-9236-71136cb0a315
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_mright_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: q-J8gX9R8JD9XwScKy4_Up8Gt94Ipv2ziIH_ObwCajk
+id: paragraph.main_title.mt_mright_pc
+field_name: mt_mright_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Margin Right'
+description: 'Allows you to add a right margin to the title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

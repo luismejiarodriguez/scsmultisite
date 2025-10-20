@@ -1,0 +1,23 @@
+uuid: b5cac87c-3ff3-4eba-bc5e-3cbda110d20f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_border_style
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: Bex1USovNuDNzpVdvBnoVxBGPNqvw5Z-Pw4JF3HSNzE
+id: paragraph.main_title.mt_border_style
+field_name: mt_border_style
+entity_type: paragraph
+bundle: main_title
+label: 'Estilo del borde'
+description: 'Le permite configurar un estilo de borde específico'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

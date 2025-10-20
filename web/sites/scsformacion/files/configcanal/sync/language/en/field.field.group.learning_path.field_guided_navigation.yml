@@ -1,0 +1,4 @@
+label: 'Guided Navigation'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

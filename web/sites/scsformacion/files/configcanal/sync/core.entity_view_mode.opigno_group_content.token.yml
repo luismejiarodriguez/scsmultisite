@@ -1,0 +1,13 @@
+uuid: 8b9d8625-692d-4aaf-82a2-64e7844cd7d1
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_group_manager
+_core:
+  default_config_hash: QIvXGmzojrnEIpkL2Yo8O7tTp7NKNqCI-HCeO92eAMM
+id: opigno_group_content.token
+label: Comodín
+description: ''
+targetEntityType: opigno_group_content
+cache: true

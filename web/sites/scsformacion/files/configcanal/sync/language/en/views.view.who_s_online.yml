@@ -1,0 +1,44 @@
+label: "Who's online block"
+description: 'Shows the user names of the most recently active users, and the total number of active users.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: "Who's online"
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No one is online at the moment.'
+      filters:
+        access:
+          expose:
+            label: 'Last access'
+            description: 'A user is considered online for this long after they have last viewed a page.'
+      header:
+        result:
+          content: 'There are currently @total users online.'
+  full_list_block:
+    display_title: 'Full list'
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'
+  who_s_online_block:
+    display_title: "Who's online"
+    display_options:
+      display_description: 'A list of users that are currently logged in.'
+      block_description: "Who's online"

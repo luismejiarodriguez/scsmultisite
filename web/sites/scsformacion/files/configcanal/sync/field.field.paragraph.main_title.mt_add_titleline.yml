@@ -1,0 +1,23 @@
+uuid: 3daeebc6-7375-4950-b671-2ac088321b74
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_add_titleline
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 90bc3Tx2Vm_h3_k00GO1XYO8SnJjYGaILXtZr0X4-D4
+id: paragraph.main_title.mt_add_titleline
+field_name: mt_add_titleline
+entity_type: paragraph
+bundle: main_title
+label: 'Añadir Línea decorativa'
+description: 'Añade una línea con varias opciones de personalización.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

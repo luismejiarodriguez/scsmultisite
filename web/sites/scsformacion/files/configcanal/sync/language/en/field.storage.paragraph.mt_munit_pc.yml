@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    -
+      label: px
+    -
+      label: '%'
+    -
+      label: rem
+    -
+      label: em

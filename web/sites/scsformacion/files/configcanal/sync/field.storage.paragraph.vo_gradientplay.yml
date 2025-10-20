@@ -1,0 +1,22 @@
+uuid: 370b3f7d-74bb-4f92-b80d-e137902c47f4
+langcode: es
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: l-jiJ4R2oWggcX_DsNMPixF6eg4HoHC3FdFlPWUrnJQ
+id: paragraph.vo_gradientplay
+field_name: vo_gradientplay
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#129dd0'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,49 @@
+label: 'Opigno Group Members'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Pending Memberships'
+      fields:
+        label:
+          separator: ', '
+        label_1:
+          separator: ', '
+        id:
+          separator: ', '
+        nothing:
+          alter:
+            text: "<strong>{{ label }}</strong>\r\n<p class=\"sub-label\">in {{ label_1 }}</p>"
+            path: 'group/{{ id }}/members'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No pending memberships for the moment.'
+  block_pending:
+    display_title: 'Pending memberships'
+    display_options:
+      title: 'Pending memberships'
+      display_description: 'Pending memberships'
+      footer:
+        area_text_custom:
+          content: '<a href="{{ path(''opigno_dashboard.get_pending_memberships'') }}" class="use-ajax">{{ ''See all pending requests''|t }}</a>'
+  full_list_block:
+    display_title: 'Listing block'
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'

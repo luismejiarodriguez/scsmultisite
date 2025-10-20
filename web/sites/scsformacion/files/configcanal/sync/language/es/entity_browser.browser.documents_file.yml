@@ -1,0 +1,6 @@
+display_configuration:
+  link_text: 'Seleccione entidades'
+widgets:
+  3726304c-be0b-4b15-9534-a64d2dc5fbf4:
+    settings:
+      submit_text: 'Seleccione entidades'

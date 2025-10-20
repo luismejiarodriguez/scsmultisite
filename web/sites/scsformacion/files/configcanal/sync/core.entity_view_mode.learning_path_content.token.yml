@@ -1,0 +1,13 @@
+uuid: 5dc8c849-077c-44f9-a988-a35bc97638a6
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_learning_path
+_core:
+  default_config_hash: AkKOYFgGTdsTgZoJa60VtIW2cNdlsfnnpZvoqp5sYnM
+id: learning_path_content.token
+label: Comodín
+description: ''
+targetEntityType: learning_path_content
+cache: true

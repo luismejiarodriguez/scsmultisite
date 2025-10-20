@@ -1,0 +1,27 @@
+uuid: 3a392b71-082e-4b96-a667-d207516e2573
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_dashboard
+    - system
+  theme:
+    - canal_opigno
+id: canal_opigno_dashboard_opigno_user_stats_block
+theme: canal_opigno
+region: header
+weight: -4
+provider: null
+plugin: opigno_user_stats_block
+settings:
+  id: opigno_user_stats_block
+  label: 'Dashboard: User statistics'
+  label_display: ''
+  provider: opigno_dashboard
+  without_stats: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

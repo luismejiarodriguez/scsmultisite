@@ -1,0 +1,28 @@
+uuid: 14e3d77d-8b0a-4b32-9937-44318b9f08a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.opigno_activity.field_video
+    - opigno_module.opigno_activity_type.opigno_video
+  module:
+    - video
+_core:
+  default_config_hash: ZNhLFN9o-o3FwbK0Ir1EqFmJ1h9c7bwd0pkHnxowL8s
+id: opigno_activity.opigno_video.field_video
+field_name: field_video
+entity_type: opigno_activity
+bundle: opigno_video
+label: Vídeo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
+field_type: video

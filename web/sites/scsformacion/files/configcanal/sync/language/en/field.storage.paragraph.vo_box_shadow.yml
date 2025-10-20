@@ -1,0 +1,22 @@
+settings:
+  allowed_values:
+    -
+      label: 'Sombra 1'
+    -
+      label: 'Sombra 2'
+    -
+      label: 'Sombra 3'
+    -
+      label: 'Sombra 4'
+    -
+      label: 'Sombra 5'
+    -
+      label: 'Sombra 6'
+    -
+      label: 'Sombra 7'
+    -
+      label: 'Sombra 8'
+    -
+      label: 'Sombra 9'
+    -
+      label: 'Sombra 10'

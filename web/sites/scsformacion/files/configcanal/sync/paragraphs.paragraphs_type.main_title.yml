@@ -1,0 +1,12 @@
+uuid: 67dbb183-99a2-4474-842e-9d6d6202ad11
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ogdzGcS0fqsE6L4_96xYzl30pslPoiQ0o6pyF6ayVd0
+id: main_title
+label: 'Título principal'
+icon_uuid: null
+icon_default: null
+description: 'Allows you to add a title with tags (H1-H6) and other options'
+behavior_plugins: {  }

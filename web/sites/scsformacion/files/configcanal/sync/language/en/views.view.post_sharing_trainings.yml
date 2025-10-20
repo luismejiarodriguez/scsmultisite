@@ -1,0 +1,74 @@
+label: 'Post sharing trainings'
+display:
+  default:
+    display_title: Master
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        training:
+          alter:
+            text: '<a href="#" class="use-ajax" data-opigno-post-attachment-id="{{ id }}" data-opigno-attachment-type="training" data-opigno-attachment-entity-type="group">{{ training }}</a>'
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Search
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+      arguments:
+        uid:
+          exception:
+            title: All
+      filters:
+        label:
+          expose:
+            placeholder: Search
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: 'In progress'
+              2:
+                title: Completed
+  certificates:
+    display_title: Certificates
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        finished:
+          alter:
+            text: "{{ finished|format_date('post_short_date') }}"
+        label:
+          alter:
+            text: "<a href=\"#\" data-opigno-post-attachment-id=\"{{ id }}\" data-opigno-attachment-type=\"certificate\" data-opigno-attachment-entity-type=\"group\">\r\n  <span class=\"text\">Certificate for {{ label__value }}</span>\r\n  <span class=\"date\">{{ finished }}</span>\r\n</a>"
+          separator: ', '
+      empty:
+        area:
+          content:
+            value: 'You have currently no certificates to share'
+      filters:
+        label:
+          expose:
+            placeholder: Search
+        status:
+          expose:
+            label: Status
+          group_info:
+            label: Status
+  trainings:
+    display_title: Trainings
+    display_options:
+      empty:
+        area:
+          content:
+            value: 'You have currently no trainings to share'

@@ -1,0 +1,17 @@
+uuid: 4304755b-13a3-4887-88f2-1c91b3c9066e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H-BaECAutG4wxi46I_2In9bq-AlB2izi8BuArHYLTB4
+name: user_list_item
+label: 'User list item (60x60)'
+effects:
+  62256d27-b0f6-449c-80aa-8aaa46142393:
+    uuid: 62256d27-b0f6-449c-80aa-8aaa46142393
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60
+      anchor: center-center

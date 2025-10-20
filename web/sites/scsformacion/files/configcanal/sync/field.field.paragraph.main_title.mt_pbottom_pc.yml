@@ -1,0 +1,25 @@
+uuid: 3bcb29db-3cd0-4a89-8417-3aaa414df9d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_pbottom_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 6OZE77Ej7NiOI9-OUnY_Zo54tF2Fqvc3PsLkEKulm6k
+id: paragraph.main_title.mt_pbottom_pc
+field_name: mt_pbottom_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Padding inferior'
+description: 'Allows you to add Bottom Padding to the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

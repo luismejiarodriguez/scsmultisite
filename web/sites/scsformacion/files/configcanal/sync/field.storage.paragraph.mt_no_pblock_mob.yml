@@ -1,0 +1,20 @@
+uuid: 7c0d43b5-7dd8-4401-a929-619838f9125b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: '-tU695RbO9OyFewT__zeuuiEE-D3dw6P5OT0ndTrNkU'
+id: paragraph.mt_no_pblock_mob
+field_name: mt_no_pblock_mob
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

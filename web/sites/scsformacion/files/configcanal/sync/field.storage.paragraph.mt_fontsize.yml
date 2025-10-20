@@ -1,0 +1,22 @@
+uuid: 3828c53b-e5eb-436b-9fae-fcb007100f43
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: L7jBP_SsWVGYbMLp2tX4N9KeFXzux_8__uggCArUWkQ
+id: paragraph.mt_fontsize
+field_name: mt_fontsize
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

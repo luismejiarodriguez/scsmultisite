@@ -1,0 +1,13 @@
+uuid: f3395f17-4fc1-49fc-968f-5f37ae7a1e84
+langcode: es
+status: true
+dependencies:
+  module:
+    - opigno_module
+_core:
+  default_config_hash: WTTz7YAylh3w9V92XKamw7g44O2SanecsLKG0kvKMz8
+id: opigno_module.token
+label: Comodín
+description: ''
+targetEntityType: opigno_module
+cache: true

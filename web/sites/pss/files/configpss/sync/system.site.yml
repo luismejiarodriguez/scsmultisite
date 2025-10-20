@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: es
+uuid: 8cbbc141-1316-42cc-b9be-b6b9a36cfd80
+name: 'Plataforma Socio Sanitaria'
+mail: luis.mejia.rodriguez@accenture.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: null

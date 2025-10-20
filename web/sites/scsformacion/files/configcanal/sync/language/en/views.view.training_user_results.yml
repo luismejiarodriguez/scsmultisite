@@ -1,0 +1,49 @@
+label: 'Training user results'
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        uid:
+          separator: ', '
+        name:
+          label: User
+          separator: ', '
+        score:
+          label: Score
+          format_plural_string: !!binary MQNAY291bnQ=
+        latest_user_lp_status:
+          label: Passed
+        time:
+          label: 'Time spent'
+          format_plural_string: !!binary MQNAY291bnQ=
+        gid:
+          separator: ', '
+        nothing:
+          label: Details
+          alter:
+            text: "<a href=\"{{  path('opigno_learning_path.training_by_user', {'group': gid, 'account': uid}) }}\" class=\"btn btn-rounded\">Details</a>"
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        gid:
+          exception:
+            title: All
+  block:
+    display_title: Block

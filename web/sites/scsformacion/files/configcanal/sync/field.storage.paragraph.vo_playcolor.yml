@@ -1,0 +1,22 @@
+uuid: b8cb07c7-c495-4d9b-b931-70bd825f11b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: 1UoSri85h1fBwNyrIMRWp6V9GIkctnIaEfpJA764aOo
+id: paragraph.vo_playcolor
+field_name: vo_playcolor
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

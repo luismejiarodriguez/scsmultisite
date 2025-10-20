@@ -1,0 +1,25 @@
+uuid: 392a5454-2ef3-4a54-9c2b-ef88172a3518
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.paciente.field_estado
+    - field.field.node.paciente.field_nif_nie
+    - node.type.paciente
+  module:
+    - user
+id: node.paciente.teaser
+targetEntityType: node
+bundle: paciente
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_estado: true
+  field_nif_nie: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: d907750c-61ad-408c-9bc2-dcf6cea89ae1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: PlvVyQWTM4LqqILl8LPHNtwdPPEx2HCChtdtSYyYO9A
+id: paragraph.mt_mtop_pc
+field_name: mt_mtop_pc
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

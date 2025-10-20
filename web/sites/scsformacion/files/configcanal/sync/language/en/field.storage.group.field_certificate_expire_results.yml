@@ -1,0 +1,14 @@
+settings:
+  allowed_values:
+    -
+      label: '1 month'
+    -
+      label: '3 months'
+    -
+      label: '6 months'
+    -
+      label: '12 months'
+    -
+      label: '18 months'
+    -
+      label: '24 months'

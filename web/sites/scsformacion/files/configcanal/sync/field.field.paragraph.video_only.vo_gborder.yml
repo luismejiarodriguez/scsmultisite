@@ -1,0 +1,23 @@
+uuid: 5376a4be-f681-45c0-bf61-7325bf6a4fe1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_gborder
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: cGpMPTkzDRwIWxf6T_l2ezHV9W-6PmLOWaBnywXXFNw
+id: paragraph.video_only.vo_gborder
+field_name: vo_gborder
+entity_type: paragraph
+bundle: video_only
+label: 'Borde global'
+description: 'Le permite agregar un borde alrededor de todo el bloque.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

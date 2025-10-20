@@ -1,0 +1,22 @@
+uuid: 0119f874-ef33-4930-a240-e7c523dd3a3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: iHbXVsLmvV2s0mFVxcl_5-5C1t6kSqxsKl46GUJToJw
+id: paragraph.vo_bradius_topleft
+field_name: vo_bradius_topleft
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

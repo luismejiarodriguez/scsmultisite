@@ -1,0 +1,18 @@
+uuid: a2fbd07f-ed14-408e-bd66-6451082eaf32
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.paciente
+id: node.paciente.title
+field_name: title
+entity_type: node
+bundle: paciente
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

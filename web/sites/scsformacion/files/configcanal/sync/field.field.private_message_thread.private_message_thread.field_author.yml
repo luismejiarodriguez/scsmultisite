@@ -1,0 +1,31 @@
+uuid: 542ea873-87cb-47b9-bd98-382422b394d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.private_message_thread.field_author
+  module:
+    - private_message
+_core:
+  default_config_hash: 0orgGLCePxcfvAfMUB99JoAJUbyot_-oEcCTftIYR9U
+id: private_message_thread.private_message_thread.field_author
+field_name: field_author
+entity_type: private_message_thread
+bundle: private_message_thread
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

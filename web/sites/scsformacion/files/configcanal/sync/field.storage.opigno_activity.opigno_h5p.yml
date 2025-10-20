@@ -1,0 +1,21 @@
+uuid: d23fe0e1-0881-4406-b6bf-ccbed93e785d
+langcode: en
+status: true
+dependencies:
+  module:
+    - h5p
+    - opigno_module
+_core:
+  default_config_hash: FWeQYEe3ZAZsTvTh9ONYaTOoLr-dYI7CFfNHDsuIY00
+id: opigno_activity.opigno_h5p
+field_name: opigno_h5p
+entity_type: opigno_activity
+type: h5p
+settings: {  }
+module: h5p
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

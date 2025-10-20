@@ -1,0 +1,19 @@
+uuid: 519d77c0-89af-44ad-8ecd-556bb2909278
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nif_nie
+    - node.type.paciente
+id: node.paciente.field_nif_nie
+field_name: field_nif_nie
+entity_type: node
+bundle: paciente
+label: NIF/NIE
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

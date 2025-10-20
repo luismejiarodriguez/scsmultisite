@@ -1,0 +1,25 @@
+uuid: 4c28d853-2306-49dc-ad78-70cbdfc1e3b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_ptop_pc
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: 0pnEy1qVfeRbIdrxzBxooZapL5uNQ8m9wa-y48-KczQ
+id: paragraph.main_title.mt_ptop_pc
+field_name: mt_ptop_pc
+entity_type: paragraph
+bundle: main_title
+label: 'Padding superior'
+description: 'Allows you to add Top Padding to the title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

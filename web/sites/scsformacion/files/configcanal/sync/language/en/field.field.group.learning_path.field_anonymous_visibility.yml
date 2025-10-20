@@ -1,0 +1,4 @@
+label: 'Hide for anonymous users'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

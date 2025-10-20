@@ -1,0 +1,22 @@
+uuid: 2ac0b2f0-4742-42d6-99f4-a4518bc9c023
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+_core:
+  default_config_hash: _2_u1NP7SZsvFAmAOTmFTorTbLq5jOjIZ0_PDGH96Es
+id: learning_path-user_manager
+label: 'Gestor de usuarios'
+weight: -9
+internal: false
+audience: member
+group_type: learning_path
+permissions_ui: true
+permissions:
+  - 'administer members'
+  - 'leave group'
+  - 'update own group_membership content'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view own results'

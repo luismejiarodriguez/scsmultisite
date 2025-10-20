@@ -1,0 +1,14 @@
+uuid: c4ec1e93-5521-420c-adac-3ddf16ad837f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_global
+  module:
+    - user
+id: user_remove_role_action.administrador_global
+label: 'Remove the Administrador Global role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_global

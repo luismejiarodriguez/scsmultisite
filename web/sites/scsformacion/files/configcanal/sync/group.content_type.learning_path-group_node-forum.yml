@@ -1,0 +1,25 @@
+uuid: 41c43377-3298-478b-a091-b8b66a1efea1
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.learning_path
+    - node.type.forum
+    - group.type.learning_path
+    - node.type.forum
+  module:
+    - gnode
+    - node
+    - gnode
+    - node
+_core:
+  default_config_hash: vddm7huOW61MDySf0JfHZvDF2v0kh9sJ8SBG0GssGPA
+id: learning_path-group_node-forum
+label: 'Learning Path: Group node (Forum topic)'
+description: 'Adds <em class="placeholder">Forum topic</em> content to groups both publicly and privately.'
+group_type: learning_path
+content_plugin: 'group_node:forum'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

@@ -1,0 +1,26 @@
+uuid: 12a0f710-7394-4551-9c65-07e180c3b583
+langcode: es
+status: true
+dependencies:
+  module:
+    - color_field
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: zS1P2_YxX0-lTqSV4D1hPM1m5oq5msrdZapGkNu9mns
+id: paragraph.vo_bordercolor
+field_name: vo_bordercolor
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

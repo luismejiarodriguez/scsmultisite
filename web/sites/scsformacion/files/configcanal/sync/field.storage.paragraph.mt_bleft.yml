@@ -1,0 +1,22 @@
+uuid: f289f1e7-963f-4611-9fba-6c0cd1698a39
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: kWllkIuCSdBoEXAgJQmG79XNb69v5O8X4Z_55wJWbds
+id: paragraph.mt_bleft
+field_name: mt_bleft
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

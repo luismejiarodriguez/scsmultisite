@@ -1,0 +1,23 @@
+uuid: bc3dbeab-2cbf-428b-ac1b-4458976fb14d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_external_video
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: mSMuGHjgP1fQ9eR0ZhrVdZ4u9ZB0v23gv5xdP0QEcP8
+id: paragraph.video_only.vo_external_video
+field_name: vo_external_video
+entity_type: paragraph
+bundle: video_only
+label: Vídeo
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'https://youtu.be/VZLHSaMwrqA'
+default_value_callback: ''
+settings: {  }
+field_type: string

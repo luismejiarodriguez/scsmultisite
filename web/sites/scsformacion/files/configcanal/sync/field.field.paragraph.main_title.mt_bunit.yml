@@ -1,0 +1,23 @@
+uuid: b3d77e93-47e5-4445-af29-3a282926c295
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mt_bunit
+    - paragraphs.paragraphs_type.main_title
+  module:
+    - options
+_core:
+  default_config_hash: FC2r2VEPMHvgkVrvN5FeGdV9gAnIrAVdj--PYOtLvEg
+id: paragraph.main_title.mt_bunit
+field_name: mt_bunit
+entity_type: paragraph
+bundle: main_title
+label: 'Border unit'
+description: 'Allows you to choose the unit of measurement in which the borders will be applied.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

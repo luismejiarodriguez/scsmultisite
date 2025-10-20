@@ -1,0 +1,22 @@
+settings:
+  allowed_values:
+    -
+      label: 1px
+    -
+      label: 2px
+    -
+      label: 3px
+    -
+      label: 4px
+    -
+      label: 5px
+    -
+      label: 6px
+    -
+      label: 7px
+    -
+      label: 8px
+    -
+      label: 9px
+    -
+      label: 10px

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: es
+uuid: eff6e9f9-2de7-4ad5-ba0b-3f2f5beec7a0
+name: 'Canal Ciudadano'
+mail: luis.mejia.rodriguez@accenture.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: null

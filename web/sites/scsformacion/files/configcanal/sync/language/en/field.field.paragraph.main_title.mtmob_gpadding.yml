@@ -1,0 +1,4 @@
+label: 'Global Mobile Padding'
+description: 'Allows you to add padding around the entire block for mobile only.'
+settings:
+  suffix: px

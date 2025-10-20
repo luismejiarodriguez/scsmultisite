@@ -1,0 +1,25 @@
+uuid: 0a79e831-315e-4ccc-ab8a-d2421e32f7b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_ptop
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: K50RSTqEF_ViFKPMdKqfflxZ2xtWXj_SJ2UkfMm-IeY
+id: paragraph.main_title.mtmob_ptop
+field_name: mtmob_ptop
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Top Mobile'
+description: 'Allows you to add top padding for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

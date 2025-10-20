@@ -1,0 +1,62 @@
+uuid: 0422caba-ce4c-431b-8d45-1a62d5f9346e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.dashboard_page
+    - views.view.gestionar_pacientes
+  module:
+    - dashboards
+    - layout_builder
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_1
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          reverse: 0
+        components:
+          b4a4c372-26fe-4d87-82d1-592b924c7d20:
+            uuid: b4a4c372-26fe-4d87-82d1-592b924c7d20
+            region: one
+            configuration:
+              id: 'dashboards_block:dashboard:account'
+              label: 'Show current user'
+              label_display: '0'
+              provider: dashboards
+              view_mode: default
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          94d89fee-48fc-4fb9-834e-9e04dacfdfa5:
+            uuid: 94d89fee-48fc-4fb9-834e-9e04dacfdfa5
+            region: three
+            configuration:
+              id: 'views_block:gestionar_pacientes-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.dashboard_page.default
+targetEntityType: node
+bundle: dashboard_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,5 @@
+label: 'Make profile private'
+description: 'If checked, other users will be able to see only your first and last name.'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

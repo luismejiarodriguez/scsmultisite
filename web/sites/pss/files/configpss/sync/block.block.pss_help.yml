@@ -1,0 +1,22 @@
+uuid: 8804f345-84e5-4a0f-a552-1ce191b0167a
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pss
+_core:
+  default_config_hash: 4BSffQkcsqrf_epYYyk-viGu20yq6s6Nj2MW9Ik8MMA
+id: pss_help
+theme: pss
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

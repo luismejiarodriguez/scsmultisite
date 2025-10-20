@@ -1,0 +1,13 @@
+label: 'Media Entity Browser File(PDF)'
+display_configuration:
+  link_text: 'Select entities'
+widgets:
+  b18d7810-d58f-4dfb-8768-7752aaddbb89:
+    settings:
+      dropzone_description: 'Drop files here to upload them'
+      submit_text: Upload
+    label: 'Upload a new file'
+  a515f457-e00a-469b-9eae-164b1f5e17d7:
+    settings:
+      submit_text: Select
+    label: 'Select an existing file'

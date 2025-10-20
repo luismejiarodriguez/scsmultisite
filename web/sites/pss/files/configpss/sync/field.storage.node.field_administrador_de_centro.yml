@@ -1,0 +1,20 @@
+uuid: c826f645-51be-4465-8d23-b079fb8be191
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_administrador_de_centro
+field_name: field_administrador_de_centro
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

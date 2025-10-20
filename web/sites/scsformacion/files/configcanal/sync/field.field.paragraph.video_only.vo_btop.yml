@@ -1,0 +1,25 @@
+uuid: 9e0bf8da-c5eb-435c-a540-f56df26ba444
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.vo_btop
+    - paragraphs.paragraphs_type.video_only
+_core:
+  default_config_hash: yl2YElEfHQz3LJZHF0qlZbSjyHwbsLNwVuOUGqmlDKc
+id: paragraph.video_only.vo_btop
+field_name: vo_btop
+entity_type: paragraph
+bundle: video_only
+label: 'Border Botton'
+description: 'Activate the border at the bottom.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

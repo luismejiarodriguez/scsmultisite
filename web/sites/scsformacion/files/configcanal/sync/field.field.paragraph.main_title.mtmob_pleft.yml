@@ -1,0 +1,25 @@
+uuid: a5b5a86f-c90f-4b34-a42f-7701d4aae83d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.mtmob_pleft
+    - paragraphs.paragraphs_type.main_title
+_core:
+  default_config_hash: f50B3f-HP5msJ0-PH-pqcRPngcXtJ4JGOlH-oYVKb8A
+id: paragraph.main_title.mtmob_pleft
+field_name: mtmob_pleft
+entity_type: paragraph
+bundle: main_title
+label: 'Padding Left Mobile'
+description: 'Allows you to add left side padding for mobile only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

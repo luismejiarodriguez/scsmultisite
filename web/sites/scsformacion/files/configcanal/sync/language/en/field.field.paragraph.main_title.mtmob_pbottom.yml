@@ -1,0 +1,4 @@
+label: 'Padding Bottom Mobile'
+description: 'Allows you to add bottom padding for mobile only.'
+settings:
+  suffix: px

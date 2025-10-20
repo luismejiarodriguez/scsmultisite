@@ -1,0 +1,70 @@
+uuid: 0874890a-90f2-4c32-a35d-80e2b417bcd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.opigno_certificate_wysiwyg
+  module:
+    - ckeditor
+    - ckeditor_bgimage
+third_party_settings:
+  ckeditor_bgimage:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'png jpeg jpg'
+_core:
+  default_config_hash: UyK4EebrMbKWkgqPL1zUSNFTLtONpp767zAAGUN0E0w
+format: opigno_certificate_wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Styles
+            - Bold
+            - Italic
+            - Font
+            - FontSize
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+            - bgimage
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: "h1.hometitle|Home Title\r\nspan.homecat|Catería Home"
+    font:
+      font_names: ''
+      font_sizes: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,37 @@
+label: "Who's new"
+description: 'Shows a list of the newest user accounts on the site.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: "Who's new"
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'There are no new users yet.'
+  block_1:
+    display_title: "Who's new"
+    display_options:
+      display_description: 'A list of new users'
+      block_description: "Who's new"
+      block_category: User
+  full_list_block:
+    display_title: 'Listing block'
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more'

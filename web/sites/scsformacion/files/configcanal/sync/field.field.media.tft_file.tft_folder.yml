@@ -1,0 +1,31 @@
+uuid: d74bea94-7a83-43a3-ba8c-4224e4b89dde
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.tft_folder
+    - media.type.tft_file
+    - taxonomy.vocabulary.tft_tree
+_core:
+  default_config_hash: vERTEaFR79Vt4Y7B7F9ew72SdxG916ZeCT0amLWrF2w
+id: media.tft_file.tft_folder
+field_name: tft_folder
+entity_type: media
+bundle: tft_file
+label: Directorio
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tft_tree: tft_tree
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

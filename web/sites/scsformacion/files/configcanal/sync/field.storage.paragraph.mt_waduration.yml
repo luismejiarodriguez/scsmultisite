@@ -1,0 +1,50 @@
+uuid: 4f1b931d-38a5-4062-a6ce-b939f37fc990
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: Y0SoUEro-qh883KVnLJGzSkpl70L1kUyMdkspq8-4_0
+id: paragraph.mt_waduration
+field_name: mt_waduration
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: data_wow_duration_2s
+      label: 'data-wow-duration="2s"'
+    -
+      value: data_wow_duration_3s
+      label: 'data-wow-duration="3s"'
+    -
+      value: data_wow_duration_4s
+      label: 'data-wow-duration="4s"'
+    -
+      value: data_wow_duration_5s
+      label: 'data-wow-duration="5s"'
+    -
+      value: data_wow_duration_6s
+      label: 'data-wow-duration="6s"'
+    -
+      value: data_wow_duration_7s
+      label: 'data-wow-duration="7s"'
+    -
+      value: data_wow_duration_8s
+      label: 'data-wow-duration="8s"'
+    -
+      value: data_wow_duration_9s
+      label: 'data-wow-duration="9s"'
+    -
+      value: data_wow_duration_10s
+      label: 'data-wow-duration="10s"'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

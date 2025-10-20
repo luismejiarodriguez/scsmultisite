@@ -1,0 +1,20 @@
+settings:
+  allowed_values:
+    -
+      label: Brightness
+    -
+      label: 'Drop Shadow'
+    -
+      label: Grayscale
+    -
+      label: Invert
+    -
+      label: Saturate
+    -
+      label: Sepia
+    -
+      label: 'Hue Rotate'
+    -
+      label: Opacidad
+    -
+      label: Blur
