@@ -7,6 +7,7 @@ global-styling:
       css/style.css: {}
       css/colors.css: {}
       css/custom-gin-logo.css: {}
+      css/home-style.css: {}
 bootstrap:
   js:
     /libraries/popperjs/dist/umd/popper.min.js: { weight: -19 }

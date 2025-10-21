@@ -81,3 +81,5 @@ Thumbs.db
 /web/sites/pss/files/
 /web/sites/scsformacion/files/
 /web/sites/scsgcambio/files/
+/.editorconfig
+/.gitattributes
