@@ -78,3 +78,6 @@ Thumbs.db
 # Ignore .env files as they are personal
 /.env
 © 2021 GitHub, Inc.
+/web/sites/pss/files/
+/web/sites/scsformacion/files/
+/web/sites/scsgcambio/files/
