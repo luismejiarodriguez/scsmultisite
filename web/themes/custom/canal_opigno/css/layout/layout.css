@@ -2,14 +2,27 @@
 .page-front.user-not-logged-in .dashboard {
   display: none !important;
 }
-h1.hometitle {
-  width: 100%;
-  max-width: 622.08px;
-  margin: auto;
-  color: #0F172A;
-  padding: 16px 8px;
-  font-size: 24px;
-  text-align: center;
+
+/* Telefonos en vertical (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #search-top {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+}
+
+/* Ordenadores y Laptops (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1.hometitle {
+    width: 100%;
+    max-width: 622.08px;
+    margin: 16px auto;
+    color: #0F172A;
+    padding: 16px 8px;
+    font-size: 24px;
+    text-align: center;
+  }
 }
 ul.cat-home-list {
   list-style: none;
