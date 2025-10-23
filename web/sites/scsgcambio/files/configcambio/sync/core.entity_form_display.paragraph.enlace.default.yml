@@ -5,23 +5,21 @@ dependencies:
   config:
     - field.field.paragraph.enlace.field_icon
     - field.field.paragraph.enlace.field_link
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.enlace
   module:
-    - image
     - link
+    - media_library
 id: paragraph.enlace.default
 targetEntityType: paragraph
 bundle: enlace
 mode: default
 content:
   field_icon:
-    type: image_image
+    type: media_library_widget
     weight: 1
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_link:
     type: link_default

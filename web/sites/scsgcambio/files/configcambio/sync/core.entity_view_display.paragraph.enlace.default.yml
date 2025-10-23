@@ -5,10 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.enlace.field_icon
     - field.field.paragraph.enlace.field_link
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.enlace
   module:
-    - image
     - link
 id: paragraph.enlace.default
 targetEntityType: paragraph
@@ -16,13 +14,11 @@ bundle: enlace
 mode: default
 content:
   field_icon:
-    type: image
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: thumbnail
-      image_loading:
-        attribute: lazy
+      view_mode: icono
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content
