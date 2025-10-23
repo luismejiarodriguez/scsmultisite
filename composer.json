@@ -97,7 +97,7 @@
         "drupal/ai_provider_openai": "^1.1",
         "drupal/augmentor_openai_gpt3": "^1.0",
         "drupal/paragraphs": "^1.19",
-        "drupal/layout_paragraphs": "^2.1",
+        "drupal/layout_paragraphs": "^2.0",
         "drupal/backup_migrate": "^5.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/field_permissions": "^1.4",
@@ -114,7 +114,7 @@
         "drupal/webform": "^6.3@beta"
     },
     "require-dev": {
-        "drush/drush": "^10 || ^11 || ^12",
+        "drush/drush": "^13.6",
         "mglaman/composer-drupal-lenient": "^1.0"
     },
     "config": {
@@ -139,6 +139,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
+        "patches": {
+
+            "opigno/opigno_module": {
+
+                "Issue #3465426": "https://www.drupal.org/files/issues/2023-07-27/opigno_module-serialization_error-3377470-6.patch"
+
+            }
+
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
