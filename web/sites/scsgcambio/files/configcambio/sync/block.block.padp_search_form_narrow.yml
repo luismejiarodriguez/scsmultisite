@@ -1,0 +1,23 @@
+uuid: ecc4aec1-7796-48b8-bba5-431a629fbd80
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - padp
+_core:
+  default_config_hash: q5H-pOh59oSYLSP9Wwz7h3yUJ2Kr2ef13abJfEYKkGE
+id: padp_search_form_narrow
+theme: padp
+region: sidebar_first
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (estrecho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

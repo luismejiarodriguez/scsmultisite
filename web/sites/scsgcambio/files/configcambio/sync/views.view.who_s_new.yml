@@ -1,5 +1,5 @@
-uuid: dd6dce0f-84fd-4c68-9e85-f5809221005b
-langcode: en
+uuid: 882efe03-852b-4ac9-b1d9-f608f7196773
+langcode: es
 status: true
 dependencies:
   module:
@@ -7,20 +7,20 @@ dependencies:
 _core:
   default_config_hash: zji0_13MyVGK7Bn1lUMDeZyyOIZedWvqpYUeM_SioPI
 id: who_s_new
-label: "Who's new"
+label: 'Quién es nuevo'
 module: user
-description: 'Shows a list of the newest user accounts on the site.'
+description: 'Muestra una lista de las cuentas de usuario más recientes del sitio.'
 tag: default
 base_table: users_field_data
 base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: 'Por defecto'
     display_plugin: default
     position: 0
     display_options:
-      title: "Who's new"
+      title: 'Quién es nuevo'
       fields:
         name:
           id: name
@@ -64,10 +64,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -180,14 +180,14 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: "Who's new"
+    display_title: 'Quién es nuevo'
     display_plugin: block
     position: 1
     display_options:
-      display_description: 'A list of new users'
+      display_description: 'Un listado de nuevos usuarios'
       display_extenders: {  }
-      block_description: "Who's new"
-      block_category: User
+      block_description: 'Quién es nuevo'
+      block_category: Usuario
     cache_metadata:
       max-age: -1
       contexts:

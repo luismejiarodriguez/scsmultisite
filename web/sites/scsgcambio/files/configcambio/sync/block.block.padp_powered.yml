@@ -1,0 +1,22 @@
+uuid: 3bffdb0b-2157-4a1f-8964-af309068abbf
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: Uhr1aFxVJY_F1MS8Ym8hIer1QyRiaB99CCaJpdzvO2o
+id: padp_powered
+theme: padp
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

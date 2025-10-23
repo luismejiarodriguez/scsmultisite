@@ -1,0 +1,40 @@
+uuid: 285dd65c-beb0-4e22-81dc-af1f352e26d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_top_content
+    - paragraphs.paragraphs_type.contenidos
+    - paragraphs.paragraphs_type.top_content
+  module:
+    - entity_reference_revisions
+id: paragraph.contenidos.field_top_content
+field_name: field_top_content
+entity_type: paragraph
+bundle: contenidos
+label: 'Contenido destacado'
+description: 'Utilice el Paragraph <em>Contenido destacado</em> para mostrar contenido relevante, como <em>artículos recientes</em> o <em>publicaciones destacadas</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      top_content: top_content
+    negate: 0
+    target_bundles_drag_drop:
+      contenidos:
+        weight: 5
+        enabled: false
+      enlace:
+        weight: 6
+        enabled: false
+      enlaces:
+        weight: 7
+        enabled: false
+      top_content:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions

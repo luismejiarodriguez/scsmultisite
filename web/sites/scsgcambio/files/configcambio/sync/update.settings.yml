@@ -9,5 +9,5 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - luis.mejia.rodriguez@accenture.com
+    - c.martinez.baquero@accenture.com
   threshold: all

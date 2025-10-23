@@ -1,0 +1,22 @@
+uuid: cab71146-7016-40e2-a85a-60c0f95ab8b7
+langcode: es
+status: true
+dependencies:
+  theme:
+    - padp
+_core:
+  default_config_hash: xsxA9GssePWoNPalJKfWJ-5WJYOlTHOuPQT_SEVkqOo
+id: padp_secondary_local_tasks
+theme: padp
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

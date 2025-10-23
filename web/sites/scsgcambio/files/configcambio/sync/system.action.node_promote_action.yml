@@ -1,5 +1,5 @@
-uuid: f3881f41-1003-438c-9259-178ac22b61c9
-langcode: en
+uuid: 71664e60-160b-48da-91f5-bf457bd1124b
+langcode: es
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
 id: node_promote_action
-label: 'Promote content to front page'
+label: 'Promocionar contenido a la página de inicio'
 type: node
 plugin: node_promote_action
 configuration: {  }

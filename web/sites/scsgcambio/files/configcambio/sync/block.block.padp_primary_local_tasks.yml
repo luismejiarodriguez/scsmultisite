@@ -1,0 +1,22 @@
+uuid: 9fbaface-6e6e-4d2b-a03c-db7cf0521b4d
+langcode: es
+status: true
+dependencies:
+  theme:
+    - padp
+_core:
+  default_config_hash: nAF0vY4qiLoBj6BOY4OLISllVLd4hqXJ5xuo-vUrppU
+id: padp_primary_local_tasks
+theme: padp
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

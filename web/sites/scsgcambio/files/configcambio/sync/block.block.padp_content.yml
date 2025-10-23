@@ -1,0 +1,22 @@
+uuid: 9e309791-d0b5-4637-9bb0-ad7db08e5202
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: pBxaBQkz5fNYIYvabRXv7k3i-d30fwKlo4Ai1Nux6aM
+id: padp_content
+theme: padp
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

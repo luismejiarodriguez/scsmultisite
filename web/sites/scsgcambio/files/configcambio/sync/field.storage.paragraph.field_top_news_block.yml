@@ -1,0 +1,21 @@
+uuid: 4285f9e0-8273-4c4c-80d4-c660af30f595
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+id: paragraph.field_top_news_block
+field_name: field_top_news_block
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

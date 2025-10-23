@@ -1,10 +1,10 @@
-uuid: e84a4e8d-69dc-4f5d-b6f6-0a2e52821706
-langcode: en
+uuid: 77260835-5777-415c-8fd4-e71effa677f8
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
 id: html_yearless_date
-label: 'HTML Yearless date'
+label: 'Fecha anual HTML'
 locked: true
 pattern: m-d

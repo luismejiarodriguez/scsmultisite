@@ -1,0 +1,16 @@
+uuid: 0624494c-b9a5-4878-a6ec-581626d36645
+langcode: es
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: contenidos
+label: 'Contenidos destacados'
+icon_uuid: null
+icon_default: null
+description: 'Utilice el Paragraph <em>Contenidos</em> para agrupar y mostrar múltiples elementos de tipo <em>Contenido</em>'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      barrio_cardbasic: 'Card basic'
