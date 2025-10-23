@@ -909,4 +909,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/scsgcambio/files/config_XolxX10AC0LA5Zf4jCPo1m-TZbKfckcPnJskJiaHYoLkRMdqONL-U0PX9QduNCTZJa7eXL4DmA/sync';
+#$settings['config_sync_directory'] = 'sites/scsgcambio/files/config_XolxX10AC0LA5Zf4jCPo1m-TZbKfckcPnJskJiaHYoLkRMdqONL-U0PX9QduNCTZJa7eXL4DmA/sync';
+$settings['config_sync_directory'] = 'sites/scsgcambio/files/configcambio/sync';
+$settings['file_private_path'] = '../private';
+$settings['file_temp_path'] = '../tmp';
+$settings['update_free_access'] = TRUE;
