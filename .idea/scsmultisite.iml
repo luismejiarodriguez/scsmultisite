@@ -31,6 +31,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/composer-plugin-implements-scaffold-events/src" isTestSource="false" packagePrefix="Drupal\Tests\fixture\Composer\Plugin\" />
       <sourceFolder url="file://$MODULE_DIR$/web/modules/contrib/csv_importer/./src" isTestSource="false" packagePrefix="Drupal\csv_importer\" />
       <sourceFolder url="file://$MODULE_DIR$/web/modules/contrib/csv_importer/./tests/src" isTestSource="true" packagePrefix="Drupal\Tests\csv_importer\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
