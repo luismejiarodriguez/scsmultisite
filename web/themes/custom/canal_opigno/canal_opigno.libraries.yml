@@ -20,5 +20,6 @@ global:
       css/component/buttons.css: {}
     layout:
       css/layout/layout.css: {}
+      css/layout/home-layout.css: {}
     theme:
       css/theme/print.css: { media: print }
