@@ -245,7 +245,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       }
 
       foreach ($variable as $param => $value) {
-        if (!\array_key_exists($param, $this->tempStoreData) || $this->tempStoreData[$param] != $value) {
+        if (!\array_key_exists($param, $this->tempStoreData) || $this->tempStoreData[$param] !== $value) {
           $update = TRUE;
           $this->tempStoreData[$param] = $value;
         }
@@ -278,7 +278,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       // enabled on the view.
       unset($exposed_input['ajax_page_state']);
       foreach ($this->view->exposed_raw_input as $key => $value) {
-        if (!array_key_exists($key, $exposed_input)) {
+        if (!\array_key_exists($key, $exposed_input)) {
           $exposed_input[$key] = $value;
         }
       }
@@ -287,7 +287,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
     // input.
     \ksort($exposed_input);
     foreach ($exposed_input as $name => $value) {
-      if (\is_array($value) && $value != FALSE) {
+      if (\is_array($value)) {
         $exposed_input[$name] = $this->getExposedInput($value);
       }
     }
@@ -523,17 +523,10 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
         '#type' => 'value',
         '#value' => $id,
       ];
-      $state = FALSE;
-      if (
-        \array_key_exists($id, $selected_actions_data) &&
-        $selected_actions_data[$id] != FALSE
-      ) {
-        $state = TRUE;
-      }
       $table[$delta]['container']['state'] = [
         '#type' => 'checkbox',
         '#title' => $action['label'],
-        '#default_value' => $state,
+        '#default_value' => \array_key_exists($id, $selected_actions_data),
         '#attributes' => ['class' => ['vbo-action-state']],
       ];
 
@@ -565,7 +558,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
 
       // Also allow to force a default confirmation step for actions that don't
       // have it implemented.
-      if ($action['confirm_form_route_name'] === '' || $action['confirm_form_route_name'] === NULL) {
+      if ($action['confirm_form_route_name'] === '') {
         $table[$delta]['container']['preconfiguration']['add_confirmation'] = [
           '#type' => 'checkbox',
           '#title' => $this->t('Add confirmation step'),
@@ -623,7 +616,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       return;
     }
     $selected_actions = $selected_actions['table'];
-    $selected_actions = \array_filter($selected_actions, static fn ($action_data) => $action_data['container']['state'] != FALSE);
+    $selected_actions = \array_filter($selected_actions, static fn ($action_data) => $action_data['container']['state'] !== 0);
 
     foreach ($selected_actions as &$item) {
       unset($item['weight']);
@@ -905,7 +898,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
    *   The current state of the form.
    */
   public function viewsFormSubmit(array &$form, FormStateInterface $form_state): void {
-    if ($form_state->get('step') == 'views_form_views_form') {
+    if ($form_state->get('step') === 'views_form_views_form') {
 
       $action_config = $this->options['selected_actions'][$form_state->getValue('action')];
 
@@ -919,7 +912,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       $this->tempStoreData['clear_on_exposed'] = $this->options['clear_on_exposed'];
       $this->tempStoreData['confirm_route'] = $action['confirm_form_route_name'];
       $add_confirmation = $action_config['preconfiguration']['add_confirmation'] ?? FALSE;
-      if ($this->tempStoreData['confirm_route'] == FALSE && $add_confirmation) {
+      if ($this->tempStoreData['confirm_route'] === '' && $add_confirmation) {
         $this->tempStoreData['confirm_route'] = 'views_bulk_operations.confirm';
       }
 
@@ -950,7 +943,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       if ($this->options['form_step'] && $this->isActionConfigurable($action)) {
         $redirect_route = 'views_bulk_operations.execute_configurable';
       }
-      elseif ($this->tempStoreData['confirm_route'] != FALSE) {
+      elseif ($this->tempStoreData['confirm_route'] !== '') {
         $redirect_route = $this->tempStoreData['confirm_route'];
       }
       else {
@@ -1006,7 +999,7 @@ class ViewsBulkOperationsBulkForm extends FieldPluginBase implements CacheableDe
       // results selected in other requests and validate if
       // anything is selected.
       $this->tempStoreData = $this->getTempstoreData();
-      $selected = \array_filter($form_state->getValue($this->options['id']) ?? []);
+      $selected = \array_filter($form_state->getValue($this->options['id']) ?? [], fn($item) => $item !== 0);
       if (\count($this->tempStoreData['list']) === 0 && \count($selected) === 0) {
         $form_state->setErrorByName('', $this->t('No items selected.'));
       }

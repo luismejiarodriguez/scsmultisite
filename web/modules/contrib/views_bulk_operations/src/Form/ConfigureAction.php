@@ -126,7 +126,7 @@ class ConfigureAction extends FormBase {
       $form_data['configuration'] = $form_state->getValues();
     }
 
-    if (\array_key_exists('confirm_route', $form_data) && $form_data['confirm_route'] !== NULL) {
+    if (\array_key_exists('confirm_route', $form_data) && $form_data['confirm_route'] !== '') {
       // Update tempStore data.
       $this->setTempstoreData($form_data, $form_data['view_id'], $form_data['display_id']);
       // Go to the confirm route.

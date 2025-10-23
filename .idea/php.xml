@@ -118,13 +118,12 @@
       <path value="$PROJECT_DIR$/vendor/commerceguys/addressing" />
       <path value="$PROJECT_DIR$/vendor/commerceguys/intl" />
       <path value="$PROJECT_DIR$/vendor/consolidation/annotated-command" />
-      <path value="$PROJECT_DIR$/vendor/consolidation/self-update" />
       <path value="$PROJECT_DIR$/vendor/consolidation/site-process" />
       <path value="$PROJECT_DIR$/vendor/consolidation/site-alias" />
       <path value="$PROJECT_DIR$/vendor/consolidation/filter-via-dot-access-data" />
       <path value="$PROJECT_DIR$/vendor/consolidation/output-formatters" />
       <path value="$PROJECT_DIR$/vendor/consolidation/config" />
-      <path value="$PROJECT_DIR$/vendor/webflo/drupal-finder" />
+      <path value="$PROJECT_DIR$/vendor/laravel/prompts" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3">

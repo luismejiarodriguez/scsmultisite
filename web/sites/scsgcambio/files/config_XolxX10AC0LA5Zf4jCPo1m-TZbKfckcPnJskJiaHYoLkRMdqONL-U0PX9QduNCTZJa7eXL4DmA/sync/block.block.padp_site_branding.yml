@@ -1,0 +1,25 @@
+uuid: 4ee6b3b6-4fe3-46a1-9465-0e7e03952a41
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: LY7kaeeQO0GL-mEcUTqjybHwOGl0es9lv8mVgmvkWyI
+id: padp_site_branding
+theme: padp
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

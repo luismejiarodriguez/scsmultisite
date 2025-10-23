@@ -1,0 +1,26 @@
+uuid: 220feb89-4bfd-48b9-bf02-1acf73811bf9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: 8TNcdwdHoCjVm7W5A2H6Hoj-QkvqpHOYIDalkeLd63A
+id: padp_page_title
+theme: padp
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

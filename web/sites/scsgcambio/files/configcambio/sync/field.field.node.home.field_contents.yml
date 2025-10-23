@@ -1,0 +1,39 @@
+uuid: d8a67df0-d4fa-416f-a885-9e7a38908908
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contents
+    - node.type.home
+    - paragraphs.paragraphs_type.contenidos
+    - paragraphs.paragraphs_type.enlaces
+  module:
+    - entity_reference_revisions
+id: node.home.field_contents
+field_name: field_contents
+entity_type: node
+bundle: home
+label: Contenidos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contenidos: contenidos
+      enlaces: enlaces
+    negate: 0
+    target_bundles_drag_drop:
+      contenidos:
+        weight: 4
+        enabled: true
+      enlace:
+        weight: 5
+        enabled: false
+      enlaces:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

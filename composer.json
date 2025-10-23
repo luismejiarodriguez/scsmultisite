@@ -111,7 +111,8 @@
         "drupal/views_bulk_operations": "^4.3",
         "drupal/color_field": "^3.0",
         "drupal/maxlength": "^3.1",
-        "drupal/webform": "^6.3@beta"
+        "drupal/webform": "^6.3@beta",
+        "drupal/viewsreference": "^2.0@beta"
     },
     "require-dev": {
         "drush/drush": "^13.6",

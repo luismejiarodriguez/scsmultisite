@@ -75,6 +75,12 @@ final class ViewsBulkOperationsActionManager extends ActionManager {
         ($definition['type'] !== '' && !\array_key_exists($definition['type'], $entity_type_definitions))
       ) {
         unset($definitions[$plugin_id]);
+        continue;
+      }
+
+      // Make sure confirm_form_route_name is always a string.
+      if (!\is_string($definition['confirm_form_route_name'])) {
+        $definition['confirm_form_route_name'] = '';
       }
 
       // Filter definitions that are incompatible due to applied core
@@ -87,10 +93,11 @@ final class ViewsBulkOperationsActionManager extends ActionManager {
       // comment_unpublish_by_keyword_action.
       if (!\in_array(ViewsBulkOperationsActionInterface::class, \class_implements($definition['class']), TRUE)) {
         if (
-          ($definition['confirm_form_route_name'] ?? '') !== '' ||
+          $definition['confirm_form_route_name'] !== '' ||
           ($definition['type'] ?? '') === ''
         ) {
           unset($definitions[$plugin_id]);
+          continue;
         }
       }
 

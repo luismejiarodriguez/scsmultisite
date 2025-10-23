@@ -1,0 +1,33 @@
+uuid: eae5b648-7d82-4a27-86f9-e6da5f19831d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contenidos.field_title
+    - field.field.paragraph.contenidos.field_top_content
+    - paragraphs.paragraphs_type.contenidos
+  module:
+    - entity_reference_revisions
+id: paragraph.contenidos.default
+targetEntityType: paragraph
+bundle: contenidos
+mode: default
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_top_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 8aaa8bf3-d619-4157-98f1-aa7fc8d67e98
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: 0_TwSeDF42t8-LvonX_93rMiiTv8_mOUzuTkQi5UfF4
+id: padp_account_menu
+theme: padp
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

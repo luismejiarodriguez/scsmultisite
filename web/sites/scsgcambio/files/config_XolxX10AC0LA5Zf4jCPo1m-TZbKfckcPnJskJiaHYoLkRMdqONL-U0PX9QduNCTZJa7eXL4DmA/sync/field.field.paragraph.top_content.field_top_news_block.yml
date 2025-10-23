@@ -1,0 +1,29 @@
+uuid: bb1ee10b-c0c0-49d0-81f1-12dc980d79c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_top_news_block
+    - paragraphs.paragraphs_type.top_content
+  module:
+    - viewsreference
+id: paragraph.top_content.field_top_news_block
+field_name: field_top_news_block
+entity_type: paragraph
+bundle: top_content
+label: 'Bloque de noticias destacadas'
+description: 'Permite seleccionar una vista del tipo bloque para mostrar noticias destacadas en la home'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  enabled_settings: {  }
+field_type: viewsreference

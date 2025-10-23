@@ -1,0 +1,41 @@
+uuid: 6b67dc24-5b0e-4ce7-8124-67bd9e0fd26b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.enlace.field_icon
+    - field.field.paragraph.enlace.field_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.enlace
+  module:
+    - image
+    - link
+id: paragraph.enlace.default
+targetEntityType: paragraph
+bundle: enlace
+mode: default
+content:
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
