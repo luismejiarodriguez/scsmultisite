@@ -1,0 +1,10 @@
+uuid: 753b6446-ba77-4c6c-9822-f85bba0c39d2
+langcode: es
+status: true
+dependencies: {  }
+id: enlace
+label: Enlace
+icon_uuid: null
+icon_default: null
+description: 'Utilice el Paragraph <em>Enlace</em> para añadir un link acompañado de un icono'
+behavior_plugins: {  }

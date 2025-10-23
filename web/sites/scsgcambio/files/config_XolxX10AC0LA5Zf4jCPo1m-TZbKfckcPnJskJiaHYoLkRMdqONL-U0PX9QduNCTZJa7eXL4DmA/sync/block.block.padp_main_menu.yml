@@ -1,0 +1,27 @@
+uuid: 0ac23841-b579-490f-9e72-d3a7e46659be
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: K9HcOepjyA5KfA_O8v-ZgNc2JRru5iDDdw0JaMXRdDc
+id: padp_main_menu
+theme: padp
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -9,6 +9,8 @@ dependencies:
     - contact
     - file
     - filter
+    - media
+    - paragraphs_type_permissions
     - search
     - shortcut
     - system
@@ -28,3 +30,8 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view media'
+  - 'view paragraph content contenidos'
+  - 'view paragraph content enlace'
+  - 'view paragraph content enlaces'
+  - 'view paragraph content top_content'

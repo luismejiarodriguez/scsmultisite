@@ -1,0 +1,20 @@
+uuid: d0db6902-d94c-4351-ad46-226a4e713259
+langcode: es
+status: true
+dependencies:
+  theme:
+    - padp
+_core:
+  default_config_hash: '-PCEgn0KyIZVAOsJSJ07RdSyebJcUzxHn0usJE3GprM'
+id: padp_primary_admin_actions
+theme: padp
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: 65212ded-4d0a-4fdc-89f7-994628a224cf
+langcode: es
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: enlaces
+label: Enlaces
+icon_uuid: null
+icon_default: null
+description: 'Utilice el Paragraph <em>Enlaces</em> para crear un bloque que contenga varios elementos de tipo <em>Enlace</em>'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      barrio_cardhorizontal: 'Card horizontal'

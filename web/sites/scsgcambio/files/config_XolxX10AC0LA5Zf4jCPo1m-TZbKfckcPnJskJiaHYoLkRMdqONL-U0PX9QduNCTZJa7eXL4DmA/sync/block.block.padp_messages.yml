@@ -1,0 +1,22 @@
+uuid: e32fbeb7-31bf-44d8-814e-27866555dfc4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: aFvLaHcaokEby0Pgv3tnWhOCWY84ubAIM3bPsynkBeI
+id: padp_messages
+theme: padp
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }
