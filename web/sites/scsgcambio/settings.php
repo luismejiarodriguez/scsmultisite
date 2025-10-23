@@ -288,7 +288,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'n5xiAgwbTTGVx3Xjlmtp0C-wJlpIukNWQVkp-skrUSJVrdlvEk0J99n1mjxqNJGv5m_eeTiSlw';
+$settings['hash_salt'] = '3VKE__nzA-v8XUKe6dAgqr8jIZmp0ntHnbPDIUwFfUtf020jg9y8Y9iICI4oxzThi5np0vKyng';
 
 /**
  * Deployment identifier.
@@ -876,9 +876,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # $settings['migrate_file_private_path'] = '';
 
 // Automatically generated include for settings managed by ddev.
-if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
+/*if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
   include __DIR__ . '/settings.ddev.php';
-}
+}*/
 
 /**
  * Load local development override configuration, if available.
@@ -909,6 +909,7 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
+#$settings['config_sync_directory'] = 'sites/scsgcambio/files/config_XolxX10AC0LA5Zf4jCPo1m-TZbKfckcPnJskJiaHYoLkRMdqONL-U0PX9QduNCTZJa7eXL4DmA/sync';
 $settings['config_sync_directory'] = 'sites/scsgcambio/files/configcambio/sync';
 $settings['file_private_path'] = '../private';
 $settings['file_temp_path'] = '../tmp';
