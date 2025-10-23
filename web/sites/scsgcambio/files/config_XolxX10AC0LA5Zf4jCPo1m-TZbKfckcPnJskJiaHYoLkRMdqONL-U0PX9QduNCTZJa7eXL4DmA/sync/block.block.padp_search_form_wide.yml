@@ -1,0 +1,23 @@
+uuid: 6dc456dd-6557-4bc0-a29b-ef836a60c03c
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - padp
+_core:
+  default_config_hash: uhddQNvzfqs-FCy5GgXxeTgT8XQm4TT7s1ohAGkRv9A
+id: padp_search_form_wide
+theme: padp
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

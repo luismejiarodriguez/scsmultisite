@@ -1,0 +1,13 @@
+uuid: ce89531b-33bc-4eb2-8d92-0e39f7ca9064
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+_core:
+  default_config_hash: _YqHTUZ5t7SWq5sE0bJwbSNH9CaL_KIbwu-rURJ6sXo
+id: paragraphs_library_item.summary
+label: Resumen
+description: ''
+targetEntityType: paragraphs_library_item
+cache: true

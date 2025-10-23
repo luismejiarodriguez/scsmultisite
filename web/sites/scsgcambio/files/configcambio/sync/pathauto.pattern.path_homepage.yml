@@ -1,0 +1,22 @@
+uuid: a2a95208-f471-492b-b982-150432535bb5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: path_homepage
+label: 'Path Homepage'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  233067bb-87dd-417c-9b2d-ab8acc0c8800:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 233067bb-87dd-417c-9b2d-ab8acc0c8800
+    context_mapping:
+      node: node
+    bundles:
+      home: home
+selection_logic: and
+weight: -5
+relationships: {  }

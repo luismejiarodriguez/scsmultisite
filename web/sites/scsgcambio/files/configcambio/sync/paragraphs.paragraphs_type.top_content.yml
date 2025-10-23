@@ -1,0 +1,16 @@
+uuid: a213bcf0-28b3-4c13-9dd3-f1bac1ddc62e
+langcode: es
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: top_content
+label: 'Contenido destacado'
+icon_uuid: null
+icon_default: null
+description: 'Utilice el Paragraph <em>Contenido destacado</em> para mostrar contenido relevante, como artículos recientes o publicaciones destacadas'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      barrio_cardbasic: 'Card basic'

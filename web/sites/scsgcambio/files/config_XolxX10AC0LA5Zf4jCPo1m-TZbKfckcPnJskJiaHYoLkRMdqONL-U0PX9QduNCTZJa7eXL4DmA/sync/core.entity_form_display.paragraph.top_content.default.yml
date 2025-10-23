@@ -1,0 +1,48 @@
+uuid: 9448167c-efe8-4420-9899-62f38ee244e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.top_content.field_content
+    - field.field.paragraph.top_content.field_title
+    - field.field.paragraph.top_content.field_top_news_block
+    - paragraphs.paragraphs_type.top_content
+  module:
+    - viewsreference
+id: paragraph.top_content.default
+targetEntityType: paragraph
+bundle: top_content
+mode: default
+content:
+  field_content:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_top_news_block:
+    type: viewsreference_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

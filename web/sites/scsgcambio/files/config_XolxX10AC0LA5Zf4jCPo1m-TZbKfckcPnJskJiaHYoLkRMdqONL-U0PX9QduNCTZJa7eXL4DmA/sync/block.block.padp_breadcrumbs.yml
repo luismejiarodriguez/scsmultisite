@@ -1,0 +1,22 @@
+uuid: 5a0bf3bc-83fb-48f5-8d3b-975e8f870bbe
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - padp
+_core:
+  default_config_hash: UqqZ9Mtq1HQbxGB1GbWaDbwy3hADwU1qp_kyZ4ocDhU
+id: padp_breadcrumbs
+theme: padp
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

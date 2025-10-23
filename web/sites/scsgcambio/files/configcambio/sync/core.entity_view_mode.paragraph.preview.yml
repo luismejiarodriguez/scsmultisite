@@ -1,0 +1,13 @@
+uuid: 5ebf7b56-39c0-454f-a01d-b4cc876f9194
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: h3BeHVei4Lnyqbkao3YiF4KqoY-DhRvUNfEgKG8Rgjg
+id: paragraph.preview
+label: 'Vista previa'
+description: ''
+targetEntityType: paragraph
+cache: true

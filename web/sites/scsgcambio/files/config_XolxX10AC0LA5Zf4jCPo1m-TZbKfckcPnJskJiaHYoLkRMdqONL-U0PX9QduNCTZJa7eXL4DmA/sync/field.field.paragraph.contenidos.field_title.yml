@@ -1,0 +1,19 @@
+uuid: 209f734e-83cc-4480-a635-5af9d2768549
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.contenidos
+id: paragraph.contenidos.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: contenidos
+label: Titulo
+description: 'Titulo opcional para el bloque de Contenidos'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 600de96b-9503-43cb-93ea-cd4df944ad92
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - node.type.article
+    - node.type.page
+    - paragraphs.paragraphs_type.top_content
+id: paragraph.top_content.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: top_content
+label: Contenido
+description: 'Este bloque le permite seleccionar contenido ya existente del sitio para mostrar como contenido destacado'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

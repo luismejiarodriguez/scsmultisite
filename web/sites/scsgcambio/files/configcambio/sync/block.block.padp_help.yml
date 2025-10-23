@@ -1,0 +1,22 @@
+uuid: 92a694c6-97c4-4c07-b59b-76a19a0a2a74
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - padp
+_core:
+  default_config_hash: N-ejCK46ikv8plhO5zUUV8hNFrFHytP-vg71F2DgN-8
+id: padp_help
+theme: padp
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

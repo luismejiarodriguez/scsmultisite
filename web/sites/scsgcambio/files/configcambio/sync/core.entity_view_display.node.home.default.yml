@@ -1,0 +1,36 @@
+uuid: a45dca85-a6ef-42b6-92dc-7c4cf54b0ac9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.home.field_contents
+    - node.type.home
+  module:
+    - layout_paragraphs
+    - user
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  field_contents:
+    type: layout_paragraphs_builder
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+      preview_view_mode: default
+      form_display_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
