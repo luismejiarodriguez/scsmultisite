@@ -1,0 +1,11 @@
+uuid: 9674b0a9-ab45-4460-b79e-891bcdda8a37
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.icono
+label: Icono
+description: 'Mostrar las imágenes tamaño icono'
+targetEntityType: media
+cache: true

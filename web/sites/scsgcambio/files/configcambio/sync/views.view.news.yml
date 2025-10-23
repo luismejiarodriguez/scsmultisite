@@ -539,18 +539,16 @@ display:
       style:
         type: grid_responsive
         options:
-          grouping: {  }
+          uses_fields: false
           columns: 4
           cell_min_width: 250
-          grid_gutter: 20
+          grid_gutter: 15
           alignment: horizontal
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       defaults:
         title: false
         pager: false
